@@ -123,7 +123,16 @@ body {
   line-height: 140%;
   letter-spacing: 1.6px;
   width: 100%;
-}
+}::placeholder{
+   color: #DFE2E6;
+   font-size: 16px;
+   line-height: 140%;
+ }
+
+ .mask-password{
+ }::placeholder{
+     color: #222529;
+   }
 
 .def-fields-icon{
   position: absolute;

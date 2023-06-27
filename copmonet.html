@@ -1,25 +1,99 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="componets.css">
-  <title>Componets</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+
+  <script src="js/input-mask.js"></script>
+  <title>Components</title>
 </head>
 <body>
 
 
+<label class="def-fields">
+  <span class="def-fields-title">Пароль</span>
+  <input type="password" class="def-fields-input mask-password" placeholder="✱✱✱✱✱✱✱✱✱✱">
+  <img class="def-fields-icon" src="assets/icons/key.svg" alt="key-icon">
+</label>
+<br>
 
-      <label class="password-filed">
-        <span class="password-filed-title">Пароль</span>
-        <input type="password" class="password-filed-input">
-        <img class="password-filed-icon" src="./images/16%20px.svg" alt="password-icon">
-      </label>
+<label class="def-fields">
+  <span class="def-fields-title">Телефон</span>
+  <input type="text" class="def-fields-input mask-phone" placeholder="+7 (999) 123-45-67">
+  <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+</label>
+<br>
+
+<label class="def-fields">
+  <span class="def-fields-title">Числовой одноразовый код</span>
+  <input type="text" class="def-fields-input mask-one-key" placeholder="000–000">
+  <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+</label>
+
+<br>
+
+<label class="def-fields">
+  <span class="def-fields-title">E-mail</span>
+  <input type="text" class="def-fields-input mask-email" placeholder="_@_._">
+  <img class="def-fields-icon" src="assets/icons/mail.svg" alt="email-icon">
+</label>
+
+
+<br>
+
+<label class="def-fields">
+  <span class="def-fields-title">ИФО</span>
+  <input type="text" class="def-fields-input mask-fio" placeholder="Иванов Иван Иванович">
+  <img class="def-fields-icon" src="assets/icons/axe.svg" alt="email-icon">
+</label>
 
 
 
+<br>
 
+<label class="def-fields">
+  <span class="def-fields-title">ИНН ИП/Физлица</span>
+  <input type="text" class="def-fields-input mask-physical" placeholder="0000000000">
+  <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+</label>
+
+<br>
+
+<label class="def-fields">
+  <span class="def-fields-title">ИНН Юрлица</span>
+  <input type="text" class="def-fields-input mask-jurlitsa" placeholder="0000000000">
+  <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+</label>
+
+
+<br>
+
+<label class="def-fields">
+  <span class="def-fields-title">ОГРН</span>
+  <input type="text" class="def-fields-input mask-orgn" placeholder="0000000000">
+  <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+</label>
+
+
+<br>
+
+<label class="def-fields">
+  <span class="def-fields-title">ОГРНИП</span>
+  <input type="text" class="def-fields-input mask-orgnip" placeholder="00000000000000">
+  <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+</label>
+
+
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -14,6 +14,10 @@ const { none, show, active, hidden, opacity25, disabled } = {
 class ToolMasks {
     static numberMaskElements = document.querySelectorAll('.mask-phone');
     static maskOneKeyElements = document.querySelectorAll('.mask-one-key');
+    static maskPhysicalElements = document.querySelectorAll('.mask-physical');
+    static maskJurlitsaElements = document.querySelectorAll('.mask-jurlitsa');
+    static maskOrgnElements = document.querySelectorAll('.mask-orgn');
+    static maskOrgnipElements = document.querySelectorAll('.mask-orgnip');
 
     constructor() {
     }
@@ -28,6 +32,28 @@ class ToolMasks {
 
     }
 
+    static maskPhysical(){
+        this.maskPhysicalElements.forEach((item) => this.startMask(item,  '000000000000'))
+
+    }
+
+    static maskJurlitsa(){
+        this.maskJurlitsaElements.forEach((item) => this.startMask(item,  '0000000000'))
+
+    }
+
+    static maskOrgn(){
+        this.maskOrgnElements.forEach((item) => this.startMask(item,  '0000000000000'))
+
+    }
+
+    static maskOrgnip(){
+        this.maskOrgnipElements.forEach((item) => this.startMask(item,  '000000000000000'))
+
+    }
+
+
+
     static startMask(item, mask){
         return IMask(item, {
             mask: mask,
@@ -40,3 +66,7 @@ class ToolMasks {
 
 ToolMasks.russianPhoneMask()
 ToolMasks.maskOneKey()
+ToolMasks.maskPhysical()
+ToolMasks.maskJurlitsa()
+ToolMasks.maskOrgn()
+ToolMasks.maskOrgnip()
