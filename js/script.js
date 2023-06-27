@@ -12,20 +12,20 @@ const { none, show, active, hidden, opacity25, disabled } = {
 
 
 class ToolMasks {
-    static numberMaskElements = document.querySelectorAll('.default-phone-input');
+    static numberMaskElements = document.querySelectorAll('.def-fields-input');
 
     constructor() {
     }
 
 
-    static russianNumberMask(){
+    static russianPhoneMask(){
         this.numberMaskElements.forEach((item) => IMask(item, {
             mask: '+{7}(000)000-00-00',
-            lazy: false,  // make placeholder always visible
-            placeholderChar: '0'     // defaults to '_'
+            lazy: false,
+            placeholderChar: '0'
         }))
     }
 
 }
 
-ToolMasks.russianNumberMask()
+ToolMasks.russianPhoneMask()

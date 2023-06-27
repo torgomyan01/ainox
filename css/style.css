@@ -25,6 +25,8 @@
   padding: 0;
   text-decoration: none;
   outline: none;
+  border: none;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Montserrat", sans-serif;
@@ -91,3 +93,41 @@ body {
   padding: 0 2rem;
 }
 
+/* password  */
+
+.def-fields{
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #EAECEF;
+  background: #FFF;
+  padding: 10px;
+  width: 100%;
+  height: 63px;
+  position: relative;
+}
+
+.def-fields-title{
+  color: #6E757C;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 145%;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.def-fields-input{
+  height: 22px;
+  color: #222529;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 1.6px;
+  width: 100%;
+}
+
+.def-fields-icon{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
