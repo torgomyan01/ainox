@@ -41,12 +41,16 @@
     padding: 10px;
   }
 
-  .social-sites .btn-social{
+  .email{
+    padding: 0 20px;
+  }
+
+ .email-box .social-sites .btn-social{
     font-size: 0;
     width: 86px;
   }
 
-  .social-sites .btn-social img{
+ .email-box .social-sites .btn-social img{
     display: flex;
     justify-content: center;
     align-items: center;
