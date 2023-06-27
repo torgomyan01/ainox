@@ -52,6 +52,126 @@ a {
   }
 }
 
+/*  buttons */
+
+  .button-link{
+    background: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+
+.button-link:hover{
+  color: #0056D3;
+}
+
+  .button-link img{
+    margin-right: 10px;
+  }
+
+
+  .button-black{
+    display: flex;
+    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #282C30;
+    cursor: pointer;
+    color: #F8F8F8;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 165%;
+  }
+
+  .button-black img{
+    margin-left: 10px;
+  }
+
+  .button-white{
+    display: flex;
+    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #282C30;
+    cursor: pointer;
+    color: #282C30;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 165%;
+  }
+
+  .button-white img{
+    margin-right: 10px;
+  }
+
+.button-transparent{
+  display: flex;
+  padding: 10px 25px;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #282C30;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 165%;
+}
+
+.button-transparent img{
+  margin-right: 10px;
+}
+
+.button-gray{
+  display: flex;
+  padding: 10px 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #282C30;
+  background: #DFE2E6;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 165%;
+}
+
+.button-gray img{
+  margin-right: 10px;
+}
+
+.button-green{
+  display: flex;
+  padding: 10px 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #00C58A;
+  cursor: pointer;
+  color: #F8F8F8;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 165%;
+}
+
+.button-green img{
+  margin-left: 10px;
+}
+
+
+/* buttons end */
+
 body {
   min-height: 100vh;
 }
