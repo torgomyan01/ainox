@@ -16,6 +16,30 @@
 
 @media (max-width: 576px){
 
+  .btn-black{
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .btn-white{
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .btn-transparent{
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .btn-gray{
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .btn-green{
+    font-size: 16px;
+    padding: 10px;
+  }
 }
 
 @media (max-width: 320px){

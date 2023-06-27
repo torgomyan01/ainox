@@ -54,7 +54,7 @@ a {
 
 /*  buttons */
 
-  .button-link{
+  .btn-link{
     background: none;
     color: #000;
     font-size: 16px;
@@ -64,16 +64,16 @@ a {
     cursor: pointer;
   }
 
-.button-link:hover{
+.btn-link:hover{
   color: #0056D3;
 }
 
-  .button-link img{
+  .btn-link img{
     margin-right: 10px;
   }
 
 
-  .button-black{
+  .btn-black{
     display: flex;
     padding: 10px 25px;
     justify-content: center;
@@ -88,11 +88,11 @@ a {
     line-height: 165%;
   }
 
-  .button-black img{
+  .btn-black img{
     margin-left: 10px;
   }
 
-  .button-white{
+  .btn-white{
     display: flex;
     padding: 10px 25px;
     justify-content: center;
@@ -108,11 +108,11 @@ a {
     line-height: 165%;
   }
 
-  .button-white img{
+  .btn-white img{
     margin-right: 10px;
   }
 
-.button-transparent{
+.btn-transparent{
   display: flex;
   padding: 10px 25px;
   justify-content: center;
@@ -127,11 +127,11 @@ a {
   line-height: 165%;
 }
 
-.button-transparent img{
+.btn-transparent img{
   margin-right: 10px;
 }
 
-.button-gray{
+.btn-gray{
   display: flex;
   padding: 10px 25px;
   justify-content: center;
@@ -146,11 +146,11 @@ a {
   line-height: 165%;
 }
 
-.button-gray img{
+.btn-gray img{
   margin-right: 10px;
 }
 
-.button-green{
+.btn-green{
   display: flex;
   padding: 10px 25px;
   justify-content: center;
@@ -165,7 +165,7 @@ a {
   line-height: 165%;
 }
 
-.button-green img{
+.btn-green img{
   margin-left: 10px;
 }
 
@@ -259,4 +259,80 @@ body {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+
+/*  email */
+
+.email{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F8F8F8;
+}
+
+.email .email-box{
+  width: 420px;
+}
+
+.wrapper {
+  border-radius: 30px;
+  background: #FFF;
+  width: 100%;
+  box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
+  padding: 25px 20px;
+
+}
+
+.email .email-box .email-box-title{
+  color: #6E757C;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 145%;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.email .email-box .btn-email{
+  width: 100%;
+  margin-top: 25px;
+}
+
+.email .email-box .btn-email img{
+ margin-right: 10px;
+}
+
+.solid-text{
+  width: 100%;
+  height: 20px;
+  position: relative;
+  margin-top: 25px;
+}
+
+.solid-text:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 1px;
+  background: #DFE2E6;
+}
+
+.solid-text span{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #F8F8F8;
+  height: 100%;
+  padding: 0 20px;
+  color: #DFE2E6;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 145%;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
