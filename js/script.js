@@ -1,23 +1,16 @@
-const { none, show, active, hidden, opacity25, disabled } = {
-    none: "d-none",
-    show: 'show',
-    active: 'active',
-    hidden: 'overflow-hidden',
-    opacity25: 'opacity-25',
-    disabled: 'disabled'
-}
-
-
-
+const $ = (className) => document.querySelectorAll(className);
 
 
 class ToolMasks {
-    static numberMaskElements = document.querySelectorAll('.mask-phone');
-    static maskOneKeyElements = document.querySelectorAll('.mask-one-key');
-    static maskPhysicalElements = document.querySelectorAll('.mask-physical');
-    static maskJurlitsaElements = document.querySelectorAll('.mask-jurlitsa');
-    static maskOrgnElements = document.querySelectorAll('.mask-orgn');
-    static maskOrgnipElements = document.querySelectorAll('.mask-orgnip');
+    static numberMaskElements = $('.mask-phone');
+    static maskOneKeyElements = $('.mask-one-key');
+    static maskPhysicalElements = $('.mask-physical');
+    static maskJurlitsaElements = $('.mask-jurlitsa');
+    static maskOrgnElements = $('.mask-orgn');
+    static maskOrgnipElements = $('.mask-orgnip');
+    static maskSerialPassportElements = $('.mask-serial-passport');
+    static maskBikElements = $('.mask-bik');
+    static maskCheckingAccountElements = $('.mask-checking-account');
 
     constructor() {
     }
@@ -29,37 +22,39 @@ class ToolMasks {
 
     static maskOneKey(){
         this.maskOneKeyElements.forEach((item) => this.startMask(item,  '000 - 000'))
-
     }
 
     static maskPhysical(){
         this.maskPhysicalElements.forEach((item) => this.startMask(item,  '000000000000'))
-
     }
 
     static maskJurlitsa(){
         this.maskJurlitsaElements.forEach((item) => this.startMask(item,  '0000000000'))
-
     }
 
     static maskOrgn(){
         this.maskOrgnElements.forEach((item) => this.startMask(item,  '0000000000000'))
-
     }
 
     static maskOrgnip(){
         this.maskOrgnipElements.forEach((item) => this.startMask(item,  '000000000000000'))
-
     }
 
 
+    static maskSerialPassport(){
+        this.maskSerialPassportElements.forEach((item) => this.startMask(item,  '00 00'))
+    }
+
+    static maskBik(){
+        this.maskBikElements.forEach((item) => this.startMask(item,  '000000000'))
+    }
+
+    static maskCheckingAccount(){
+        this.maskCheckingAccountElements.forEach((item) => this.startMask(item,  '00000000000000000000'))
+    }
 
     static startMask(item, mask){
-        return IMask(item, {
-            mask: mask,
-            lazy: false,
-            placeholderChar: '0'
-        })
+        return IMask(item, { mask: mask })
     }
 
 }
@@ -70,3 +65,62 @@ ToolMasks.maskPhysical()
 ToolMasks.maskJurlitsa()
 ToolMasks.maskOrgn()
 ToolMasks.maskOrgnip()
+ToolMasks.maskSerialPassport()
+ToolMasks.maskBik()
+ToolMasks.maskCheckingAccount()
+
+// ------------- ************* ---------------------- //
+//                  CONSTANTS
+// ------------- ************* ---------------------- //
+
+const { inputLink, active } = {
+    inputLink: '.input-link',
+    active: 'active',
+}
+
+
+// ------------- ************* ---------------------- //
+//                  CONSTANTS
+// ------------- ************* ---------------------- //
+
+
+
+
+
+// ------------- ************* ---------------------- //
+//           LINK INPUTS FUNCTIONS
+// ------------- ************* ---------------------- //
+
+const regLink = new RegExp('https://|http://', 'g');
+
+$(inputLink).forEach((item) => {
+    item.addEventListener('input', function (){
+        this.value = this.value.replace(regLink, '')
+    })
+})
+
+// ------------- ************* ---------------------- //
+//           LINK INPUTS FUNCTIONS
+// ------------- ************* ---------------------- //
+
+//
+// const url = "https://cleaner.dadata.ru/api/v1/clean/name";
+// const token = "3a57367cba2c76b91aad728bf599c9876a904394";
+// const secret = "3b57ed51506a083cbbb422e8e7c16510ca5cb287";
+// const query = "Срегей владимерович иванов";
+//
+// const options = {
+//     method: "POST",
+//     mode: "cors",
+//     headers: {
+//         "Content-Type": "application/json",
+//         "Authorization": "Token " + token,
+//         "X-Secret": secret
+//     },
+//     body: JSON.stringify([query])
+// }
+//
+// fetch(url, options)
+//     .then(response => response.text())
+//     .then(result => console.log(result))
+//     .catch(error => console.log("error", error));
