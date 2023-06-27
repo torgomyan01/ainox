@@ -124,3 +124,46 @@ $(inputLink).forEach((item) => {
 //     .then(response => response.text())
 //     .then(result => console.log(result))
 //     .catch(error => console.log("error", error));
+
+
+
+// email
+
+const btnEmail = document.querySelector('.email .email-box .btn-email')
+const inputEmail = document.querySelector('.email .email-box .email-input')
+const inputKod = document.querySelector('.email .email-box .input-kod')
+const passwordEmail = document.querySelector('.email .email-box .email-password')
+const footerEmail = document.querySelector('.email .email-box .email-footer')
+const emailKod = document.querySelector('.email .email-box .input-kod .email-kod')
+
+emailKod.addEventListener('input', ubdatekod)
+
+function ubdatekod(e){
+    if(e.target.value.length === 9){
+       setTimeout(()=>{
+           inputKod.classList.remove('active')
+           passwordEmail.classList.add('active')
+       },2000)
+    }
+}
+
+
+let a = 655656
+console.log(a.length)
+
+inputEmail.addEventListener("input", ubdatefunc)
+
+function  ubdatefunc(e){
+    if(e.target.value.length > 0){
+        btnEmail.addEventListener('click', ()=>{
+            inputKod.classList.add('active')
+            footerEmail.style.display = 'none'
+        })
+
+    }
+}
+
+
+
+
+// email ent

@@ -40,6 +40,20 @@
     font-size: 16px;
     padding: 10px;
   }
+
+  .social-sites .btn-social{
+    font-size: 0;
+    width: 86px;
+  }
+
+  .social-sites .btn-social img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 8px;
+  }
+
 }
 
 @media (max-width: 320px){
