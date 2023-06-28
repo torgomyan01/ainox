@@ -196,7 +196,7 @@ a {
 
 
 
-    /*  email */
+    /* ............. Login .......*/
 
 .email{
   min-height: 100vh;
@@ -207,7 +207,7 @@ a {
 }
 
 .email .email-box{
-  width: 420px;
+  width: 450px;
 }
 
 .wrapper {
@@ -354,17 +354,64 @@ a {
   font-size: 20px;
   font-weight: 500;
   line-height: 165%;
-  position: relative;
-  top: 130px;
+  position: absolute;
+  bottom: 27px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
 }
 
 .email-box .register-now img{
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+
+
+/*............  Login end ..............*/
+
+
+/*   ........... Email..............         */
+
+
+.emaile .emaile-box .image{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.emaile .emaile-box .email-box-subtitle{
+  color: #222529;
+  font-size: 15px;
+  line-height: 165%;
+  width: 100%;
+}
+
+.emaile .emaile-box .email-box-subtitle a{
+  font-size: 15px;
+  font-weight: 700;
+  color: #222529;
+
+}
+
+.emaile .emaile-box .emaile-box-change{
+  width: 100%;
+}
+
+.emaile .emaile-box .btn-emaile{
+  width: 100%;
+  margin-top: 25px;
+}
+
+.emaile .emaile-box .btn-emaile img{
   margin-right: 10px;
 }
 
 
 
-/*  email end */
+  /*   ........... Email end..............         */
 
 /*  buttons */
 
