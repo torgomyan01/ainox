@@ -17,7 +17,7 @@
   <script src="js/input-mask.js"></script>
   <title>Components</title>
 </head>
-<body style="padding: 20px">
+<body style="padding: 20px 20px 100px;">
 
 <h1>#Input Fields</h1>
 <br>
@@ -67,8 +67,14 @@
   <span class="def-fields-title">ИНН ИП/Физлица</span>
   <input type="text" class="def-fields-input mask-physical" placeholder="0000000000">
   <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+  <span class="def-fields-alert">
+    Некорректный номер ИНН. Должно быть 9 цифр.
+
+    <span>-3</span>
+  </span>
 </label>
 
+<br>
 <br>
 
 <label class="def-fields">
@@ -154,36 +160,70 @@
 
 <h1>#Buttons</h1>
 <br><br>
-<div class="buttons">
-  <button class="btn-link">
-    <img src="assets/icons/link-button.svg" alt="arrow">
-    Стандартный текст
-  </button>
-  <br><br>
-  <button class="btn-black">
-    Стандартный текст
-    <img src="assets/icons/arrow-right.svg" alt="arrow">
-  </button>
-  <br>
-  <button class="btn-white">
-    <img src="assets/icons/Edit-Attachment.svg" alt="arrow">
-    Стандартный текст
-  </button>
-  <br>
-  <button class="btn-transparent">
-    <img src="assets/icons/Arrows%20Synchronize.svg" alt="arrow">
-    Стандартный текст
-  </button>
-  <br>
-  <button class="btn-gray">
-    <img src="assets/icons/Arrows%20Synchronize.svg" alt="arrow">
-    Стандартный текст
-  </button>
-  <br>
-  <button class="btn-green">
-    Стандартный текст
-    <img src="assets/icons/arrow-right.svg" alt="arrow">
-  </button>
+<div style="display: flex; justify-content: space-between;">
+  <div class="buttons">
+    <h2>Normal buttons</h2>
+    <br>
+    <br>
+    <button class="btn-link">
+      <img src="assets/icons/link-button.svg" alt="arrow">
+      Стандартный текст
+    </button>
+    <br><br>
+    <button class="btn-black">
+      Стандартный текст
+      <img src="assets/icons/arrow-right.svg" alt="arrow">
+    </button>
+    <br>
+    <button class="btn-white">
+      <img src="assets/icons/Edit-Attachment.svg" alt="arrow">
+      Стандартный текст
+    </button>
+    <br>
+    <button class="btn-transparent">
+      <img src="assets/icons/Arrows%20Synchronize.svg" alt="arrow">
+      Стандартный текст
+    </button>
+    <br>
+    <button class="btn-gray">
+      <img src="assets/icons/Arrows%20Synchronize.svg" alt="arrow">
+      Стандартный текст
+    </button>
+    <br>
+    <button class="btn-green">
+      Стандартный текст
+      <img src="assets/icons/arrow-right.svg" alt="arrow">
+    </button>
+  </div>
+  <div class="buttons">
+    <h2>Loading buttons</h2>
+    <br>
+    <br>
+    <button class="btn-black btn-loading">
+      Стандартный текст
+      <img src="assets/icons/arrow-right.svg" alt="arrow">
+    </button>
+    <br>
+    <button class="btn-white btn-loading">
+      <img src="assets/icons/Edit-Attachment.svg" alt="arrow">
+      Стандартный текст
+    </button>
+    <br>
+    <button class="btn-transparent btn-loading">
+      <img src="assets/icons/Arrows%20Synchronize.svg" alt="arrow">
+      Стандартный текст
+    </button>
+    <br>
+    <button class="btn-gray btn-loading">
+      <img src="assets/icons/Arrows%20Synchronize.svg" alt="arrow">
+      Стандартный текст
+    </button>
+    <br>
+    <button class="btn-green btn-loading">
+      Стандартный текст
+      <img src="assets/icons/arrow-right.svg" alt="arrow">
+    </button>
+  </div>
 </div>
 
 <br>

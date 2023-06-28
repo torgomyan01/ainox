@@ -89,31 +89,62 @@ a {
 .def-fields {
     display: block;
     border-radius: 5px;
-    border: 1px solid #EAECEF;
-    background: #FFF;
+    background: #E4FFF9;
     padding: 10px;
     width: 100%;
     height: 63px;
     position: relative;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.def-fields-alert{
+    color: #FF756B;
+    font-size: 12px;
+    line-height: 120%;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.def-fields:hover{
+    border: 1px solid #b8fdf7;
+}
+
+.def-fields .def-fields-icon{
+    transition: 0.3s opacity;
+    opacity: 0;
 }
 
 .def-fields-title {
-    color: #6E757C;
-    font-size: 11px;
-    font-weight: 500;
-    line-height: 145%;
     text-transform: uppercase;
     display: block;
     margin-bottom: 5px;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    color: #222529;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    transition: 0.3s;
 }
 
 .def-fields-input {
-    height: 22px;
     color: #222529;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 1.6px;
-    width: 100%;
+    width: calc(100% - 10px);
+    transition: 0.3s;
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    bottom: 10px;
 }
 
 .def-fields-input::placeholder {
@@ -131,6 +162,23 @@ a {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.def-fields.active {
+    border: 1px solid #EAECEF;
+    background: #FFF;
+}
+
+.def-fields.active .def-fields-title{
+    top: 10px;
+    font-size: 11px;
+}
+.def-fields.active .def-fields-input {
+    opacity: 1;
+    height: 22px;
+}
+.def-fields.active .def-fields-icon{
+    opacity: 1;
 }
 
 
@@ -221,6 +269,7 @@ a {
     cursor: pointer;
 }
 
+
 .btn-link:hover{
     color: #0056D3;
 }
@@ -243,6 +292,11 @@ a {
     font-size: 20px;
     font-weight: 500;
     line-height: 165%;
+    transition: 0.3s;
+}
+
+.btn-black:hover{
+    background: #3a4146;
 }
 
 .btn-black img{
@@ -324,6 +378,36 @@ a {
 
 .btn-green img{
     margin-left: 10px;
+}
+
+
+.btn-loading{
+    position: relative;
+    overflow: hidden;
+    cursor: context-menu !important;
+}
+
+.btn-loading:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100%;
+}
+
+.btn-loading:after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../assets/icons/loading.svg") no-repeat center;
+    background-size: contain;
 }
 
 /*----------------- SWITCH -------------- */

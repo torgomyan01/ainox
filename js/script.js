@@ -103,6 +103,30 @@ $(inputLink).forEach((item) => {
 //           LINK INPUTS FUNCTIONS
 // ------------- ************* ---------------------- //
 
+const defaultInputs = $('.def-fields .def-fields-input');
+
+defaultInputs.forEach((item) => {
+    item.addEventListener('focus', function (){
+        checkItems()
+        this.parentElement.classList.add(active);
+    })
+
+    item.addEventListener('blur', checkItems)
+    checkItems()
+})
+
+
+function checkItems(){
+    defaultInputs.forEach((defInputs) => {
+        if(defInputs.value === ''){
+            defInputs.parentElement.classList.remove(active);
+        } else {
+            defInputs.parentElement.classList.add(active)
+        }
+    })
+}
+
+
 //
 // const url = "https://cleaner.dadata.ru/api/v1/clean/name";
 // const token = "3a57367cba2c76b91aad728bf599c9876a904394";
