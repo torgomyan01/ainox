@@ -73,9 +73,12 @@ ToolMasks.maskCheckingAccount()
 //                  CONSTANTS
 // ------------- ************* ---------------------- //
 
-const { inputLink, active } = {
+const { inputLink, active, none, btnLoading, disabled } = {
     inputLink: '.input-link',
     active: 'active',
+    none: 'd-none',
+    btnLoading: 'btn-loading',
+    disabled: 'disabled'
 }
 
 
@@ -99,8 +102,10 @@ $(inputLink).forEach((item) => {
     })
 })
 
+
+
 // ------------- ************* ---------------------- //
-//           LINK INPUTS FUNCTIONS
+//           OPEN CLOSE INPUTS
 // ------------- ************* ---------------------- //
 
 const defaultInputs = $('.def-fields .def-fields-input');
@@ -108,6 +113,7 @@ const defaultInputs = $('.def-fields .def-fields-input');
 defaultInputs.forEach((item) => {
     item.addEventListener('focus', function (){
         checkItems()
+        this.parentElement.classList.remove(disabled);
         this.parentElement.classList.add(active);
     })
 
@@ -121,73 +127,19 @@ function checkItems(){
         if(defInputs.value === ''){
             defInputs.parentElement.classList.remove(active);
         } else {
-            defInputs.parentElement.classList.add(active)
+            defInputs.parentElement.classList.add(active);
+            defInputs.parentElement.classList.add(disabled);
         }
     })
 }
 
+// ------------- ************* ---------------------- //
+//             EMAIL VALIDATION
+// ------------- ************* ---------------------- //
 
-//
-// const url = "https://cleaner.dadata.ru/api/v1/clean/name";
-// const token = "3a57367cba2c76b91aad728bf599c9876a904394";
-// const secret = "3b57ed51506a083cbbb422e8e7c16510ca5cb287";
-// const query = "Срегей владимерович иванов";
-//
-// const options = {
-//     method: "POST",
-//     mode: "cors",
-//     headers: {
-//         "Content-Type": "application/json",
-//         "Authorization": "Token " + token,
-//         "X-Secret": secret
-//     },
-//     body: JSON.stringify([query])
-// }
-//
-// fetch(url, options)
-//     .then(response => response.text())
-//     .then(result => console.log(result))
-//     .catch(error => console.log("error", error));
+const validateEmail = (email) => {
+    return email.match(
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+};
 
-
-
-// email
-
-const btnEmail = document.querySelector('.email .email-box .btn-email')
-const inputEmail = document.querySelector('.email .email-box .email-input')
-const inputKod = document.querySelector('.email .email-box .input-kod')
-const passwordEmail = document.querySelector('.email .email-box .email-password')
-const footerEmail = document.querySelector('.email .email-box .email-footer')
-const emailKod = document.querySelector('.email .email-box .input-kod .email-kod')
-
-emailKod.addEventListener('input', ubdatekod)
-
-function ubdatekod(e){
-    if(e.target.value.length === 9){
-       setTimeout(()=>{
-           inputKod.classList.remove('active')
-           passwordEmail.classList.add('active')
-       },2000)
-    }
-}
-
-
-let a = 655656
-console.log(a.length)
-
-inputEmail.addEventListener("input", ubdatefunc)
-
-function  ubdatefunc(e){
-    if(e.target.value.length > 0){
-        btnEmail.addEventListener('click', ()=>{
-            inputKod.classList.add('active')
-            footerEmail.style.display = 'none'
-        })
-
-    }
-}
-
-
-
-
-// email ent
