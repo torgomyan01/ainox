@@ -147,15 +147,26 @@ a {
     bottom: 10px;
 }
 
+
+
 .def-fields-input::placeholder {
     color: #DFE2E6;
     font-size: 16px;
     line-height: 140%;
 }
 
-.mask-password::placeholder {
-    color: #222529;
+#password{
+  font-size: 30px;
 }
+
+
+#password::placeholder {
+    color: #222529;
+  font-size: 14px;
+}
+
+
+
 
 .def-fields-icon {
     position: absolute;
@@ -219,18 +230,67 @@ a {
   margin-top: 25px;
 }
 
-.email .email-box .btn-email img{
- margin-right: 10px;
+.email .email-box .btn-email img {
+  margin-right: 10px;
 }
 
-.solid-text{
+.email .email-box .input-kod{
+  display: none;
+}
+
+
+.email .email-box .input-kod.active{
+  display: initial;
+}
+
+
+.email .email-box .email-password{
+  display: none;
+}
+
+
+.email .email-box .email-password.active{
+  display: initial;
+}
+
+.email .email-box .fields-kod{
+  margin-top: 15px;
+}
+
+.email .email-box .fields-password{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.email .email-box .email-change-kod{
+  color: #AEB5BC;
+  font-size: 13px;
+  line-height: 120%;
+  margin-top: 10px;
+}
+
+.email .email-box .email-change-kod a{
+  color: #AEB5BC;
+  font-size: 13px;
+  line-height: 120%;
+  text-decoration: underline;
+}
+
+.email .email-box .email-password a{
+  color: #AEB5BC;
+  font-size: 13px;
+  line-height: 120%;
+  text-decoration: underline;
+}
+
+.email-box .solid-text{
   width: 100%;
   height: 20px;
   position: relative;
   margin-top: 25px;
 }
 
-.solid-text:before{
+.email-box .solid-text:before{
   content: "";
   position: absolute;
   left: 0;
@@ -241,7 +301,7 @@ a {
   background: #DFE2E6;
 }
 
-.solid-text span{
+.email-box .solid-text span{
   position: absolute;
   left: 50%;
   top: 50%;
@@ -256,6 +316,52 @@ a {
   text-transform: uppercase;
   white-space: nowrap;
 }
+
+  .email-box .social-sites{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+
+.email-box .social-sites .btn-social{
+    display: flex;
+    width: 116px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #EAECEF;
+    cursor: pointer;
+    color:  #353A3F;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 165%;
+  }
+
+.email-box .social-sites .btn-social img{
+    margin-right: 10px;
+  }
+
+.email-box .register-now{
+  text-align: center;
+  display: block;
+  color: #353A3F;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 165%;
+  position: relative;
+  top: 130px;
+}
+
+.email-box .register-now img{
+  margin-right: 10px;
+}
+
+
+
+/*  email end */
 
 /*  buttons */
 
