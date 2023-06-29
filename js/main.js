@@ -73,12 +73,13 @@ ToolMasks.maskCheckingAccount()
 //                  CONSTANTS
 // ------------- ************* ---------------------- //
 
-const { inputLink, active, none, btnLoading, disabled } = {
+const { inputLink, active, none, btnLoading, disabled, show } = {
     inputLink: '.input-link',
     active: 'active',
     none: 'd-none',
     btnLoading: 'btn-loading',
-    disabled: 'disabled'
+    disabled: 'disabled',
+    show: 'show'
 }
 
 
@@ -172,6 +173,20 @@ window.addEventListener('scroll', function (){
         navbar.classList.remove('fixed')
     }
 })
+
+// OPEN CLOSE MOBILE MENU
+$('.mobile-menu-item').forEach((item) => {
+    item.addEventListener('click', function (){
+        const id = this.dataset.toggle;
+        if(id){
+            this.classList.toggle(active)
+            document.getElementById(id).classList.toggle(show)
+        } else{
+            console.error('Есть проблема с атрибутом toggle')
+        }
+    })
+})
+
 
 // ------------- ************* ---------------------- //
 //             EMAIL VALIDATION
