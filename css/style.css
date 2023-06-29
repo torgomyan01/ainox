@@ -627,6 +627,25 @@ a {
 }
 
 
+.new-request .form .switch-new-ticket{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+
+
+.new-request .form .switch-new-ticket .switch-new-ticket-title{
+  color: #222529;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-left: 20px;
+}
+
+
+
   /* request end */
 
 
