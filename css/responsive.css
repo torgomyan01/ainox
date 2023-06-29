@@ -130,5 +130,7 @@
 }
 
 @media (max-width: 320px){
-
+  .email{
+    padding: 0 10px;
+  }
 }
