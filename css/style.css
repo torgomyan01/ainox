@@ -550,7 +550,18 @@ a {
   background: rgba(34, 37, 41, 0.90);
   backdrop-filter: blur(6px);
   overflow-y: auto;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 0 100%);
+  transition: .3s;
+}
 
+.new-request.close{
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.new-request.active{
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+  transition: .3s;
 }
 
 .new-request .form{
