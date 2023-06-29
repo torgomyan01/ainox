@@ -74,6 +74,7 @@ main{
     max-width: 940px;
     margin: 0 auto;
     position: relative;
+  padding: 0 10px;
 }
 
 /* password  */
