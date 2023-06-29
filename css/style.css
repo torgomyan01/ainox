@@ -553,8 +553,9 @@ main{
   background: rgba(34, 37, 41, 0.90);
   backdrop-filter: blur(6px);
   overflow-y: auto;
-  clip-path: polygon(0 0, 0 100%, 100% 100%, 0 100%);
-  transition: .3s;
+  clip-path: polygon(0 86%, 0 100%, 8% 100%, 0% 100%);
+  transition: .4s;
+  opacity: 0;
 }
 
 .new-request.close{
@@ -564,7 +565,8 @@ main{
 
 .new-request.active{
   clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
-  transition: .3s;
+  transition: .4s;
+  opacity: 1;
 }
 
 .new-request .form{
