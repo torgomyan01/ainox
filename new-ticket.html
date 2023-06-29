@@ -62,8 +62,8 @@
     <div class="form-heading">
       <span>Новый запрос</span>
       <div class="icons">
-        <img class="X" src="assets/icons/bottom-left-arrow.svg" alt="botom-left">
-        <img src="assets/icons/X.svg" alt="X">
+        <img class="X botom-left" src="assets/icons/bottom-left-arrow.svg" alt="botom-left">
+        <img class="exit-newRequest" src="assets/icons/X.svg" alt="X">
       </div>
     </div>
 
@@ -113,8 +113,12 @@
     </div>
     </div>
     <div class="footer-buttons">
-      <button class="btn-white footer-buttons-btn"><img src="assets/icons/loading-icon.svg" alt="loading"> Загрузить</button>
-      <button class="btn-green footer-buttons-btn-green">Отправить запрос
+      <label class="btn-white footer-buttons-btn"><img src="assets/icons/loading-icon.svg" alt="loading">
+        <input type="file" class="input-loading d-none">
+        Загрузить
+      </label>
+      <button class="btn-green footer-buttons-btn-green">
+        Отправить запрос
         <img src="assets/icons/arrow-right.svg" alt="arrow-right"></button>
     </div>
 
