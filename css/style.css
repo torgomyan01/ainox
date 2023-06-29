@@ -935,7 +935,7 @@ a {
     position: fixed;
     bottom: 0;
     left: 0;
-    display: flex;
+    display: none;
     padding: 0 10px;
     justify-content: space-between;
     align-items: center;
@@ -949,7 +949,7 @@ a {
 }
 
 .mobile-menu-item{
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;

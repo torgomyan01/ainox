@@ -16,7 +16,7 @@
         top: 55px;
         left: 0;
     }
-    .mobile-menu-item{
+    .mobile-menu{
         display: flex;
     }
 }
