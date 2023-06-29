@@ -67,9 +67,10 @@ a {
 }
 
 .container {
-    max-width: 1120px !important;
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
     position: relative;
-    padding: 0 2rem;
 }
 
 /* password  */
@@ -412,6 +413,99 @@ a {
 
 
   /*   ........... Email end..............         */
+
+
+/* .......... New ticket ..................    */
+
+
+
+.container-new-ticket .technical-support{
+  margin-top: 25px;
+  max-width: 620px;
+}
+
+
+.container-new-ticket .technical-support .btn-transparent-new-ticket{
+  color: #222529;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  padding: 0;
+}
+
+.container-new-ticket .technical-support .heading-tew-ticket{
+  color: #222529;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-top: 25px;
+}
+
+.container-new-ticket .technical-support .title-new-ticket {
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+  margin-top: 25px;
+}
+
+.container-new-ticket .technical-support .title-new-ticket a{
+  text-decoration: underline;
+  color: #2398AB;
+}
+
+.container-new-ticket .technical-support .watch-box{
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #EAECEF;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.container-new-ticket .technical-support .watch-box span{
+  color: #6E757C;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+  margin-left: 10px;
+}
+
+.container-new-ticket .technical-support .footer-btn-new-ticket{
+  position: fixed;
+  bottom: 25px;
+  background: #fff;
+  padding: 10px;
+  width: 620px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
+}
+
+.container-new-ticket .technical-support .footer-btn-new-ticket .fields-new-ticket{
+  background: #E4FFF9;
+  width: 100%;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
+  cursor: pointer;
+
+}
+
+.container-new-ticket .technical-support .footer-btn-new-ticket .fields-new-ticket .submit-new-ticket{
+  color: #222529;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  background: none;
+}
+
+  /* ........... New Ticket end.................*/
 
 /*  buttons */
 
