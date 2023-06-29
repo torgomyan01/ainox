@@ -23,6 +23,11 @@
 
 @media (max-width: 768px){
 
+  .container{
+    padding: 0 10px;
+  }
+
+
 }
 
 @media (max-width: 576px){
@@ -88,6 +93,35 @@
   .email .email-box .email-change-kod a{
     font-size: 10px;
   }
+
+  .container-new-ticket .technical-support .footer-btn-new-ticket{
+    width: 95%;
+  }
+
+  .container-new-ticket .technical-support .heading-tew-ticket{
+    color: #222529;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  .container-new-ticket .technical-support .title-new-ticket {
+    color: #222529;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 165%;
+  }
+
+  .container-new-ticket .technical-support .watch-box span{
+    font-size: 10px;
+  }
+
+  .container-new-ticket .technical-support .footer-btn-new-ticket .fields-new-ticket .submit-new-ticket{
+    font-size: 14px;
+  }
+
 
 }
 

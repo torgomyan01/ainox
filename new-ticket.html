@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+
+  <script src="js/input-mask.js"></script>
+  <title>New Ticket</title>
+</head>
+<body>
+
+
+
+<div class="container container-new-ticket">
+
+  <div class="technical-support">
+    <button class="btn-transparent btn-transparent-new-ticket">
+      <img src="assets/icons/arrow-left.svg" alt="arrow-left">
+      Техническая поддержка
+    </button>
+    <h2 class="heading-tew-ticket">Новый запрос в техподдержку</h2>
+    <p class="title-new-ticket">Ваш запрос будет обработан специалистом техподдержки Ainox. Перед отправкой запроса рекомендуем поискать ответ в нашей
+      <a href="#">  базе знаний.</a>
+    </p>
+    <div class="watch-box">
+      <img src="assets/icons/watch.svg" alt="watch">
+      <span>На связи в рабочие дни с 09:00 до 18:00 по Московскому времени</span>
+    </div>
+    <div class="footer-btn-new-ticket">
+      <label class="fields-new-ticket">
+        <input type="submit" class="submit-new-ticket " value="Опишите вашу проблему...">
+      </label>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="new-request">
+
+  <div class="form">
+
+    <div class="form-heading">
+      <span>Новый запрос</span>
+      <div class="icons">
+        <img class="X" src="assets/icons/bottom-left-arrow.svg" alt="botom-left">
+        <img src="assets/icons/X.svg" alt="X">
+      </div>
+    </div>
+
+    <div class="form-input-box">
+      <span class="title">Введите свой запрос</span>
+      <div class="inputs">
+        <label class="def-fields new-tickets-fields">
+          <span class="def-fields-title new-tickets-span">E-mail</span>
+          <input type="email" class="def-fields-input mask-email new-tickets-email" placeholder="_@_._">
+          <img class="def-fields-icon" src="assets/icons/mail.svg" alt="email-icon">
+          <img class="def-fields-icon-edit" src="assets/icons/edit-input.svg" alt="key-icon">
+        </label>
+        <label class="def-fields">
+          <span class="def-fields-title">Телефон</span>
+          <input type="text" class="def-fields-input mask-phone" placeholder="+7 (999) 123-45-67">
+          <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+          <img class="def-fields-icon-edit" src="assets/icons/edit-input.svg" alt="key-icon">
+        </label>
+      </div>
+      <div class="subject">
+        <label class="def-fields subject-fields">
+          <span class="def-fields-title">Тема</span>
+          <input type="text" class="def-fields-input mask-fio" >
+        </label>
+        <label class="textarea-fields">
+<!--          <span class="def-fields-title">Тема</span>-->
+          <textarea name="subject-textarea" id="Description" placeholder="Опишите вашу проблему..." ></textarea>
+        </label>
+      </div>
+    </div>
+    <div class="todos">
+      <div class="todo-item">
+        Документ.pdf
+        <img src="assets/icons/fa-trash.svg" alt="trash">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<script src="js/main.js"></script>
+<script src="js/new-ticket.js"></script>
+</body>
+</html>
