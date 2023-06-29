@@ -216,7 +216,10 @@ a {
   width: 100%;
   box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
   padding: 25px 20px;
+}
 
+.wrapper.login{
+  margin-top: 100px;
 }
 
 .email .email-box .email-box-title{
@@ -354,11 +357,9 @@ a {
   font-size: 20px;
   font-weight: 500;
   line-height: 165%;
-  position: absolute;
-  bottom: 27px;
-  left: 50%;
-  transform: translateX(-50%);
   white-space: nowrap;
+  margin-top: 200px;
+  margin-bottom: 50px;
 }
 
 .email-box .register-now img{
