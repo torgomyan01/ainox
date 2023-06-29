@@ -50,12 +50,32 @@
     width: 86px;
   }
 
+  .emaile .emaile-box .email-box-subtitle{
+    font-size: 13px;
+  }
+
+  .email .email-box .email-box-title{
+    font-size: 12px;
+  }
+
  .email-box .social-sites .btn-social img{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-left: 8px;
+  }
+
+  .email-box .register-now{
+    font-size: 16px;
+  }
+
+  .email .email-box .email-change-kod{
+    font-size: 10px;
+  }
+
+  .email .email-box .email-change-kod a{
+    font-size: 10px;
   }
 
 }
