@@ -46,6 +46,9 @@ a {
     text-decoration: none;
 }
 
+main{
+  margin-top: 65px;
+}
 
 .trans {
     -webkit-transition: 0.3s;
@@ -1322,8 +1325,12 @@ a {
   background: #EAECEF;
 }
 .btn-status.all-opened.disabled{
+  color: #AEB5BC;
   background: transparent;
   border: 1px solid #EAECEF;
+}
+.btn-status.all-opened.disabled path{
+  stroke: #AEB5BC;
 }
 
 
@@ -1341,4 +1348,90 @@ a {
 }
 .btn-status.no-read svg{
   margin-bottom: 2px;
+}
+
+
+.btn-status.wait{
+  color: #222529;
+  background: #BDCCFF;
+}
+.btn-status.wait.disabled{
+  color: #AEB5BC;
+  background: transparent;
+  border: 1px solid #EAECEF;
+}
+.btn-status.wait.disabled path{
+  stroke: #BDCCFF;
+}
+
+
+.btn-status.read-it{
+  color: #222529;
+  background: #D7E1E9;
+}
+.btn-status.read-it.disabled{
+  color: #AEB5BC;
+  background: transparent;
+  border: 1px solid #EAECEF;
+}
+.btn-status.read-it.disabled path{
+  stroke: #D7E1E9;
+}
+
+
+.btn-status.closed{
+  color: #FFFFFF;
+  background: #4BB462;
+}
+.btn-status.closed.disabled{
+  color: #AEB5BC;
+  background: transparent;
+  border: 1px solid #EAECEF;
+}
+.btn-status.closed.disabled path{
+  stroke: #4BB462;
+}
+
+.container-steps{
+  padding-top: 25px;
+}
+
+.container-steps .alert{
+  margin-bottom: 25px;
+}
+
+
+.standard-h1{
+  color: #222529;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.standard-p{
+  color: #222529;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 165%;
+}
+.standard-p a{
+  color: #2398AB;
+  text-decoration: underline;
+}
+.standard-p b{
+  color: #222529;
+}
+
+.standard-explanation{
+  color: #AEB5BC;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+
+/* ---------- STEP PAGE --------------- */
+
+.input-loading{
+
 }
