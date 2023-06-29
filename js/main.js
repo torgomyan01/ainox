@@ -47,7 +47,7 @@ const icons = [
     {
         name: 'notification',
         icon: '<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"> <g id="Interface Alert Alarm Bell 2" clip-path="url(#clip0_817_9299)"> <g id="Group"> <path id="Vector" d="M5.64282 12.1372H7.35711" stroke="white" stroke-width="0.857143" stroke-linecap="round" stroke-linejoin="round"/> <path id="Vector_2" d="M9.9285 5.7086C9.9285 4.79929 9.56728 3.92722 8.9243 3.28423C8.28131 2.64125 7.40924 2.28003 6.49993 2.28003C5.59062 2.28003 4.71855 2.64125 4.07556 3.28423C3.43258 3.92722 3.07136 4.79929 3.07136 5.7086V8.7086C3.07136 9.04959 2.9359 9.37662 2.69478 9.61774C2.45366 9.85886 2.12664 9.99432 1.78564 9.99432H11.2142C10.8732 9.99432 10.5462 9.85886 10.3051 9.61774C10.064 9.37662 9.9285 9.04959 9.9285 8.7086V5.7086Z" stroke="white" stroke-width="0.857143" stroke-linecap="round" stroke-linejoin="round"/> <path id="Vector_3" d="M0.928467 5.5972C0.928929 4.78132 1.1235 3.97726 1.4961 3.25143C1.8687 2.52561 2.40864 1.89884 3.07132 1.42291" stroke="white" stroke-width="0.857143" stroke-linecap="round" stroke-linejoin="round"/> <path id="Vector_4" d="M12.0713 5.5972C12.0709 4.78132 11.8763 3.97726 11.5037 3.25143C11.1311 2.52561 10.5911 1.89884 9.92847 1.42291" stroke="white" stroke-width="0.857143" stroke-linecap="round" stroke-linejoin="round"/> </g> </g> <defs> <clipPath id="clip0_817_9299"> <rect width="12" height="12" fill="white" transform="translate(0.5 0.780029)"/> </clipPath> </defs> </svg>'
-    },
+    }
 ]
 
 $('.icon').forEach((item) => {

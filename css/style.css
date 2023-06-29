@@ -541,7 +541,7 @@ a {
   /* request */
 
 .new-request{
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
@@ -549,14 +549,19 @@ a {
   height: 100%;
   background: rgba(34, 37, 41, 0.90);
   backdrop-filter: blur(6px);
+  overflow-y: auto;
 
 }
 
 .new-request .form{
   max-width: 755px;
-  padding: 15px 20px;
+  width: 100%;
   background: #fff;
   margin: 50px auto;
+}
+
+.new-request .form .form-inputs{
+  padding: 15px 20px;
 }
 
 .new-request .form .form-heading{
@@ -582,7 +587,7 @@ a {
 }
 
 .new-request .form .form-input-box{
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .new-request .form .form-input-box .title{
@@ -617,7 +622,7 @@ a {
   border-radius: 5px;
   padding: 10px;
   width: 100%;
-  height: 243px;
+  height: 200px;
   position: relative;
   transition: 0.3s;
   resize: none;
@@ -677,7 +682,24 @@ a {
   margin-left: 20px;
 }
 
+.new-request .form .switch-new-ticket .switch-new-ticket-title a{
+  color: #2398AB;
+  text-decoration: underline;
+}
 
+.new-request .form .footer-buttons{
+  display: flex;
+  background: #F8F8F8;
+  margin-top: 25px;
+  width: 100%;
+  padding: 25px 20px;
+  position: relative;
+}
+
+.new-request .form .footer-buttons .footer-buttons-btn-green{
+ margin-left: 15px;
+
+}
 
   /* request end */
 
