@@ -1388,3 +1388,39 @@ main{
 .container-steps .alert{
   margin-bottom: 25px;
 }
+
+
+.standard-h1{
+  color: #222529;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.standard-p{
+  color: #222529;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 165%;
+}
+.standard-p a{
+  color: #2398AB;
+  text-decoration: underline;
+}
+.standard-p b{
+  color: #222529;
+}
+
+.standard-explanation{
+  color: #AEB5BC;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+
+/* ---------- STEP PAGE --------------- */
+
+.input-loading{
+
+}
