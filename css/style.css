@@ -77,6 +77,15 @@ main {
   padding: 0 10px;
 }
 
+/*[placeholder]:empty::before {*/
+/*  content: attr(placeholder);*/
+/*  color: #555;*/
+/*}*/
+
+/*[placeholder]:empty:focus::before {*/
+/*  content: "";*/
+/*}*/
+
 /* password  */
 
 .def-fields {
@@ -138,6 +147,52 @@ main {
 
 .def-fields.text .def-fields-input {
   letter-spacing: 0;
+  display: none;
+}
+
+
+.def-fields.text .def-fields-text-body {
+  display: block;
+  color: #222529;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 1.6px;
+  width: calc(100% - 45px);
+  transition: 0.3s;
+  opacity: 0;
+  /*height: calc(100% - 10px);*/
+  position: relative;
+  top: 15px;
+  background: transparent;
+  height: 55px;
+  overflow: hidden;
+  cursor: text;
+  margin-top: -22px;
+  transition: 0.3s;
+}
+.def-fields.text{
+  /*height: auto;*/
+  padding-bottom: 25px;
+}
+.def-fields.text.disabled .def-fields-text-body{
+  cursor: context-menu;
+}
+
+.def-fields.text .def-fields-text-icon-edit{
+  display: none;
+}
+
+.def-fields.text.active{
+  height: auto;
+}
+.def-fields.text.active.no-active .def-fields-text-icon-edit{
+  display: none;
+}
+
+.def-fields.text.active .def-fields-text-body{
+  opacity: 1;
+  height: auto;
+  margin-top: 0;
 }
 
 .def-fields.password .def-fields-input {
@@ -160,7 +215,7 @@ main {
 /*}*/
 
 
-.def-fields-icon, .def-fields-icon-edit {
+.def-fields-icon, .def-fields-icon-edit, .def-fields-text-icon-edit {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -176,9 +231,14 @@ main {
   background: #FFF;
 }
 
-.def-fields.active .def-fields-title {
+.def-fields.active .def-fields-title{
   top: 10px;
   font-size: 11px;
+}
+
+.def-fields.active .def-fields-input {
+  opacity: 1;
+  height: 22px;
 }
 
 .def-fields.active .def-fields-input {
