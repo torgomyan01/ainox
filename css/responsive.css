@@ -125,6 +125,21 @@
   .email-box .register-now{
     margin-top: 100px;
   }
+  .standard-h1{
+    font-size: 24px;
+  }
+  .standard-p{
+    font-size: 13px;
+  }
+  .step-page-list-title{
+    font-size: 13px;
+  }
+  .step-page-list-subtitle{
+    font-size: 12px;
+  }
+  .menu-list-with-content{
+    font-size: 13px;
+  }
 
 
 }

@@ -9,7 +9,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="android-chrome-192x192.png">
-  <meta name="msapplication-config" content="browserconfig.xml" />
+  <meta name="msapplication-config" content="browserconfig.xml"/>
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +33,7 @@
     <a href="/">
       <img src="assets/images/logo-site.svg" alt="logo site">
     </a>
-    
+
     <div class="navbar-items">
       <a href="#" class="navbar-item">
         <i class="icon" data-name="users"></i>
@@ -80,21 +80,21 @@
         <div class="profile-dropdowns-toggle">
           <div class="profile-dropdowns-toggle-title">Справочная информация</div>
           <a href="#" class="profile-dropdowns-toggle-item">
-              <img src="assets/icons/energi.svg" alt="energi" class="profile-dropdowns-toggle-icon">
-              Мастер быстрой настройки
+            <img src="assets/icons/energi.svg" alt="energi" class="profile-dropdowns-toggle-icon">
+            Мастер быстрой настройки
           </a>
           <a href="#" class="profile-dropdowns-toggle-item">
-              <img src="assets/icons/book.svg" alt="book" class="profile-dropdowns-toggle-icon">
-              База знаний Ainox
+            <img src="assets/icons/book.svg" alt="book" class="profile-dropdowns-toggle-icon">
+            База знаний Ainox
           </a>
           <div class="profile-dropdowns-toggle-title">Справочная информация</div>
           <a href="#" class="profile-dropdowns-toggle-item">
-              <img src="assets/icons/send-message.svg" alt="book" class="profile-dropdowns-toggle-icon">
-              Поддержка в Telegram
+            <img src="assets/icons/send-message.svg" alt="book" class="profile-dropdowns-toggle-icon">
+            Поддержка в Telegram
           </a>
           <a href="#" class="profile-dropdowns-toggle-item">
-              <img src="assets/icons/help.svg" alt="help" class="profile-dropdowns-toggle-icon">
-              Диалоги с поддержкой
+            <img src="assets/icons/help.svg" alt="help" class="profile-dropdowns-toggle-icon">
+            Диалоги с поддержкой
           </a>
           <button class="btn-black">
             <img src="assets/icons/quation.svg" alt="quation" class="profile-dropdowns-toggle-icon">
@@ -159,8 +159,6 @@
 </div>
 
 
-
-
 <main>
   <div class="container container-steps">
     <div class="alert success">
@@ -170,20 +168,123 @@
       <i class="icon" data-name="close"></i>
     </div>
 
-    <h1 class="standard-h1">Добро пожаловать в мастер настройки</h1>
-    <p class="standard-p mt-25 mb-25">
-      Вы в паре шагов от запуска продаж, осталось сделать несколько настроек. Процедура состоит из двух этапов:
-    </p>
 
-    <div class="step-page-list">
-      <img src="assets/icons/one.svg" alt="one">
-      <div>
-        <p class="step-page-list-title">
-          Настройка Ainox
+    <div class="step-page-row">
+      <div class="step-page-row-left">
+        <div class="steps-block d-none" data-step="1">
+          <h1 class="standard-h1">Добро пожаловать в мастер настройки</h1>
+          <p class="standard-p mt-25 mb-25">
+            Вы в паре шагов от запуска продаж, осталось сделать несколько настроек. Процедура состоит из двух этапов:
+          </p>
+          <div class="step-page-list">
+            <img src="assets/icons/one.svg" alt="one" class="step-page-list-icon">
+            <div>
+              <p class="step-page-list-title">
+                Настройка Ainox
+              </p>
+              <p class="step-page-list-subtitle">
+                Первоначальная конфигурация сервиса
+              </p>
+            </div>
+          </div>
+          <div class="step-page-list">
+            <img src="assets/icons/two.svg" alt="one" class="step-page-list-icon">
+            <div>
+              <p class="step-page-list-title">
+                Подключение Robokassa
+              </p>
+              <p class="step-page-list-subtitle">
+                Подключение платежной системы для приема платежей
+              </p>
+            </div>
+          </div>
+          <p class="standard-p mt-25 mb-25">
+            После завершения настройки, система будет полностью функциональна. Вы сможете протестировать платежи с
+            собственной карты и запустить продажи.
+          </p>
+          <button class="btn-black">
+            Начать настройку
+            <img src="assets/icons/arrow-right.svg" alt="arrow">
+          </button>
+        </div>
+        <div class="steps-block" data-step="2">
+          <h1 class="standard-h1">Введите данные вашего ИП или компании</h1>
+          <p class="standard-p mt-25 mb-25">
+            Для работы везде требуются реквизиты продавца. Введите основную информацию, всё остальное мы загрузим из справочников.
+          </p>
+          <div class="note big">
+            <img src="assets/icons/russian-flag.svg" alt="flag">
+            Работаем только с юридическими лицами и ИП зарегистрированными в РФ
+          </div>
+          <form action="#" method="post" class="wrapper mt-25">
+            <p class="form-title mb-25">
+              Заполните форму
+            </p>
+            <label class="def-fields text">
+              <span class="def-fields-title">Название или ИНН</span>
+              <input type="text" class="def-fields-input" placeholder="">
+              <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+            </label>
+            <p class="standard-explanation mt-6 mb-25">
+              Укажите какие-либо данные, остальное мы найдем и заполним из справочника.
+            </p>
+            <label class="def-fields text mb-25">
+              <span class="def-fields-title">Название компании или ИП</span>
+              <input type="text" class="def-fields-input" value="Индивидуальный предприниматель Рогов-Хабиулин Виктор Харитонович">
+              <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+            </label>
+            <label class="def-fields">
+              <span class="def-fields-title">ИНН</span>
+              <input type="text" class="def-fields-input mask-physical" placeholder="0000000000" value="123456789987">
+              <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+            </label>
+            <p class="error-form mt-6 mb-25">
+              Некорректный номер ИНН. Должно быть 9 цифр.
+              <span class="error-form-count">-3</span>
+            </p>
+            <label class="def-fields text disabled active disabled-active">
+              <span class="def-fields-title">E-mail</span>
+              <input type="email" class="def-fields-input mask-email" placeholder="_@_._" value="and.torgomyan01@gmail.com" disabled>
+              <img class="def-fields-icon-edit" src="assets/icons/edit-input.svg" alt="key-icon">
+              <img class="def-fields-icon" src="assets/icons/mail.svg" alt="email-icon">
+            </label>
+            <p class="error-form mt-6 mb-25 d-none" id="email-error">
+              Пожалуйста, введите правильный адрес электронной почты
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="step-page-row-right">
+        <p class="form-title mt-25 mb-25">
+          Настройка магазина Ainox
         </p>
-        <p class="step-page-list-subtitle">
-          Первоначальная конфигурация сервиса
+        <div class="menu-list-with-content">
+          <span>1</span>
+          Данные магазина
+        </div>
+        <div class="menu-list-with-content">
+          <span>2</span>
+          Контакты магазина
+        </div>
+        <div class="menu-list-with-content active">
+          <span>3</span>
+          Данные продавца
+        </div>
+        <div class="menu-list-with-content no-active">
+          <span>4</span>
+          Другие настройки
+        </div>
+        <p class="form-title mt-25 mb-25">
+          Подключение платежной системы Robokassa
         </p>
+        <div class="menu-list-with-content no-active">
+          <span>1</span>
+          Загрузка документов
+        </div>
+        <div class="menu-list-with-content no-active">
+          <span>2</span>
+          Банковские реквизиты
+        </div>
       </div>
     </div>
 
@@ -192,6 +293,5 @@
 
 <script src="js/fastfront.js"></script>
 <script src="js/main.js"></script>
-<script src="js/login.js"></script>
 </body>
 </html>
