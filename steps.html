@@ -23,7 +23,7 @@
 
 
   <script src="js/input-mask.js"></script>
-  <title>Login</title>
+  <title>Steps</title>
 </head>
 <body class="step-page">
 
@@ -222,36 +222,64 @@
             </p>
             <label class="def-fields text">
               <span class="def-fields-title">Название или ИНН</span>
-              <input type="text" class="def-fields-input" placeholder="">
-              <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+              <input type="email" class="def-fields-input" placeholder="_@_._">
+              <span class="def-fields-text-body" contenteditable="true"></span>
+              <img class="def-fields-icon" src="assets/icons/mail.svg" alt="email-icon">
             </label>
-            <p class="standard-explanation mt-6 mb-25">
+            <p class="standard-explanation mt-6 mb-15">
               Укажите какие-либо данные, остальное мы найдем и заполним из справочника.
             </p>
-            <label class="def-fields text mb-25">
+            <label class="def-fields text mb-15">
               <span class="def-fields-title">Название компании или ИП</span>
-              <input type="text" class="def-fields-input" value="Индивидуальный предприниматель Рогов-Хабиулин Виктор Харитонович">
-              <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+              <input type="email" class="def-fields-input" placeholder="_@_._">
+              <span class="def-fields-text-body" contenteditable="true"></span>
+              <img class="def-fields-icon" src="assets/icons/mail.svg" alt="email-icon">
             </label>
-            <label class="def-fields">
+            <label class="def-fields mb-15">
               <span class="def-fields-title">ИНН</span>
               <input type="text" class="def-fields-input mask-physical" placeholder="0000000000" value="123456789987">
               <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
             </label>
-            <p class="error-form mt-6 mb-25">
+            <p class="error-form mt-6 mb-15">
               Некорректный номер ИНН. Должно быть 9 цифр.
               <span class="error-form-count">-3</span>
             </p>
-            <label class="def-fields text disabled active disabled-active">
+            <label class="def-fields disabled active disabled-active mb-15">
               <span class="def-fields-title">E-mail</span>
               <input type="email" class="def-fields-input mask-email" placeholder="_@_._" value="and.torgomyan01@gmail.com" disabled>
               <img class="def-fields-icon-edit" src="assets/icons/edit-input.svg" alt="key-icon">
               <img class="def-fields-icon" src="assets/icons/mail.svg" alt="email-icon">
             </label>
-            <p class="error-form mt-6 mb-25 d-none" id="email-error">
+            <p class="error-form mt-6 mb-15 d-none" id="email-error">
               Пожалуйста, введите правильный адрес электронной почты
             </p>
+            <label class="def-fields text disabled mb-15">
+              <span class="def-fields-title">Чем вы занимаетесь</span>
+              <input type="email" class="def-fields-input" placeholder="_@_._">
+              <span class="def-fields-text-body">
+                Бананами торгую, людьми. Шучу, не бананами. Бананами торгую, людьми. Шучу, не бананами.
+              </span>
+              <img class="def-fields-icon" src="assets/icons/mail.svg" alt="email-icon">
+              <img class="def-fields-text-icon-edit" src="assets/icons/edit-input.svg" alt="key-icon">
+            </label>
+            <div class="def-select mb-15">
+              <select data-title="Кто подписывает договор">
+                <option value="text" data-subtitle="text-subtitle1" selected>Иванов Иван Иванович</option>
+                <option value="text1" data-subtitle="text-subtitle1">Text1</option>
+                <option value="text2" data-subtitle="text-subtitle2">Text2</option>
+                <option value="text3" data-subtitle="text-subtitle3">Text3</option>
+              </select>
+              <div class="def-select-content"></div>
+            </div>
           </form>
+          <div class="note warning mt-25 c-textBlack">
+            <img src="assets/icons/warning.svg" alt="icon">
+            Убедитесь, что эта информация для публичного использования. Данные будут размещены в открытом доступе.
+          </div>
+          <button class="btn-green mt-25 mb-40">
+            Отправить
+            <img src="assets/icons/arrow-right.svg" alt="arrow">
+          </button>
         </div>
       </div>
       <div class="step-page-row-right">

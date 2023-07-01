@@ -140,13 +140,14 @@ ToolMasks.maskCheckingAccount()
 //                  CONSTANTS
 // ------------- ************* ---------------------- //
 
-const { inputLink, active, none, btnLoading, disabled, show } = {
+const { inputLink, active, none, btnLoading, disabled, show, selected } = {
     inputLink: '.input-link',
     active: 'active',
     none: 'd-none',
     btnLoading: 'btn-loading',
     disabled: 'disabled',
-    show: 'show'
+    show: 'show',
+    selected: 'selected'
 }
 
 
@@ -220,8 +221,6 @@ defaultInputsTag.forEach((item) => {
         } else {
             inputElement.value = e.target.innerText;
         }
-        console.log(inputElement.value)
-
     })
 
     item.addEventListener('focus', function (){
@@ -232,12 +231,6 @@ defaultInputsTag.forEach((item) => {
     checkItemsTag()
 })
 
-// $('.def-fields-icon-edit').forEach((item) => {
-//     item.addEventListener('click', function (){
-//         this.parentElement.classList.remove(disabled)
-//         this.previousElementSibling.removeAttribute(disabled)
-//     })
-// })
 
 
 $('.def-fields-text-icon-edit').forEach((item) => {
@@ -343,3 +336,73 @@ const validateEmail = (email) => {
         /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     );
 };
+
+
+
+// ------------- ************* ---------------------- //
+//              DEFAULT SELECT
+// ------------- ************* ---------------------- //
+
+$('.def-select select').forEach((select) => {
+    let optionItems = '';
+    select.parentElement.insertAdjacentHTML('beforeend',
+        `
+        <button class="def-select-header">
+            <span class="def-select-header-title">${select.dataset.title}</span>
+            <span class="def-select-header-selected-name"></span>
+            <img src="assets/icons/down.svg" alt="down icon">
+        </button>
+    `)
+    select.querySelectorAll('option').forEach((option) => {
+        optionItems += `
+            <div class="def-select-body-item" data-value="${option.value}" data-title="${option.innerText}">
+              <p class="def-select-body-item-title">${option.innerText}</p>
+              ${option.dataset.subtitle ? `<p class="def-select-body-item-subtitle">${option.dataset.subtitle}</p>` : ''}
+            </div>
+        `
+    })
+    select.parentElement.insertAdjacentHTML('beforeend',
+        `
+        <div class="def-select-body">
+            ${optionItems}
+        </div>
+    `)
+})
+
+//
+$('.def-select .def-select-header').forEach((select) => {
+    select.addEventListener('click', function (){
+        this.parentElement.classList.toggle(active)
+    })
+})
+
+$('.def-select-content').forEach((item) => {
+    item.addEventListener('click', function (){
+        this.parentElement.classList.remove(active)
+    })
+})
+
+$('.def-select-body-item').forEach((item) => {
+    item.addEventListener('click', function (){
+        this.parentElement.parentElement.classList.add(selected);
+        this.parentElement.parentElement.classList.remove(active);
+        this.parentElement.parentElement.querySelector('.def-select-header-selected-name').innerText = this.dataset.title;
+        // option.parentElement.parentElement.querySelector('.def-select-header-title').innerText = this.dataset.title;
+        this.parentElement.parentElement.querySelectorAll(`select option`).forEach((option) => {
+            option.removeAttribute(selected)
+        })
+        this.parentElement.parentElement.querySelector(`select option[value="${this.dataset.value}"]`).setAttribute(selected, 'true')
+    })
+})
+
+$('.def-select select option').forEach((option) => {
+    if(option.getAttribute(selected) !== null){
+        option.parentElement.parentElement.classList.add(selected);
+        option.parentElement.parentElement.classList.remove(active);
+        option.parentElement.parentElement.querySelector('.def-select-header-selected-name').innerText = option.innerText;
+        option.parentElement.parentElement.querySelectorAll(`select option`).forEach((option) => {
+            option.removeAttribute(selected)
+        })
+        option.parentElement.parentElement.querySelector(`select option[value="${this.dataset.value}"]`).setAttribute(selected, 'true')
+    }
+})
