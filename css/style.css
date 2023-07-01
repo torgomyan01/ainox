@@ -731,14 +731,12 @@ main {
 }
 
 .new-request .form .todos{
- display: flex;
+  display: flex;
   overflow-y: auto;
 }
 
 .new-request .form .todos .todo-item {
-  display: flex;
   padding: 5px 15px;
-  align-items: center;
   border-radius: 10px;
   background: #EAECEF;
   color: #222529;
@@ -748,6 +746,7 @@ main {
   line-height: 165%;
   cursor: pointer;
   margin-right: 15px;
+  white-space: nowrap;
 }
 
 .new-request .form .todos .todo-item img {

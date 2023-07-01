@@ -142,10 +142,130 @@
   }
 
 
+/*  request */
+  .new-request .form {
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .new-request .form .form-inputs {
+    padding: 15px 10px;
+  }
+
+  .new-request .form .form-inputs .new-tickets-fields{
+    height: 63px;
+    font-size: 14px;
+    background: none;
+  }
+
+  .new-request .form .form-inputs .new-tickets-fields .def-fields-icon{
+    opacity: 1;
+  }
+
+  .new-request .form .form-inputs .new-tickets-fields.active{
+    border: none;
+  }
+
+  .new-request .form .form-inputs .new-tickets-fields span{
+    font-size: 14px;
+  }
+
+  .new-request .form .form-inputs .subject-fields{
+    height: 63px;
+    font-size: 14px;
+    background: none;
+  }
+
+  .new-request .form .form-inputs .subject-fields.active{
+   border: none;
+  }
+
+  .new-request .form .form-input-box .subject {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .new-request .form .form-inputs .subject-fields span{
+    font-size: 14px;
+  }
+  .new-request .form .form-input-box .subject .subject-fields {
+    margin-bottom: 10px;
+  }
+
+  .new-request .form .form-input-box .subject #Description{
+    border: none;
+    font-size: 14px;
+    height: 240px;
+  }
+
+
+  .new-request .form .todos .todo-item {
+    font-size: 13px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+
+  .new-request .form .form-heading span {
+    font-size: 13px;
+  }
+
+  .new-request .form .form-heading .icons .X {
+    margin-right: 15px;
+  }
+
+  .new-request .form .form-input-box {
+    margin-top: 10px;
+  }
+
+  .new-request .form .footer-buttons {
+    margin-top: 15px;
+  }
+
+  .def-fields-input::placeholder {
+    color: #DFE2E6;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+}
+
+
+@media (max-width: 400px){
+  .new-request .form .form-input-box {
+    margin-top: 10px;
+  }
+
+  .new-request .form .form-input-box .title {
+    display: none;
+  }
+
+  .new-request .form .switch-new-ticket .switch-new-ticket-title{
+    font-size: 10px;
+  }
+
+  .new-request .form .footer-buttons {
+    margin-top: 0;
+  }
+
+  .new-request .form .footer-buttons .footer-buttons-btn {
+    font-size: 0;
+
+  }
+
+  .new-request .form .footer-buttons .footer-buttons-btn img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7px;
+  }
+
 }
 
 @media (max-width: 320px){
   .email{
     padding: 0 10px;
   }
+
+
 }
