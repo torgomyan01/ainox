@@ -77,6 +77,15 @@ main {
   padding: 0 10px;
 }
 
+/*[placeholder]:empty::before {*/
+/*  content: attr(placeholder);*/
+/*  color: #555;*/
+/*}*/
+
+/*[placeholder]:empty:focus::before {*/
+/*  content: "";*/
+/*}*/
+
 /* password  */
 
 .def-fields {
@@ -91,15 +100,6 @@ main {
   transition: 0.3s;
 }
 
-.def-fields-alert {
-  color: #FF756B;
-  font-size: 12px;
-  line-height: 120%;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 5px;
-}
 
 .def-fields:hover {
   border: 1px solid #b8fdf7;
@@ -147,6 +147,52 @@ main {
 
 .def-fields.text .def-fields-input {
   letter-spacing: 0;
+  display: none;
+}
+
+
+.def-fields.text .def-fields-text-body {
+  display: block;
+  color: #222529;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 1.6px;
+  width: calc(100% - 45px);
+  transition: 0.3s;
+  opacity: 0;
+  /*height: calc(100% - 10px);*/
+  position: relative;
+  top: 15px;
+  background: transparent;
+  height: 55px;
+  overflow: hidden;
+  cursor: text;
+  margin-top: -22px;
+  transition: 0.3s;
+}
+.def-fields.text{
+  /*height: auto;*/
+  padding-bottom: 25px;
+}
+.def-fields.text.disabled .def-fields-text-body{
+  cursor: context-menu;
+}
+
+.def-fields.text .def-fields-text-icon-edit{
+  display: none;
+}
+
+.def-fields.text.active{
+  height: auto;
+}
+.def-fields.text.active.no-active .def-fields-text-icon-edit{
+  display: none;
+}
+
+.def-fields.text.active .def-fields-text-body{
+  opacity: 1;
+  height: auto;
+  margin-top: 0;
 }
 
 .def-fields.password .def-fields-input {
@@ -169,7 +215,7 @@ main {
 /*}*/
 
 
-.def-fields-icon, .def-fields-icon-edit {
+.def-fields-icon, .def-fields-icon-edit, .def-fields-text-icon-edit {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -185,9 +231,14 @@ main {
   background: #FFF;
 }
 
-.def-fields.active .def-fields-title {
+.def-fields.active .def-fields-title{
   top: 10px;
   font-size: 11px;
+}
+
+.def-fields.active .def-fields-input {
+  opacity: 1;
+  height: 22px;
 }
 
 .def-fields.active .def-fields-input {
@@ -965,7 +1016,10 @@ main {
   background-color: #00CF91;
 }
 
-/*----------------- SWITCH -------------- */
+.def-switch input:checked ~ span:hover{
+  background-color: #00C58A;
+}
+
 
 
 /*----------------- MENU SITE -------------- */
@@ -1476,9 +1530,122 @@ main {
   line-height: 120%;
 }
 
+.form-title{
+  color: #6E757C;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145%;
+  text-transform: uppercase;
+}
+.menu-list-with-content{
+  display: flex;
+  padding: 15px 10px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  color: #AEB5BC;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+}
+.menu-list-with-content span{
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #EAECEF;
+  background: #EAECEF;
+  color: #6E757C;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 165%;
+  transition: 0.3s;
+}
+
+.menu-list-with-content.active{
+  color: #222529;
+  font-weight: 600;
+}
+.menu-list-with-content.active span{
+  border: 1px solid #00CF91;
+  background: #00CF91;
+  color: #fff;
+}
+
+
+.menu-list-with-content.no-active{
+  color: #222529;
+}
+.menu-list-with-content.no-active span{
+  border: 1px solid #EAECEF;
+  background: transparent;
+  color: #6E757C;
+}
+
 
 /* ---------- STEP PAGE --------------- */
 
-.input-loading {
+.step-page-list{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 25px;
+}
+.step-page-list-icon{
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.step-page-list-title{
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 165%;
+  margin-bottom: 5px;
+}
 
+.step-page-list-subtitle{
+  color: #AEB5BC;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.step-page-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.step-page-row-right{
+  width: 300px;
+  padding: 25px 20px;
+  border-radius: 30px;
+  border: 1px solid #EAECEF;
+  margin-left: 20px;
+}
+.step-page-row-left{
+  width: calc(100% - 317px);
+}
+.error-form{
+  color: #FF756B;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 120%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.error-form a{
+  text-decoration: underline;
+  color: #FF756B;
+}
+.error-form-count{
+  font-weight: 500;
 }

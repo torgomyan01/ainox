@@ -203,6 +203,63 @@ $('.def-fields-icon-edit').forEach((item) => {
 })
 
 
+
+const defaultInputsTag = $('.def-fields .def-fields-text-body');
+
+
+defaultInputsTag.forEach((item) => {
+    const inputElement = item.parentElement.querySelector('input');
+
+    inputElement.value = item.innerText
+
+    item.addEventListener('input', (e) => {
+        const val = e.target.innerText;
+        if(val === ''){
+            item.parentElement.classList.remove('no-active');
+            item.parentElement.classList.remove(active)
+        } else {
+            inputElement.value = e.target.innerText;
+        }
+        console.log(inputElement.value)
+
+    })
+
+    item.addEventListener('focus', function (){
+        this.parentElement.classList.add(active)
+    })
+
+    item.addEventListener('blur', checkItemsTag);
+    checkItemsTag()
+})
+
+// $('.def-fields-icon-edit').forEach((item) => {
+//     item.addEventListener('click', function (){
+//         this.parentElement.classList.remove(disabled)
+//         this.previousElementSibling.removeAttribute(disabled)
+//     })
+// })
+
+
+$('.def-fields-text-icon-edit').forEach((item) => {
+    item.addEventListener('click', function (){
+        this.parentElement.classList.remove(disabled);
+        this.parentElement.classList.add('no-active');
+        this.parentElement.querySelector('.def-fields-text-body').setAttribute('contenteditable', 'true')
+    })
+})
+
+function checkItemsTag(){
+    defaultInputsTag.forEach((defInputs) => {
+        if(defInputs.innerHTML === ''){
+            defInputs.parentElement.classList.remove(active);
+        } else {
+            defInputs.parentElement.classList.add(active);
+            // defInputs.parentElement.classList.add(disabled);
+        }
+    })
+}
+
+
 function checkItems(){
     defaultInputs.forEach((defInputs) => {
         if(defInputs.value === ''){
@@ -213,7 +270,6 @@ function checkItems(){
         }
     })
 }
-
 
 
 // ------------- ************* ---------------------- //
