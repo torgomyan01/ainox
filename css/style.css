@@ -1,6 +1,6 @@
 ::-webkit-scrollbar {
   width: 5px;
-  height: 5px;
+  height: 2px;
   border-radius: 5px;
 }
 
@@ -505,9 +505,12 @@ main {
 
 /* .......... New ticket ..................    */
 
+.new-ticket-body{
+  background: #F8F8F8;
+}
 
 .container-new-ticket .technical-support {
-  margin-top: 25px;
+  margin-top: 90px;
   max-width: 620px;
 }
 
@@ -519,6 +522,7 @@ main {
   font-weight: 500;
   line-height: 120%;
   padding: 0;
+  background: transparent;
 }
 
 .container-new-ticket .technical-support .heading-tew-ticket {
@@ -733,7 +737,9 @@ main {
 .new-request .form .todos{
   display: flex;
   overflow-y: auto;
+  padding-bottom: 10px;
 }
+
 
 .new-request .form .todos .todo-item {
   padding: 5px 15px;
@@ -793,6 +799,255 @@ main {
 
 
 /* ........... New Ticket end.................*/
+
+
+
+
+/*................  Ticket................ */
+
+.ticket{
+  background: #F8F8F8;
+}
+
+.ticket-container{
+ margin-top: 90px;
+}
+
+.ticket-container .request-box{
+  width: 100%;
+  border-radius: 10px;
+  background: #C9FFBF;
+  padding: 20px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.ticket-container .request-box p{
+  color: #222529;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.ticket-container .request-box img{
+  cursor: pointer;
+}
+
+.ticket-container .chat{
+  max-width: 620px;
+  width: 100%;
+}
+
+.ticket-container .chat .btn-transparent-ticket{
+  padding: 10px 0;
+  color: #222529;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  background: transparent;
+}
+
+.ticket-container .chat .heading-ticket{
+  color: #222529;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 25px 0;
+}
+
+.ticket-container .chat .submissions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.ticket-container .chat .submissions a{
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+  display: flex;
+  align-items: center;
+}
+
+.ticket-container .chat .submissions a img{
+  margin-right: 5px;
+ position: relative;
+  top: -2.1px;
+}
+
+.ticket-container .chat .watch-box {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #EAECEF;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.ticket-container .chat .watch-box span {
+  color: #6E757C;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+  margin-left: 10px;
+}
+
+.ticket-container .chat .wrapper-ticket{
+  padding: 35px 20px;
+  border: 1px solid #EAECEF;
+  margin-top: 25px;
+  background: #F8F8F8;
+}
+
+.message{
+  margin-bottom: 35px;
+}
+
+.message .message-ticket{
+  border-radius: 5px;
+  background: #D7E1E9;
+  padding: 10px;
+}
+
+.message .message-ticket p{
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+}
+
+.message  .message-ticket p a{
+    color: #2398AB;
+    text-decoration: underline;
+}
+
+.message .user{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.message .user .user-about .user-name{
+  display: flex;
+  justify-content: end;
+  color:  #222529;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.message .user .user-about .data-message{
+  color: #222529;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.message .user .user-image{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.message .user .user-image img{
+  object-fit: cover;
+  width: 100%;
+}
+
+  /* my-message */
+
+.my-message{
+  margin-bottom: 35px;
+}
+
+.my-message .my-message-ticket{
+  border-radius: 5px;
+  background: #fff;
+  padding: 10px;
+}
+
+.my-message .my-message-ticket p{
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+}
+
+.my-message  .my-message-ticket p a{
+  color: #2398AB;
+  text-decoration: underline;
+}
+
+.my-message .file-download{
+  color: #222529;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  border-radius: 5px;
+  background: #EAECEF;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+
+.my-message .my-user{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.my-message .my-user .my-user-about .my-user-name{
+  display: flex;
+  justify-content: start;
+  color:  #222529;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.my-message .my-user .my-user-about .data-message{
+  color: #222529;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.my-message .my-user .my-user-image{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.my-message .my-user .my-user-image img{
+  object-fit: cover;
+  width: 100%;
+}
+
+
+  /*.................  Ticket End ................. */
 
 /*  buttons */
 
@@ -1406,11 +1661,19 @@ main {
   font-weight: 400;
   line-height: 165%;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .btn-status.all-opened {
   background: #EAECEF;
 }
+
+.btn-status.all-opened:hover{
+  background: transparent;
+  border: 1px solid  #222529;
+  color: #222529;
+}
+
 
 .btn-status.all-opened.disabled {
   color: #AEB5BC;
@@ -1426,6 +1689,12 @@ main {
 .btn-status.no-read {
   color: #FFFFFF;
   background: #FF756B;
+}
+
+.btn-status.no-read:hover{
+  background: transparent;
+  border: 1px solid  #FF756B;
+  color: #FF756B;
 }
 
 .btn-status.no-read.disabled {
@@ -1448,6 +1717,13 @@ main {
   background: #BDCCFF;
 }
 
+.btn-status.wait:hover{
+  background: transparent;
+  border: 1px solid  #BDCCFF;
+  color: #222529;
+}
+
+
 .btn-status.wait.disabled {
   color: #AEB5BC;
   background: transparent;
@@ -1464,6 +1740,12 @@ main {
   background: #D7E1E9;
 }
 
+.btn-status.read-it:hover{
+  background: transparent;
+  border: 1px solid  #D7E1E9;
+  color: #222529;
+}
+
 .btn-status.read-it.disabled {
   color: #AEB5BC;
   background: transparent;
@@ -1478,6 +1760,12 @@ main {
 .btn-status.closed {
   color: #FFFFFF;
   background: #4BB462;
+}
+
+.btn-status.closed:hover {
+  background: transparent;
+  border: 1px solid  #4BB462;
+  color: #4BB462;
 }
 
 .btn-status.closed.disabled {

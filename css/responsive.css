@@ -98,6 +98,10 @@
     width: 95%;
   }
 
+  .container-new-ticket .technical-support {
+    margin-top: 75px;
+  }
+
   .container-new-ticket .technical-support .heading-tew-ticket{
     color: #222529;
     font-size: 24px;
@@ -117,6 +121,7 @@
   .container-new-ticket .technical-support .watch-box span{
     font-size: 10px;
   }
+
 
   .container-new-ticket .technical-support .footer-btn-new-ticket .fields-new-ticket .submit-new-ticket{
     font-size: 14px;
@@ -149,7 +154,7 @@
   }
 
   .new-request .form .form-inputs {
-    padding: 15px 10px;
+    padding: 15px 5px;
   }
 
   .new-request .form .form-inputs .new-tickets-fields{
@@ -227,6 +232,14 @@
     font-size: 14px;
     line-height: 140%;
   }
+
+
+/*  ticket   */
+
+  .ticket-container{
+    margin-top: 75px;
+  }
+
 
 }
 
