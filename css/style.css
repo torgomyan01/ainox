@@ -1051,6 +1051,55 @@ main {
 }
 
 
+.contacts{
+  text-align: center;
+}
+
+
+.contacts h2{
+  color: #6E757C;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145%;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.contacts a{
+  display: block;
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+}
+
+.contacts a img{
+  margin-right: 5px;
+}
+
+.contacts .contacts-email img{
+  position: relative;
+  top: 1.9px;
+}
+
+.contacts .contacts-email{
+  margin-bottom: 10px;
+}
+
+.contacts p{
+  margin-top: 35px;
+  color: #6E757C;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145%;
+  text-transform: uppercase;
+}
+
   /*.................  Ticket End ................. */
 
 /*  buttons */
