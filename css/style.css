@@ -1371,6 +1371,20 @@ main {
   transition: 0.3s;
 }
 
+.go-to-back{
+  color: #222529;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  background: none;
+  cursor: pointer;
+}
+
+.go-to-back img{
+  margin-right: 10px;
+}
+
 /* #282C30 */
 
 .btn-transparent:hover {
