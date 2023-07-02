@@ -1009,8 +1009,16 @@ main {
   background: #EAECEF;
   padding: 10px;
   margin: 10px 0;
+  white-space: nowrap;
 }
 
+.my-message .file-download .pdf-icon{
+  margin-right: 10px;
+}
+
+.my-message .file-download .download-icon{
+  margin-left: 10px;
+}
 
 .my-message .my-user{
   display: flex;
@@ -1029,7 +1037,7 @@ main {
   line-height: 120%;
 }
 
-.my-message .my-user .my-user-about .data-message{
+.my-message .my-user .my-user-about .my-data-message{
   color: #222529;
   font-size: 13px;
   font-style: normal;
@@ -1101,6 +1109,25 @@ main {
 }
 
   /*.................  Ticket End ................. */
+
+
+/*    .............. Ticket Message......    */
+
+
+.ticket-message-container{
+
+}
+
+.ticket-message-description{
+  max-width: 620px;
+  width: 100%;
+  margin-top: 90px;
+}
+
+
+/* .............. Ticket Message end */
+
+
 
 /*  buttons */
 
