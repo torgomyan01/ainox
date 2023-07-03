@@ -207,7 +207,7 @@
             <img src="assets/icons/arrow-right.svg" alt="arrow">
           </button>
         </div>
-        <div class="steps-block" data-step="2">
+        <div class="steps-block d-none" data-step="2">
           <h1 class="standard-h1">Введите данные вашего ИП или компании</h1>
           <p class="standard-p mt-25 mb-25">
             Для работы везде требуются реквизиты продавца. Введите основную информацию, всё остальное мы загрузим из справочников.
@@ -281,6 +281,46 @@
             <img src="assets/icons/arrow-right.svg" alt="arrow">
           </button>
         </div>
+        <div class="steps-block" data-step="3">
+          <h1 class="standard-h1">Загрузите документы для проверки в Robokassa</h1>
+          <p class="standard-p mt-25 mb-25">
+            Для работы везде требуются реквизиты продавца. Введите основную информацию, всё остальное мы загрузим из справочников.
+          </p>
+          <div class="note big">
+            <img src="assets/icons/russian-flag.svg" alt="flag">
+            Ваши документы в безопасности. Мы используем их только для заполнения анкеты и передадим для модерации в Robokassa. Затем сразу удалим у себя.
+          </div>
+          <div class="wrapper mt-25">
+            <p class="form-title mb-25">
+              Заполните форму
+            </p>
+            <p class="user-information-title">
+              Паспорт руководителя
+            </p>
+            <div class="files-drag-drop-center">
+              <div class="files-drag-drop-center-title">Прикрепите файлы с устройства</div>
+              <div id="uploading-file-step"></div>
+              <p class="icon-accent">
+                <img src="assets/icons/error-rounded.svg" alt="rounded">
+                Стандартный текст и акцент со <a href="#">ссылкой</a>
+              </p>
+              <label class="d-inline-block">
+                <input type="file" class="d-none" id="upload-file-step-input" multiple="multiple" accept="image/png, image/jpeg, image/jpg, application/pdf">
+                <span class="btn-white mt-15">
+                  <img src="assets/icons/Edit-Attachment.svg" alt="arrow">
+                  Прикрепить
+                </span>
+              </label>
+            </div>
+            <p class="standard-explanation mt-6">
+              В формате jpg, jpeg, png, pdf. До 1 мб. Без бликов, размытий, с четко видимыми всеми элементами.
+            </p>
+          </div>
+          <button class="btn-green mt-25 mb-40">
+            Отправить
+            <img src="assets/icons/arrow-right.svg" alt="arrow">
+          </button>
+        </div>
       </div>
       <div class="step-page-row-right">
         <p class="form-title mt-25 mb-25">
@@ -319,7 +359,28 @@
   </div>
 </main>
 
+
+
+<div class="upload-box">
+  <img src="assets/images/upload.png" alt="uplaod">
+</div>
+
+<div class="view-image">
+  <div class="view-image-content">
+    <img src="assets/images/passport-image-max.png" alt="view image" class="view-image-content-image">
+    <div class="view-image-content-image-information">
+      <div class="view-image-content-image-information-text">
+        <img src="assets/icons/trash-white.svg" alt="trash-white" class="view-image-content-image-information-remove">
+        Стандартный текст
+      </div>
+      <i class="icon" data-name="close"></i>
+    </div>
+  </div>
+</div>
+
+
 <script src="js/fastfront.js"></script>
 <script src="js/main.js"></script>
+<script src="js/step.js"></script>
 </body>
 </html>
