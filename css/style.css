@@ -523,17 +523,7 @@ main {
 }
 
 
-.container-new-ticket .technical-support .btn-transparent-new-ticket {
-  color: #222529;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
-  padding: 0;
-  background: transparent;
-}
-
-.container-new-ticket .technical-support .heading-tew-ticket {
+.heading-tew-ticket {
   color: #222529;
   font-size: 28px;
   font-style: normal;
@@ -542,7 +532,7 @@ main {
   margin-top: 25px;
 }
 
-.container-new-ticket .technical-support .title-new-ticket {
+.title-new-ticket {
   color: #222529;
   font-size: 15px;
   font-style: normal;
@@ -2572,4 +2562,13 @@ main {
   -webkit-transform: rotate(0);
   transform: rotate(0);
   top: 0;
+}
+.btn-transparent-new-ticket {
+  color: #222529;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  padding: 0;
+  background: transparent;
 }
