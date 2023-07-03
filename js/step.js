@@ -90,3 +90,16 @@ function removeItemToModal(id){
     })
 }
 
+$('.change-step').forEach((item) => {
+    item.addEventListener('click', function (){
+        const stepPage = this.dataset.step;
+        $('.steps-block').forEach((stepBlock) => stepBlock.classList.add(none));
+        $element(`.steps-block[data-step="${stepPage}"]`).classList.remove(none);
+    })
+})
+
+$element('.mobile-menu-board').addEventListener('click', function (){
+    this.classList.toggle(active)
+    $element('.step-page-row-right').classList.toggle(active)
+})
+

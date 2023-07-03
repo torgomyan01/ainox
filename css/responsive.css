@@ -22,8 +22,37 @@
 }
 
 @media (max-width: 768px){
+  .menu-list-with-content{
+    padding: 10px 0;
+  }
 
   .container{
+    padding: 0 10px;
+  }
+  .step-page-row-right{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    margin-left: 0;
+    border-radius: 0;
+    background-color: #fff;
+    height: calc(100vh - 124px);
+    overflow-y: auto;
+    border: 0;
+    transition: 0.3s;
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  .step-page-row-right.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .step-page-row-left{
+    width: 100%;
+  }
+  .view-image-content{
     padding: 0 10px;
   }
 

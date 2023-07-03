@@ -30,6 +30,11 @@
 
 <nav class="navbar">
   <div class="navbar-content">
+    <div class="mobile-menu-board">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <a href="/">
       <img src="assets/images/logo-site.svg" alt="logo site">
     </a>
@@ -171,7 +176,7 @@
 
     <div class="step-page-row">
       <div class="step-page-row-left">
-        <div class="steps-block d-none" data-step="1">
+        <div class="steps-block" data-step="1">
           <h1 class="standard-h1">Добро пожаловать в мастер настройки</h1>
           <p class="standard-p mt-25 mb-25">
             Вы в паре шагов от запуска продаж, осталось сделать несколько настроек. Процедура состоит из двух этапов:
@@ -202,7 +207,7 @@
             После завершения настройки, система будет полностью функциональна. Вы сможете протестировать платежи с
             собственной карты и запустить продажи.
           </p>
-          <button class="btn-black">
+          <button class="btn-black change-step" data-step="2">
             Начать настройку
             <img src="assets/icons/arrow-right.svg" alt="arrow">
           </button>
@@ -276,12 +281,12 @@
             <img src="assets/icons/warning.svg" alt="icon">
             Убедитесь, что эта информация для публичного использования. Данные будут размещены в открытом доступе.
           </div>
-          <button class="btn-green mt-25 mb-40">
+          <button class="btn-green mt-25 mb-40 change-step" data-step="3">
             Отправить
             <img src="assets/icons/arrow-right.svg" alt="arrow">
           </button>
         </div>
-        <div class="steps-block" data-step="3">
+        <div class="steps-block d-none" data-step="3">
           <h1 class="standard-h1">Загрузите документы для проверки в Robokassa</h1>
           <p class="standard-p mt-25 mb-25">
             Для работы везде требуются реквизиты продавца. Введите основную информацию, всё остальное мы загрузим из справочников.
@@ -302,9 +307,9 @@
               <div id="uploading-file-step"></div>
               <p class="icon-accent">
                 <img src="assets/icons/error-rounded.svg" alt="rounded">
-                Стандартный текст и акцент со <a href="#">ссылкой</a>
+                Прикрепляемый файл превышает допустимый размер.
               </p>
-              <label class="d-inline-block">
+              <label class="d-inline-block cursor-pointer">
                 <input type="file" class="d-none" id="upload-file-step-input" multiple="multiple" accept="image/png, image/jpeg, image/jpg, application/pdf">
                 <span class="btn-white mt-15">
                   <img src="assets/icons/Edit-Attachment.svg" alt="arrow">
@@ -316,25 +321,25 @@
               В формате jpg, jpeg, png, pdf. До 1 мб. Без бликов, размытий, с четко видимыми всеми элементами.
             </p>
           </div>
-          <button class="btn-green mt-25 mb-40">
+          <button class="btn-green mt-25 mb-40 change-step" data-step="1">
             Отправить
             <img src="assets/icons/arrow-right.svg" alt="arrow">
           </button>
         </div>
       </div>
       <div class="step-page-row-right">
-        <p class="form-title mt-25 mb-25">
+        <p class="form-title mt-lg-25 mb-10 mb-lg-25">
           Настройка магазина Ainox
         </p>
-        <div class="menu-list-with-content">
+        <div class="menu-list-with-content active" >
           <span>1</span>
           Данные магазина
         </div>
-        <div class="menu-list-with-content">
+        <div class="menu-list-with-content no-active">
           <span>2</span>
           Контакты магазина
         </div>
-        <div class="menu-list-with-content active">
+        <div class="menu-list-with-content no-active">
           <span>3</span>
           Данные продавца
         </div>
@@ -342,7 +347,7 @@
           <span>4</span>
           Другие настройки
         </div>
-        <p class="form-title mt-25 mb-25">
+        <p class="form-title mt-25 mb-10 mb-lg-25">
           Подключение платежной системы Robokassa
         </p>
         <div class="menu-list-with-content no-active">
