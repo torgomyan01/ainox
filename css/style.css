@@ -821,14 +821,7 @@ main {
 }
 
 .ticket-container .request-box{
-  width: 100%;
-  border-radius: 10px;
-  background: #C9FFBF;
-  padding: 20px;
   margin-bottom: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 
@@ -840,8 +833,10 @@ main {
   line-height: 120%;
 }
 
-.ticket-container .request-box img{
-  cursor: pointer;
+.ticket-container .request-box p a{
+  color: #222529;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .ticket-container .chat{
@@ -916,8 +911,16 @@ main {
   background: #F8F8F8;
 }
 
+/*  message*/
+
+.messages{
+  max-height: 710px;
+  overflow-x: auto;
+}
+
 .message{
   margin-bottom: 35px;
+
 }
 
 .message .message-ticket{
@@ -1121,10 +1124,35 @@ main {
   background: #F8F8F8;
 }
 
+.got-a-message{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 10px;
+  background: #FF756B;
+}
+.got-a-message .got-a-message-container{
+  color: #FFF;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.ticket-message .navbar.actives{
+  margin-top: 40px;
+}
+
+
 .ticket-message-description{
   max-width: 620px;
   width: 100%;
   margin-top: 90px;
+}
+
+.ticket-message-description.actives{
+  margin-top: 115px;
 }
 
 .ticket-message-description .btn-transparent-ticket{
