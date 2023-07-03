@@ -22,9 +22,9 @@
 
 
   <script src="js/input-mask.js"></script>
-  <title>New Ticket</title>
+  <title>Ticket Message</title>
 </head>
-<body class="new-ticket-body">
+<body class="ticket-message">
 
 <nav class="navbar">
   <div class="navbar-content">
@@ -95,114 +95,122 @@
   </div>
 </nav>
 
+<div class="container ticket-message-container">
 
-
-
-<div class="container container-new-ticket">
-
-  <div class="technical-support">
-    <button class="btn-transparent btn-transparent-new-ticket">
-      <img src="assets/icons/arrow-left.svg" alt="arrow-left">
-      Техническая поддержка
-    </button>
-    <h2 class="heading-tew-ticket">Новый запрос в техподдержку</h2>
-    <p class="title-new-ticket">Ваш запрос будет обработан специалистом техподдержки Ainox. Перед отправкой запроса рекомендуем поискать ответ в нашей
-      <a href="#">базе знаний.</a>
+  <div class="ticket-message-description">
+  <button class="btn-transparent btn-transparent-ticket">
+    <img src="assets/icons/arrow-left.svg" alt="arrow-left">
+    Техническая поддержка
+  </button>
+  <h2 class="heading-ticket-message">
+    Техническая поддержка
+  </h2>
+    <p class="title-ticket-message">
+      «Живое» общение с командой Ainox по техническим и организационным вопросам.
     </p>
     <div class="watch-box">
       <img src="assets/icons/watch.svg" alt="watch">
       <span>На связи в рабочие дни с 09:00 до 18:00 по Московскому времени</span>
     </div>
-    <div class="footer-btn-new-ticket">
-      <label class="fields-new-ticket">
-        <input type="submit" class="submit-new-ticket " value="Опишите вашу проблему...">
-      </label>
+    <a href="new-ticket.html">
+      <button class="btn-black">
+        <img src="assets/icons/message-icon.svg" alt="message-icon">
+        Создать обращение
+      </button>
+    </a>
+  </div>
+
+  <div class="history-of-dialogues">
+      <h2 class="history-of-dialogues-heading">История диалогов</h2>
+    <div class="buttons">
+      <button class="btn-status all-opened ">
+        <i class="icon" data-name="all-open"></i>
+        Все открытые
+      </button>
+      <button class="btn-status no-read ">
+        <i class="icon" data-name="notification"></i>
+        Не прочитано
+      </button>
+      <button class="btn-status wait ">
+        <i class="icon" data-name="loading"></i>
+        Ожидает ответ
+      </button>
+      <button class="btn-status read-it ">
+        <i class="icon" data-name="view"></i>
+        Прочитано
+      </button>
+      <button class="btn-status closed ">
+        <i class="icon" data-name="check"></i>
+        Закрыто
+      </button>
     </div>
+    <div class="wrapper">
+      <div class="buttons-wrapper">
+        <button class="btn-status no-read ">
+          <i class="icon" data-name="notification"></i>
+          Не прочитано
+        </button>
+        <a href="#">
+          <img src="assets/icons/check-mark.svg" alt="chek-mark">
+          CS-999999999
+        </a>
+      </div>
+      <h4 class="wrapper-title">Как я могу оформить договор и платить вам еще больше денег если у меня миллион подписчиков?</h4>
+      <p class="wrapper-subtitle">Обновлено 21 мая 2023 г. в 10:11</p>
+    </div>
+    <div class="wrapper">
+      <div class="buttons-wrapper">
+        <button class="btn-status wait ">
+          <i class="icon" data-name="loading"></i>
+          Ожидает ответ
+        </button>
+        <a href="#">
+          <img src="assets/icons/check-mark.svg" alt="chek-mark">
+          CS-999999999
+        </a>
+      </div>
+      <h4 class="wrapper-title-min">Настройка интеграции с сайтом</h4>
+      <p class="wrapper-subtitle-min">Обновлено 21 мая 2023 г. в 10:11</p>
+    </div>
+    <div class="wrapper">
+      <div class="buttons-wrapper">
+        <button class="btn-status read-it ">
+          <i class="icon" data-name="view"></i>
+          Прочитано
+        </button>
+        <a href="#">
+          <img src="assets/icons/check-mark.svg" alt="chek-mark">
+          CS-999999999
+        </a>
+      </div>
+      <h4 class="wrapper-title-min">Настройка интеграции с сайтом</h4>
+      <p class="wrapper-subtitle-min">Обновлено 21 мая 2023 г. в 10:11</p>
+    </div>
+    <div class="wrapper">
+      <div class="buttons-wrapper">
+        <button class="btn-status closed ">
+          <i class="icon" data-name="check"></i>
+          Закрыто
+        </button>
+        <a href="#">
+          <img src="assets/icons/check-mark.svg" alt="chek-mark">
+          CS-999999999
+        </a>
+      </div>
+      <h4 class="wrapper-title-min">Настройка интеграции с сайтом</h4>
+      <p class="wrapper-subtitle-min">Обновлено 21 мая 2023 г. в 10:11</p>
+    </div>
+    <span class="footer-title">Показано диалогов: 25 из 45</span>
+    <button class="btn-gray">
+      <img src="assets/icons/Arrows%20Synchronize.svg" alt="arrow">
+      Загрузить еще
+    </button>
   </div>
 
 </div>
 
-<div class="new-request">
 
-
-
-  <div class="form">
-
-
-    <div class="form-inputs">
-
-    <div class="form-heading">
-      <span>Новый запрос</span>
-      <div class="icons">
-        <img class="X botom-left" src="assets/icons/bottom-left-arrow.svg" alt="botom-left">
-        <img class="exit-newRequest" src="assets/icons/X.svg" alt="X">
-      </div>
-    </div>
-
-    <div class="form-input-box">
-      <span class="title">Введите свой запрос</span>
-      <div class="inputs">
-        <label class="def-fields new-tickets-fields">
-          <span class="def-fields-title new-tickets-span">E-mail</span>
-          <input type="email" class="def-fields-input mask-email new-tickets-email" placeholder="_@_._">
-          <img class="def-fields-icon" src="assets/icons/mail.svg" alt="email-icon">
-          <img class="def-fields-icon-edit" src="assets/icons/edit-input.svg" alt="key-icon">
-        </label>
-        <label class="def-fields new-tickets-fields">
-          <span class="def-fields-title">Телефон</span>
-          <input type="text" class="def-fields-input mask-phone" placeholder="+7 (999) 123-45-67">
-          <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
-          <img class="def-fields-icon-edit" src="assets/icons/edit-input.svg" alt="key-icon">
-        </label>
-      </div>
-      <div class="subject">
-        <label class="def-fields subject-fields">
-          <span class="def-fields-title">Тема</span>
-          <input type="text" class="def-fields-input mask-fio" placeholder="О чем мой запрос..." >
-        </label>
-        <label class="textarea-fields">
-<!--          <span class="def-fields-title">Тема</span>-->
-          <textarea name="subject-textarea" id="Description" placeholder="Опишите вашу проблему..." ></textarea>
-        </label>
-      </div>
-    </div>
-    <div class="todos">
-      <div class="todo-item">
-        Документ.pdf
-        <img class="fa-trash" src="assets/icons/fa-trash.svg" alt="trash">
-      </div>
-    </div>
-    <div class="switch-new-ticket">
-      <label class="def-switch">
-        <input type="checkbox">
-        <span></span>
-      </label>
-      <p class="switch-new-ticket-title">
-        Даю
-        <a href="#">согласие</a>
-        на обработку моих персональных данных
-      </p>
-    </div>
-    </div>
-    <div class="footer-buttons">
-      <label class="btn-white footer-buttons-btn"><img src="assets/icons/loading-icon.svg" alt="loading">
-        <input type="file" class="input-loading d-none">
-        Загрузить
-      </label>
-      <button class="btn-green footer-buttons-btn-green">
-        Отправить запрос
-        <img src="assets/icons/arrow-right.svg" alt="arrow-right"></button>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="upload-box">
-  <img src="assets/images/upload.png" alt="uplaod">
-</div>
 
 <script src="js/main.js"></script>
-<script src="js/new-ticket.js"></script>
 </body>
 </html>

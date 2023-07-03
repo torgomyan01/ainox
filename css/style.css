@@ -1012,8 +1012,16 @@ main {
   background: #EAECEF;
   padding: 10px;
   margin: 10px 0;
+  white-space: nowrap;
 }
 
+.my-message .file-download .pdf-icon{
+  margin-right: 10px;
+}
+
+.my-message .file-download .download-icon{
+  margin-left: 10px;
+}
 
 .my-message .my-user{
   display: flex;
@@ -1032,7 +1040,7 @@ main {
   line-height: 120%;
 }
 
-.my-message .my-user .my-user-about .data-message{
+.my-message .my-user .my-user-about .my-data-message{
   color: #222529;
   font-size: 13px;
   font-style: normal;
@@ -1054,7 +1062,223 @@ main {
 }
 
 
+.contacts{
+  text-align: center;
+}
+
+
+.contacts h2{
+  color: #6E757C;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145%;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.contacts a{
+  display: block;
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+}
+
+.contacts a img{
+  margin-right: 5px;
+}
+
+.contacts .contacts-email img{
+  position: relative;
+  top: 1.9px;
+}
+
+.contacts .contacts-email{
+  margin-bottom: 10px;
+}
+
+.contacts p{
+  margin-top: 35px;
+  color: #6E757C;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145%;
+  text-transform: uppercase;
+}
+
   /*.................  Ticket End ................. */
+
+
+/*    .............. Ticket Message......    */
+
+
+.ticket-message{
+  background: #F8F8F8;
+}
+
+.ticket-message-description{
+  max-width: 620px;
+  width: 100%;
+  margin-top: 90px;
+}
+
+.ticket-message-description .btn-transparent-ticket{
+  padding: 0;
+  background: none;
+  color: #222529;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.ticket-message-description .heading-ticket-message{
+  color: #222529;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 25px 0;
+}
+
+.ticket-message-description .title-ticket-message{
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+}
+
+.ticket-message-description .watch-box{
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #EAECEF;
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+
+.ticket-message-description .watch-box span{
+  color: #6E757C;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+  margin-left: 10px;
+}
+
+.ticket-message-description .btn-black img{
+  margin-right: 10px;
+}
+
+
+/*       .history-of-dialogues  */
+
+.history-of-dialogues{
+  margin-top: 90px;
+}
+
+.history-of-dialogues .history-of-dialogues-heading{
+  color: #222529;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 145%;
+}
+
+.history-of-dialogues .buttons{
+  display: flex;
+  margin: 25px 0;
+}
+
+.history-of-dialogues .buttons button{
+  margin-right: 15px;
+}
+
+.history-of-dialogues .buttons button:last-child{
+  margin-right: 0;
+}
+
+.history-of-dialogues .wrapper{
+  padding: 20px 20px;
+  margin-bottom: 25px;
+}
+
+.history-of-dialogues .wrapper .buttons-wrapper{
+    display: flex;
+  justify-content: space-between;
+}
+
+.history-of-dialogues .wrapper .buttons-wrapper a{
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+}
+
+.history-of-dialogues .wrapper .buttons-wrapper a img{
+  margin-right: 5px;
+  position: relative;
+  top: 1.8px;
+}
+
+.history-of-dialogues .wrapper .wrapper-title{
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 165%;
+  margin: 15px 0;
+}
+
+.history-of-dialogues .wrapper .wrapper-subtitle{
+  color: #222529;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.history-of-dialogues .wrapper .wrapper-title-min{
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 165%;
+  margin: 15px 0;
+}
+
+.history-of-dialogues .wrapper .wrapper-subtitle-min{
+  color: #222529;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+
+.history-of-dialogues .footer-title{
+  color: #AEB5BC;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.history-of-dialogues .btn-gray{
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+/* .............. Ticket Message end */
+
+
 
 /*  buttons */
 
@@ -1148,6 +1372,20 @@ main {
   font-weight: 500;
   line-height: 165%;
   transition: 0.3s;
+}
+
+.go-to-back{
+  color: #222529;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  background: none;
+  cursor: pointer;
+}
+
+.go-to-back img{
+  margin-right: 10px;
 }
 
 /* #282C30 */
