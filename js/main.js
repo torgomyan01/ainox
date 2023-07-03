@@ -1,5 +1,5 @@
 const $ = (className) => document.querySelectorAll(className);
-
+const $element = (className) => document.querySelector(className);
 
 
 
@@ -403,6 +403,8 @@ $('.def-select select option').forEach((option) => {
         option.parentElement.parentElement.querySelectorAll(`select option`).forEach((option) => {
             option.removeAttribute(selected)
         })
-        option.parentElement.parentElement.querySelector(`select option[value="${this.dataset.value}"]`).setAttribute(selected, 'true')
+        if(this.dataset?.value){
+            option.parentElement.parentElement.querySelector(`select option[value="${this.dataset.value}"]`).setAttribute(selected, 'true')
+        }
     }
 })
