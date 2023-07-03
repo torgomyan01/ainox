@@ -2464,6 +2464,7 @@ main {
 .view-image-content {
   width: 100%;
   max-width: 504px;
+  overflow-y: auto;
 }
 .view-image-content-image{
   width: 100%;
