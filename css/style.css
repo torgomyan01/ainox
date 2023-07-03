@@ -1191,10 +1191,13 @@ main {
 .history-of-dialogues .buttons{
   display: flex;
   margin: 25px 0;
+  overflow-y: auto;
+  padding-bottom: 10px;
 }
 
 .history-of-dialogues .buttons button{
   margin-right: 15px;
+  white-space: nowrap;
 }
 
 .history-of-dialogues .buttons button:last-child{
@@ -1209,6 +1212,7 @@ main {
 .history-of-dialogues .wrapper .buttons-wrapper{
     display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .history-of-dialogues .wrapper .buttons-wrapper a{

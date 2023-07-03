@@ -343,6 +343,93 @@
   }
 
 
+/*  Ticket-message  */
+
+  .ticket-message-description{
+    margin-top: 75px;
+  }
+
+  .ticket-message-description .btn-transparent-ticket{
+    font-size: 10px;
+  }
+
+
+  .ticket-message-description .heading-ticket-message{
+    font-size: 24px;
+  }
+
+  .ticket-message-description .title-ticket-message{
+    font-size: 13px;
+  }
+
+  .ticket-message-description .btn-black{
+    width: 100%;
+  }
+
+  .ticket-message-description .watch-box span{
+    font-size: 10px;
+  }
+
+  /*       .history-of-dialogues  */
+
+  .history-of-dialogues{
+    margin-top: 75px;
+  }
+
+  .history-of-dialogues .history-of-dialogues-heading{
+    font-size: 18px;
+  }
+
+
+  .history-of-dialogues .buttons button{
+    font-size: 0;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .history-of-dialogues .buttons button.active{
+    font-size: 13px;
+  }
+
+  .history-of-dialogues .buttons button svg{
+   margin-left: 10px;
+  }
+
+  .history-of-dialogues .wrapper .buttons-wrapper a{
+    font-size: 13px;
+  }
+
+  .history-of-dialogues .wrapper .wrapper-title{
+    margin: 5px 0;
+    font-size: 13px;
+  }
+
+  .history-of-dialogues .wrapper .wrapper-subtitle{
+    font-size: 10px;
+  }
+
+  .history-of-dialogues .wrapper .wrapper-title-min{
+    margin: 5px 0;
+    font-size: 13px;
+  }
+
+  .history-of-dialogues .wrapper .wrapper-subtitle-min{
+    font-size: 10px;
+  }
+
+  .history-of-dialogues .footer-title{
+    font-size: 10px;
+  }
+
+  .history-of-dialogues .btn-gray{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
 
 
 }
@@ -370,11 +457,21 @@
 
   }
 
+  .new-request .form .footer-buttons .footer-buttons-btn-green {
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+
+
   .new-request .form .footer-buttons .footer-buttons-btn img{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 7px;
+  }
+
+  .history-of-dialogues .buttons button{
+    margin-right: 8px;
   }
 
 }
@@ -383,6 +480,11 @@
   .email{
     padding: 0 10px;
   }
+
+  .history-of-dialogues .buttons button{
+    margin-right: 5px;
+  }
+
 
 
 }
