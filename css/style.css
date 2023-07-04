@@ -696,7 +696,88 @@ main {
 /*   ........... Email end..............         */
 
 
-/* .......... New ticket ..................    */
+/*   robo */
+
+
+.container-robo{
+  margin-top: 90px;
+}
+
+.container-robo .alert-robo p{
+  color: #222529;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.container-robo .alert-robo p a{
+  font-weight: 500;
+  color: #222529;
+  text-decoration: none;
+}
+
+.robo{
+  max-width: 620px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.container-robo .robo .robo-heading{
+  color: #222529;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 25px 0;
+}
+
+.container-robo .robo .robo-title{
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+}
+
+.container-robo .robo .robo-title span{
+    font-weight: 500;
+}
+
+.container-robo .robo .robo-box {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #EAECEF;
+  margin: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+}
+
+.container-robo .robo .robo-box span {
+  color: #6E757C;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+  margin-left: 10px;
+}
+
+.container-robo .robo .robo-box span a{
+  color: #6E757C;
+  font-weight: 500;
+}
+
+.container-robo .robo .btn-robo{
+  background: none;
+}
+
+
+  /* .......... New ticket ..................    */
 
 .new-ticket-body{
   background: #F8F8F8;

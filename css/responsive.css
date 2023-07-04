@@ -133,6 +133,42 @@
     font-size: 10px;
   }
 
+
+  /* robo */
+
+  .container-robo{
+    margin-top: 75px;
+  }
+
+  .container-robo .alert-robo p{
+    font-size: 12px;
+  }
+
+  .container-robo .robo .image{
+    text-align: center;
+  }
+
+  .container-robo .robo .robo-heading{
+    font-size: 24px;
+  }
+
+  .container-robo .robo .robo-title{
+    font-size: 13px;
+  }
+
+  .container-robo .robo .robo-box span {
+    font-size: 10px;
+  }
+
+  .container-robo .robo .btn-robo{
+    width: 100%;
+  }
+
+
+
+
+  /* new-ticket */
+
   .container-new-ticket .technical-support .footer-btn-new-ticket{
     width: 95%;
   }
@@ -473,15 +509,15 @@
 
 @media (max-width: 480px){
 
-  .modal-delete-account{
-    align-items: normal;
-  }
+  /*.modal-delete-account{*/
+  /*  align-items: normal;*/
+  /*}*/
 
   .modal-delete-account .modal-form{
     padding: 25px 20px;
-    position: relative;
-    top: 250px;
-    margin-top: 50px;
+    /*position: relative;*/
+    /*top: 250px;*/
+    /*margin-top: 50px;*/
   }
 
   .modal-delete-account .modal-form .modal-form-heading{
