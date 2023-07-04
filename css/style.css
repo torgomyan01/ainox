@@ -777,6 +777,54 @@ main {
 }
 
 
+  /* ......... end Robo ........*/
+
+
+
+  /* ............ Finish.......... */
+
+.container-finish{
+  margin-top: 90px;
+}
+
+
+.finish{
+  max-width: 620px;
+  width: 100%;
+}
+
+.container-finish .finish .finish-heading{
+  color: #222529;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 25px 0;
+}
+
+.container-finish  .finish .finish-title{
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+  margin-bottom: 25px;
+}
+
+.container-finish .finish .finish-subtitle{
+  color: #AEB5BC;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+
+  /*............ end finish............. */
+
+
   /* .......... New ticket ..................    */
 
 .new-ticket-body{

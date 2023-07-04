@@ -168,6 +168,32 @@
   }
 
 
+  /*  finish */
+
+  .container-finish{
+    margin-top: 75px;
+  }
+
+
+  .container-finish .finish .image{
+    text-align: center;
+  }
+
+  .container-finish .finish .finish-heading{
+    font-size: 24px;
+  }
+
+  .container-finish .finish .finish-title{
+    font-size: 13px;
+  }
+
+  .container-finish .finish .finish-subtitle{
+    font-size: 10px;
+  }
+
+  .container-finish .finish .btn-finish{
+    width: 100%;
+  }
 
 
   /* new-ticket */
