@@ -1,11 +1,12 @@
 
-const btnEmail = document.querySelector('.btn-email');
-const inputEmail = document.querySelector('.email-input');
-const inputKod = document.querySelector('.input-kod');
-const passwordEmail = document.querySelector('.email-password');
-const footerEmail = document.querySelector('.email-footer');
-const emailKod = document.querySelector('.email-kod');
-const fieldsKod = document.querySelector('.input-kod .fields-kod');
+const btnEmail = $element('.btn-email');
+const inputEmail = $element('.email-input');
+const inputKod = $element('.input-kod');
+const passwordEmail = $element('.email-password');
+const footerEmail = $element('.email-footer');
+const emailKod = $element('.email-kod');
+const fieldsKod = $element('.input-kod .fields-kod');
+const inputPassword = $element('.email-password-input');
 
 emailKod.addEventListener('input', checkCodeActivate);
 
@@ -23,6 +24,11 @@ function checkCodeActivate(e){
 
 inputEmail.addEventListener('keyup', function (e){
     document.getElementById('email-alert').classList.add(none);
+    if(e.key === 'Enter'){
+        startValidation()
+    }
+})
+inputPassword.addEventListener('keyup', function (e){
     if(e.key === 'Enter'){
         startValidation()
     }
@@ -45,3 +51,4 @@ function startValidation(){
         setTimeout(() => btnEmail.classList.remove(btnLoading), 2000)
     }
 }
+
