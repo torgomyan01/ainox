@@ -22,7 +22,7 @@
 
 
   <script src="js/input-mask.js"></script>
-  <title>Ticket Message</title>
+  <title>Trial</title>
 </head>
 <body class="ticket-message">
 
@@ -39,6 +39,36 @@
       <img src="assets/images/logo-site.svg" alt="logo site">
     </a>
 
+    <div class="navbar-items">
+      <a href="#" class="navbar-item">
+        <i class="icon" data-name="users"></i>
+        Подписчики
+      </a>
+      <a href="#" class="navbar-item">
+        <i class="icon" data-name="money-cash"></i>
+        Операции
+      </a>
+      <a href="#" class="navbar-item">
+        <i class="icon" data-name="shipping-box"></i>
+        Продукты
+      </a>
+      <div class="profile-dropdowns menu">
+        <div class="profile-dropdowns-icon">
+          <i class="icon" data-name="more-menu"></i>
+          Еще
+        </div>
+        <div class="profile-dropdowns-toggle">
+          <a href="#" class="profile-dropdowns-toggle-item">
+            <img src="assets/icons/analytic.svg" alt="energi" class="profile-dropdowns-toggle-icon">
+            Аналитика
+          </a>
+          <a href="#" class="profile-dropdowns-toggle-item">
+            <img src="assets/icons/settigns.svg" alt="book" class="profile-dropdowns-toggle-icon">
+            Настройки
+          </a>
+        </div>
+      </div>
+    </div>
 
     <div class="navbar-usr-info">
       <a href="#">
@@ -104,119 +134,42 @@
   </div>
 </nav>
 
-<div class="container ticket-message-container">
+<div class="mobile-menu-item-toggle" id="more">
+  <a href="#" class="mobile-menu-item-toggle-item">
+    <img src="assets/icons/analytic.svg" alt="icon">
+    Аналитика
+  </a>
+  <a href="#" class="mobile-menu-item-toggle-item">
+    <img src="assets/icons/settigns.svg" alt="icon">
+    Настройки
+  </a>
+</div>
 
-  <div class="ticket-message-description actives">
-  <button class="btn-transparent btn-transparent-ticket">
-    <img src="assets/icons/arrow-left.svg" alt="arrow-left">
-    Техническая поддержка
-  </button>
-  <h2 class="heading-ticket-message">
-    Техническая поддержка
-  </h2>
-    <p class="title-ticket-message">
-      «Живое» общение с командой Ainox по техническим и организационным вопросам.
-    </p>
-    <div class="watch-box">
-      <img src="assets/icons/watch.svg" alt="watch">
-      <span>На связи в рабочие дни с 09:00 до 18:00 по Московскому времени</span>
-    </div>
-    <a href="new-ticket.html">
-      <button class="btn-black">
-        <img src="assets/icons/message-icon.svg" alt="message-icon">
-        Создать обращение
-      </button>
-    </a>
+<div class="mobile-menu">
+  <a href="#" class="mobile-menu-item">
+    <i class="icon" data-name="users"></i>
+    Подписчики
+  </a>
+  <a href="#" class="mobile-menu-item active">
+    <i class="icon" data-name="money-cash"></i>
+    Операции
+  </a>
+  <a href="#" class="mobile-menu-item">
+    <i class="icon" data-name="shipping-box"></i>
+    Продукты
+  </a>
+  <div class="mobile-menu-item" data-toggle="more">
+    <i class="icon" data-name="more-menu"></i>
+    Еще
   </div>
+</div>
 
-  <div class="history-of-dialogues">
-      <h2 class="history-of-dialogues-heading">История диалогов</h2>
-    <div class="buttons">
-      <button class="btn-status all-opened" data-type="all">
-        <i class="icon" data-name="all-open"></i>
-        Все открытые
-      </button>
-      <button class="btn-status no-read disabled" data-type="no-read">
-        <i class="icon" data-name="notification"></i>
-        Не прочитано
-      </button>
-      <button class="btn-status wait disabled" data-type="wait">
-        <i class="icon" data-name="loading"></i>
-        Ожидает ответ
-      </button>
-      <button class="btn-status read-it disabled" data-type="read-it">
-        <i class="icon" data-name="view"></i>
-        Прочитано
-      </button>
-      <button class="btn-status closed disabled" data-type="closed">
-        <i class="icon" data-name="check"></i>
-        Закрыто
-      </button>
-    </div>
-    <div class="wrappers">
-    <div class="wrapper wrapper-ticket-message" data-type="no-read">
-      <div class="buttons-wrapper">
-        <button class="btn-status no-read ">
-          <i class="icon" data-name="notification"></i>
-          Не прочитано
-        </button>
-        <a href="#">
-          <img src="assets/icons/check-mark.svg" alt="chek-mark">
-          CS-999999999
-        </a>
-      </div>
-      <h4 class="wrapper-title">Как я могу оформить договор и платить вам еще больше денег если у меня миллион подписчиков?</h4>
-      <p class="wrapper-subtitle">Обновлено 21 мая 2023 г. в 10:11</p>
-    </div>
-    <div class="wrapper wrapper-ticket-message" data-type="wait">
-      <div class="buttons-wrapper" >
-        <button class="btn-status wait ">
-          <i class="icon" data-name="loading"></i>
-          Ожидает ответ
-        </button>
-        <a href="#">
-          <img src="assets/icons/check-mark.svg" alt="chek-mark">
-          CS-999999999
-        </a>
-      </div>
-      <h4 class="wrapper-title-min">Настройка интеграции с сайтом</h4>
-      <p class="wrapper-subtitle-min">Обновлено 21 мая 2023 г. в 10:11</p>
-    </div>
-    <div class="wrapper wrapper-ticket-message" data-type="read-it">
-      <div class="buttons-wrapper">
-        <button class="btn-status read-it " >
-          <i class="icon" data-name="view"></i>
-          Прочитано
-        </button>
-        <a href="#">
-          <img src="assets/icons/check-mark.svg" alt="chek-mark">
-          CS-999999999
-        </a>
-      </div>
-      <h4 class="wrapper-title-min">Не работает отправка уведомлений о том, что я не читаю инструкции</h4>
-      <p class="wrapper-subtitle-min">Обновлено 21 мая 2023 г. в 10:11</p>
-    </div>
-    <div class="wrapper wrapper-ticket-message"  data-type="closed">
-      <div class="buttons-wrapper" >
-        <button class="btn-status closed ">
-          <i class="icon" data-name="check"></i>
-          Закрыто
-        </button>
-        <a href="#">
-          <img src="assets/icons/check-mark.svg" alt="chek-mark">
-          CS-999999999
-        </a>
-      </div>
-      <h4 class="wrapper-title-min">Настройка интеграции с сайтом</h4>
-      <p class="wrapper-subtitle-min">Обновлено 21 мая 2023 г. в 10:11</p>
-    </div>
-    </div>
-    <span class="footer-title">Показано диалогов: 25 из 45</span>
-    <button class="btn-gray">
-      <img src="assets/icons/Arrows%20Synchronize.svg" alt="arrow">
-      Загрузить еще
-    </button>
-  </div>
+
+
+
+<div class="container trial-container">
+
+
 
 </div>
 
@@ -256,6 +209,6 @@
 
 
 <script src="js/main.js"></script>
-<script src="js/ticket-message.js"></script>
+<script src="js/trial.js"></script>
 </body>
 </html>
