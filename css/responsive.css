@@ -125,6 +125,10 @@
     font-size: 10px;
   }
 
+  .email-box .register-now {
+    margin-bottom: 100px;
+  }
+
   .email .email-box .email-change-kod a{
     font-size: 10px;
   }

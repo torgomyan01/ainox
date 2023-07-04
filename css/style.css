@@ -347,6 +347,7 @@ main {
 
 .email .email-box {
   width: 450px;
+  margin-top: 80px;
 }
 
 .wrapper {
@@ -359,7 +360,7 @@ main {
 }
 
 .wrapper.login {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .email .email-box .email-box-title {
@@ -510,8 +511,7 @@ main {
   font-weight: 500;
   line-height: 165%;
   white-space: nowrap;
-  margin-top: 200px;
-  margin-bottom: 100px;
+  margin-top: 120px;
 }
 
 .email-box .register-now img {
@@ -567,6 +567,9 @@ main {
   margin-right: 10px;
 }
 
+.emaile .emaile-box .sign-emaile{
+  margin-top: 130px;
+}
 
 /*   ........... Email end..............         */
 
