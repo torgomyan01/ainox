@@ -471,6 +471,63 @@
 
 }
 
+@media (max-width: 480px){
+
+  .modal-delete-account{
+    align-items: normal;
+  }
+
+  .modal-delete-account .modal-form{
+    padding: 25px 20px;
+    position: relative;
+    top: 250px;
+    margin-top: 50px;
+  }
+
+  .modal-delete-account .modal-form .modal-form-heading{
+    font-size: 24px;
+  }
+
+  .modal-delete-account .modal-form .modal-form-title{
+    font-size: 13px;
+    margin: 15px 0;
+  }
+
+  .modal-delete-account .modal-form .wrapper-modal-form span{
+    font-size: 12px;
+  }
+
+  .modal-delete-account .modal-form .wrapper-modal-form .switch-modal{
+    display: none;
+  }
+
+  .modal-delete-account .modal-form .wrapper-modal-form .switch-modal-mobile{
+    display: flex;
+  }
+
+  .modal-delete-account .modal-form .wrapper-modal-form .switch-modal p{
+    font-size: 12px;
+  }
+
+  .modal-delete-account .modal-form .modal-buttons{
+    margin-top: 15px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: normal;
+    width: 100%;
+  }
+
+  .modal-delete-account .modal-form .modal-buttons .close-modal{
+     justify-content: center;
+  }
+
+  .modal-delete-account .modal-form .modal-buttons .btn-delete{
+    justify-content: center;
+  }
+
+}
+
+
 
 @media (max-width: 400px){
   .new-request .form .form-input-box {

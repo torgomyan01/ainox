@@ -60,14 +60,16 @@
             <img src="assets/icons/send-message.svg" alt="book" class="profile-dropdowns-toggle-icon">
             Поддержка в Telegram
           </a>
-          <a href="#" class="profile-dropdowns-toggle-item">
+          <a href="ticket-message.html" class="profile-dropdowns-toggle-item">
             <img src="assets/icons/help.svg" alt="help" class="profile-dropdowns-toggle-icon">
             Диалоги с поддержкой
           </a>
-          <button class="btn-black">
-            <img src="assets/icons/quation.svg" alt="quation" class="profile-dropdowns-toggle-icon">
-            Создать обращение
-          </button>
+          <a href="new-ticket.html">
+            <button class="btn-black">
+              <img src="assets/icons/quation.svg" alt="quation" class="profile-dropdowns-toggle-icon">
+              Создать обращение
+            </button>
+          </a>
         </div>
       </div>
 
@@ -84,7 +86,7 @@
             <img src="assets/icons/dark-mode.svg" alt="icon" class="profile-dropdowns-toggle-icon">
             Выйти
           </div>
-          <div class="profile-dropdowns-toggle-item">
+          <div class="profile-dropdowns-toggle-item btn-delete-account">
             <img src="assets/icons/remove-account.svg" alt="book" class="profile-dropdowns-toggle-icon">
             Удалить аккаунт
           </div>
@@ -232,6 +234,40 @@
 
 <div class="upload-box">
   <img src="assets/images/upload.png" alt="uplaod">
+</div>
+
+
+<div class="modal-delete-account ">
+  <div class="modal-form">
+    <h2 class="modal-form-heading">Подтвердите удаление аккаунта</h2>
+    <p class="modal-form-title">Все данные об аккаунте будут незамедлительно удалены. Восстановление не возможно.</p>
+    <div class="wrapper wrapper-modal-form">
+      <span>Подтвердите удаление</span>
+      <div class="switch-modal">
+        <label class="def-switch">
+          <input type="checkbox">
+          <span></span>
+        </label>
+        <p>Подтверждаю удаление аккаунта без возможности восстановления.</p>
+      </div>
+      <div class="switch-modal switch-modal-mobile">
+        <p>Подтверждаю удаление аккаунта без возможности восстановления.</p>
+        <label class="def-switch">
+          <input type="checkbox">
+          <span></span>
+        </label>
+      </div>
+    </div>
+    <div class="modal-buttons">
+      <button class="close-modal">
+        <img src="assets/icons/X.svg" alt="X">
+        Отмена
+      </button>
+      <button class="btn-delete">
+        Удалить аккаунт
+      </button>
+    </div>
+  </div>
 </div>
 
 <script src="js/main.js"></script>
