@@ -103,3 +103,7 @@ $element('.mobile-menu-board').addEventListener('click', function (){
     $element('.step-page-row-right').classList.toggle(active)
 })
 
+$element('.view-image-bg').addEventListener('click', function (){
+    this.parentElement.classList.remove(active)
+})
+
