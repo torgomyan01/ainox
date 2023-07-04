@@ -1056,6 +1056,30 @@ main {
 .messages{
   max-height: 710px;
   overflow-x: auto;
+  padding-right: 10px;
+}
+
+.messages::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  border-radius: 5px;
+}
+
+
+/* Track */
+.messages::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.messages::-webkit-scrollbar-thumb {
+  background: rgba(87, 87, 87, 0.56);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.messages::-webkit-scrollbar-thumb:hover {
+  background: #2a2929;
 }
 
 .message{
