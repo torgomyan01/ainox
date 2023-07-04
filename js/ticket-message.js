@@ -1,8 +1,8 @@
 
 
 const buttons = document.querySelectorAll('.history-of-dialogues .buttons .btn-status')
-const wrapper_button = document.querySelectorAll('.history-of-dialogues .wrapper .buttons-wrapper button')
-
+const btn_gray = $element(".history-of-dialogues .btn-gray")
+const wrappers = $element(".wrappers")
 
 function  addDisabled (){
 buttons.forEach(btn =>{
@@ -38,13 +38,84 @@ buttons.forEach(btn =>{
 window.addEventListener('scroll', ()=>{
   const scrollTop = window.scrollY;
   if(scrollTop > 60){
-    $element('.got-a-message').classList.add('d-none')
+    $element('.got-a-message').classList.add('active')
     $element('.ticket-message .navbar').classList.remove('actives')
   $element('.ticket-message-description').classList.remove('actives')
   }
   else if(scrollTop === 0){
-    $element('.got-a-message').classList.remove('d-none')
+    $element('.got-a-message').classList.remove('active')
     $element('.ticket-message .navbar').classList.add('actives')
     $element('.ticket-message-description').classList.add('actives')
   }
 })
+
+
+  btn_gray.addEventListener('click', startValidation)
+
+
+function startValidation(){
+  btn_gray.classList.add(btnLoading)
+  setTimeout(() =>{
+    btn_gray.classList.remove(btnLoading)
+    wrappers.insertAdjacentHTML('beforeend', ` 
+      <div class="wrapper wrapper-ticket-message" data-type="no-read">
+      <div class="buttons-wrapper">
+        <button class="btn-status no-read ">
+          <i class="icon" data-name="notification"></i>
+          Не прочитано
+        </button>
+        <a href="#">
+          <img src="assets/icons/check-mark.svg" alt="chek-mark">
+          CS-999999999
+        </a>
+      </div>
+      <h4 class="wrapper-title">Как я могу оформить договор и платить вам еще больше денег если у меня миллион подписчиков?</h4>
+      <p class="wrapper-subtitle">Обновлено 21 мая 2023 г. в 10:11</p>
+    </div>
+    <div class="wrapper wrapper-ticket-message" data-type="wait">
+      <div class="buttons-wrapper" >
+        <button class="btn-status wait ">
+          <i class="icon" data-name="loading"></i>
+          Ожидает ответ
+        </button>
+        <a href="#">
+          <img src="assets/icons/check-mark.svg" alt="chek-mark">
+          CS-999999999
+        </a>
+      </div>
+      <h4 class="wrapper-title-min">Настройка интеграции с сайтом</h4>
+      <p class="wrapper-subtitle-min">Обновлено 21 мая 2023 г. в 10:11</p>
+    </div>
+    <div class="wrapper wrapper-ticket-message" data-type="read-it">
+      <div class="buttons-wrapper">
+        <button class="btn-status read-it " >
+          <i class="icon" data-name="view"></i>
+          Прочитано
+        </button>
+        <a href="#">
+          <img src="assets/icons/check-mark.svg" alt="chek-mark">
+          CS-999999999
+        </a>
+      </div>
+      <h4 class="wrapper-title-min">Не работает отправка уведомлений о том, что я не читаю инструкции</h4>
+      <p class="wrapper-subtitle-min">Обновлено 21 мая 2023 г. в 10:11</p>
+    </div>
+    <div class="wrapper wrapper-ticket-message"  data-type="closed">
+      <div class="buttons-wrapper" >
+        <button class="btn-status closed ">
+          <i class="icon" data-name="check"></i>
+          Закрыто
+        </button>
+        <a href="#">
+          <img src="assets/icons/check-mark.svg" alt="chek-mark">
+          CS-999999999
+        </a>
+      </div>
+      <h4 class="wrapper-title-min">Настройка интеграции с сайтом</h4>
+      <p class="wrapper-subtitle-min">Обновлено 21 мая 2023 г. в 10:11</p>
+    </div>
+  `)
+  },1500)
+
+}
+

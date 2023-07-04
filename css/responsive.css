@@ -382,6 +382,10 @@
     font-size: 10px;
   }
 
+  .got-a-message .got-a-message-container p{
+    font-size: 10px;
+  }
+
 
   .ticket-message-description .heading-ticket-message{
     font-size: 24px;

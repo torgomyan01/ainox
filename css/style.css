@@ -1317,7 +1317,35 @@ main {
   width: 100%;
   padding: 5px 10px;
   background: #FF756B;
+  transition: all .4s;
 }
+
+.got-a-message.active{
+  transition: all .4s;
+  top: -40px;
+}
+
+.got-a-message .got-a-message-container{
+  display: flex;
+  align-items: center;
+}
+
+.got-a-message .got-a-message-container p{
+  color: #FFF;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.got-a-message .got-a-message-container img{
+  margin-left: 5px;
+
+}
+
+
+
+
 .got-a-message .got-a-message-container{
   color: #FFF;
   font-size: 13px;
