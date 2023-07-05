@@ -19,9 +19,18 @@
     .mobile-menu{
         display: flex;
     }
+
+  .trial-container {
+    margin-bottom: 120px;
+  }
 }
 
+
+
+
 @media (max-width: 768px){
+
+
   .menu-list-with-content{
     padding: 10px 0;
   }
@@ -64,6 +73,9 @@
 
 @media (max-width: 576px){
 
+  .ticket-message .navbar.actives{
+    margin-top: 30px;
+  }
 
   .upload-box img{
     width: 100%;
@@ -194,6 +206,53 @@
   .container-finish .finish .btn-finish{
     width: 100%;
   }
+
+
+  /*  ...........trial .......*/
+
+  .trial-container{
+    margin-top: 75px;
+    margin-bottom: 100px;
+  }
+
+  .trial-container.active{
+    margin-top: 110px;
+  }
+
+
+  .trial .trial-heading{
+    font-size: 24px;
+  }
+
+  .trial .trial-title {
+    font-size: 13px;
+  }
+
+  .trial .trial-heading2{
+    font-size: 18px;
+  }
+
+  .trial .one-box .one-box-titles h4{
+      font-size: 13px;
+  }
+
+  .trial .one-box .one-box-titles p{
+    font-size: 12px;
+  }
+
+  .faq .faq-title{
+    font-size: 14px;
+  }
+
+  .faq .faq-text p{
+    font-size: 12px;
+  }
+
+  .trial .btn-trial{
+    width: 100%;
+  }
+
+  /* .......... end trial............*/
 
 
   /* new-ticket */
@@ -588,6 +647,11 @@
 
   .modal-delete-account .modal-form .modal-buttons .btn-delete{
     justify-content: center;
+  }
+
+
+  .trial-container{
+    margin-bottom: 125px;
   }
 
 }

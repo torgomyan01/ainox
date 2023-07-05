@@ -825,6 +825,174 @@ main {
   /*............ end finish............. */
 
 
+/*  ...........trial .......*/
+
+
+.got-a-message-trial{
+  background:  #FFFCBB !important;
+}
+
+.got-a-message-trial p{
+  color: #222529 !important;
+}
+
+.trial-container{
+  margin-top: 90px;
+}
+
+.trial-container.active{
+  margin-top: 115px;
+}
+
+
+
+.trial{
+  max-width: 620px;
+  width: 100%;
+}
+
+.trial .trial-heading{
+  color: #222529;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+
+.trial .trial-title{
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+  margin: 25px 0;
+}
+
+.trial .trial-title a{
+  color: #2398AB;
+  text-decoration: underline;
+}
+
+.trial .trial-heading2{
+  color: #222529;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 145%;
+  margin-bottom: 25px;
+}
+
+.trial .trial-heading3{
+  margin-bottom: 0;
+}
+
+
+.trial .one-box{
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.trial .one-box .image{
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.trial .one-box .one-box-titles h4{
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 165%;
+}
+
+.trial .one-box .one-box-titles p{
+  color: #AEB5BC;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 5px 0;
+}
+
+.trial .one-box .one-box-titles p a{
+  color: #2398AB;
+  text-decoration: underline;
+}
+
+/* faq */
+
+
+.faq{
+  border-radius: 10px;
+  border: 1px solid #EAECEF;
+  margin-bottom: 25px;
+}
+
+.faq .faq-title{
+  position: relative;
+  cursor: pointer;
+  display: block;
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 165%;
+  border-bottom: 1px solid #EAECEF;
+  padding: 20px;
+}
+
+.faq .faq-title img{
+  transition: .3s;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  transform: rotate(0)
+}
+
+.faq .faq-input{
+  width: 0;
+  height: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.faq .faq-input:checked ~ .faq-text{
+  max-height: 300px;
+  padding: 20px;
+}
+
+.faq .faq-input:checked ~ .faq-title img{
+  transform: rotate(-180deg)  ;
+
+}
+
+.faq .faq-text{
+  transition: .3s;
+  height: 100%;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  border-bottom: 1px solid #EAECEF;
+}
+
+.faq .faq-text p{
+  color: #222529;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+}
+
+.trial .btn-trial{
+  margin-bottom: 25px;
+}
+
+/* .......... end trial............*/
+
+
+
   /* .......... New ticket ..................    */
 
 .new-ticket-body{
