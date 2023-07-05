@@ -1306,13 +1306,16 @@ main {
   font-style: normal;
   font-weight: 500;
   line-height: 165%;
-  cursor: pointer;
   margin-right: 15px;
   white-space: nowrap;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .new-request .form .todos .todo-item img {
   margin-left: 10px;
+  cursor: pointer;
 }
 
 

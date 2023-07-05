@@ -67,7 +67,12 @@
   .emaile .emaile-box .sign-emaile{
     margin-top: 70px;
   }
-
+  .modal-delete-account{
+    align-items: end;
+  }
+  .modal-delete-account .modal-form{
+    border-radius: 30px 30px 0 0 ;
+  }
 
 }
 
