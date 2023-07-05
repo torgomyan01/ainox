@@ -294,7 +294,7 @@ window.onclick = function(event) {
     }
 }
 
-const navbar = document.querySelector('.navbar');
+const navbar = $element('.navbar');
 window.addEventListener('scroll', function (){
     if(window.scrollY > 10){
         navbar.classList.add('fixed')
@@ -414,10 +414,10 @@ $('.def-select select option').forEach((option) => {
 //              FOR DELETE BTN
 // ------------- ************* ---------------------- //
 
-const del_account = document.querySelector('.btn-delete-account')
-const modal_delete_account = document.querySelector('.modal-delete-account')
-const closed_modal = document.querySelector('.modal-delete-account .modal-form .modal-buttons .close-modal')
-const delete_btn = document.querySelector('.modal-delete-account .modal-form .modal-buttons .btn-delete')
+const del_account = $element('.btn-delete-account')
+const modal_delete_account = $element('.modal-delete-account')
+const closed_modal = $element('.modal-delete-account .modal-form .modal-buttons .close-modal')
+const delete_btn = $element('.modal-delete-account .modal-form .modal-buttons .btn-delete')
 
 del_account?.addEventListener('click', ()=>{
     modal_delete_account.classList.add('active')

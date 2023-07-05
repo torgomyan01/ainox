@@ -473,8 +473,8 @@ main {
 }
 
 .email .email-box {
-  width: 450px;
-  margin-top: 80px;
+  max-width: 450px;
+  width: 100%;
 }
 
 .wrapper {
@@ -486,9 +486,7 @@ main {
   padding: 25px 20px;
 }
 
-.wrapper.login {
-  margin-top: 80px;
-}
+
 
 .email .email-box .email-box-title {
   color: #6E757C;
@@ -608,7 +606,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 116px;
+  width: 136px;
   padding: 10px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -638,7 +636,11 @@ main {
   font-weight: 500;
   line-height: 165%;
   white-space: nowrap;
-  margin-top: 120px;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .email-box .register-now img {

@@ -1,6 +1,6 @@
 
 
-const btnEmaile = document.querySelector('.btn-emaile');
+const btnEmaile = $element('.btn-emaile');
 
 
 btnEmaile.addEventListener('click', startValidation)
