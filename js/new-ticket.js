@@ -17,8 +17,7 @@ loading_btn.addEventListener('click', startValidation)
 
 
 function startValidation(){
-  loading_btn.classList.add(btnLoading)
-  setTimeout(() => loading_btn.classList.remove(btnLoading), 2000)
+  loading_btn.classList.remove(btnLoading)
 }
 
 // open modal
