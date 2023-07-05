@@ -93,8 +93,8 @@ function removeItemToModal(id){
 $('.change-step').forEach((item) => {
     item.addEventListener('click', function (){
         const stepPage = this.dataset.step;
-        $('.steps-block').forEach((stepBlock) => stepBlock.classList.add(none));
-        $element(`.steps-block[data-step="${stepPage}"]`).classList.remove(none);
+        changeStepBlock(stepPage)
+        setActiveList(+stepPage - 1)
     })
 })
 
@@ -106,4 +106,33 @@ $element('.mobile-menu-board').addEventListener('click', function (){
 $element('.view-image-bg').addEventListener('click', function (){
     this.parentElement.classList.remove(active)
 })
+
+const menuList = $('.menu-list-with-content');
+function setActiveList(count){
+    menuList.forEach((element, index) => {
+        element.classList.remove(active);
+        element.classList.remove('no-active');
+        if(index === count){
+            element.classList.add(active)
+        } else if(index > count){
+            element.classList.add('no-active')
+        }
+    })
+}
+
+function changeStepBlock(stepPage){
+    $('.steps-block').forEach((stepBlock) => stepBlock.classList.add(none));
+    $element(`.steps-block[data-step="${stepPage}"]`).classList.remove(none);
+}
+
+menuList.forEach((item, index) => {
+    item.addEventListener('click', function (){
+        if(!this.classList.contains(active) && !this.classList.contains('no-active') && index < 3){
+            setActiveList(index);
+            changeStepBlock(index + 1);
+        }
+    })
+})
+
+
 
