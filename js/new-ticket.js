@@ -1,15 +1,15 @@
 
 
-const bottomLeft = document.querySelector('.new-request .botom-left')
-const exit_newRequest = document.querySelector('.new-request .exit-newRequest')
-const fields_new_ticket = document.querySelector('.technical-support .fields-new-ticket')
-const new_request = document.querySelector('.new-request')
-const form = document.querySelector('.new-request .form')
-const loading_btn = document.querySelector('.new-request .footer-buttons-btn')
-const loading_input = document.querySelector('.input-loading')
-const upload_box = document.querySelector('.upload-box')
-const upload_box_img = document.querySelector('.upload-box img')
-const todos = document.querySelector('.todos')
+const bottomLeft = $element('.new-request .botom-left')
+const exit_newRequest = $element('.new-request .exit-newRequest')
+const fields_new_ticket = $element('.technical-support .fields-new-ticket')
+const new_request = $element('.new-request')
+const form = $element('.new-request .form')
+const loading_btn = $element('.new-request .footer-buttons-btn')
+const loading_input = $element('.input-loading')
+const upload_box = $element('.upload-box')
+const upload_box_img = $element('.upload-box img')
+const todos = $element('.todos')
 
 //  btn loading
 
