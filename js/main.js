@@ -347,11 +347,11 @@ $('.def-select select').forEach((select) => {
     let optionItems = '';
     select.parentElement.insertAdjacentHTML('beforeend',
         `
-        <button class="def-select-header">
+        <div class="def-select-header">
             <span class="def-select-header-title">${select.dataset.title}</span>
             <span class="def-select-header-selected-name"></span>
             <img src="assets/icons/down.svg" alt="down icon">
-        </button>
+        </div>
     `)
     select.querySelectorAll('option').forEach((option) => {
         optionItems += `
@@ -397,7 +397,7 @@ $('.def-select-body-item').forEach((item) => {
 
 $('.def-select select option').forEach((option) => {
     if(option.getAttribute(selected) !== null){
-        option.parentElement.parentElement.classList.add(selected);
+        // option.parentElement.parentElement.classList.add(selected);
         option.parentElement.parentElement.classList.remove(active);
         option.parentElement.parentElement.querySelector('.def-select-header-selected-name').innerText = option.innerText;
         option.parentElement.parentElement.querySelectorAll(`select option`).forEach((option) => {

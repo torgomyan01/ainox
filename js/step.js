@@ -95,6 +95,7 @@ $('.change-step').forEach((item) => {
         const stepPage = this.dataset.step;
         $('.steps-block').forEach((stepBlock) => stepBlock.classList.add(none));
         $element(`.steps-block[data-step="${stepPage}"]`).classList.remove(none);
+        setActiveList(+stepPage - 1)
     })
 })
 
@@ -106,4 +107,16 @@ $element('.mobile-menu-board').addEventListener('click', function (){
 $element('.view-image-bg').addEventListener('click', function (){
     this.parentElement.classList.remove(active)
 })
+
+function setActiveList(count){
+    $('.menu-list-with-content').forEach((element, index) => {
+        element.classList.remove(active);
+        element.classList.remove('no-active');
+        if(index === count){
+            element.classList.add(active)
+        } else if(index > count){
+            element.classList.add('no-active')
+        }
+    })
+}
 
