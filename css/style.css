@@ -1373,6 +1373,7 @@ main {
 
 .ticket-container{
   margin-top: 90px;
+  background: #F8F8F8;
 }
 
 .ticket-container .request-box{
@@ -1482,11 +1483,7 @@ main {
 
 /*  message*/
 
-.messages{
-  max-height: 710px;
-  overflow-x: auto;
-  padding-right: 10px;
-}
+
 
 .messages::-webkit-scrollbar {
   width: 2px;
@@ -2038,7 +2035,7 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #fff;
+  background: transparent;
   border-radius: 5px;
   border: 1px solid #353A3F;
   cursor: pointer;
@@ -2050,6 +2047,8 @@ main {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
+
 
 /* #353A3F */
 
@@ -3554,4 +3553,8 @@ main {
 .loading-file-btn:hover{
   border: 0;
   color: #AEB5BC;
+}
+
+.link-blue:hover{
+  color: #0056D3 !important;
 }
