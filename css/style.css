@@ -110,9 +110,9 @@ main {
 .def-fields.text .def-fields-icon{
   top: 20px;
 }
-/*.def-fields.text .def-fields-text-icon-edit{*/
-/*  top: 20px;*/
-/*}*/
+.def-fields.text .def-fields-text-icon-edit{
+  top: 20px;
+}
 
 .def-fields .def-fields-icon {
   -webkit-transition: 0.3s opacity;
@@ -215,7 +215,7 @@ main {
   padding-bottom: 25px;
 }
 .def-fields.text.disabled .def-fields-text-body{
-  cursor: context-menu;
+  cursor: default;
 }
 
 .def-fields.text.disabled .def-fields-text-icon-edit{
@@ -316,7 +316,7 @@ main {
 .def-fields.disabled.disabled-active .def-fields-input {
   opacity: 1;
   height: 22px;
-  color: #EAECEF;
+  color: #222529;
 }
 
 .def-fields.disabled.disabled-active .def-fields-icon-edit {
@@ -2208,7 +2208,7 @@ main {
 
 .def-switch span {
   border-radius: 30px;
-  background: #DFE2E6;
+  background: #EAECEF;
   width: 44px;
   height: 24px;
   padding: 0 2px;
@@ -2216,6 +2216,10 @@ main {
   display: inline-block;
   -webkit-transition: 0.3s background-color;
   transition: 0.3s background-color;
+}
+
+.def-switch span:hover{
+  background: #DFE2E6;
 }
 
 .def-switch span:after {
@@ -2917,6 +2921,13 @@ main {
   font-style: normal;
   font-weight: 400;
   line-height: 165%;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.menu-list-with-content:hover{
+  background-color: #EAECEF;
+  color: #222529;
 }
 .menu-list-with-content span{
   width: 25px;
@@ -2957,12 +2968,17 @@ main {
 
 .menu-list-with-content.no-active{
   color: #222529;
-  cursor: pointer;
 }
 .menu-list-with-content.no-active span{
   border: 1px solid #EAECEF;
   background: transparent;
   color: #6E757C;
+}
+.menu-list-with-content:hover span{
+  background-color: #fff;
+}
+.menu-list-with-content.active:hover span{
+  background-color: #00CF91;
 }
 
 
@@ -3524,4 +3540,16 @@ main {
 
 .step-page{
   background-color: #F8F8F8;
+}
+.loading-file-btn{
+  color: #AEB5BC;
+  font-weight: 500;
+  background: #EAECEF;
+  border: 0;
+  cursor: default;
+}
+
+.loading-file-btn:hover{
+  border: 0;
+  color: #AEB5BC;
 }

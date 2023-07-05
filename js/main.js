@@ -410,20 +410,34 @@ $('.def-select select option').forEach((option) => {
 })
 
 
+// ------------- ************* ---------------------- //
+//              FOR DELETE BTN
+// ------------- ************* ---------------------- //
+
 const del_account = document.querySelector('.btn-delete-account')
 const modal_delete_account = document.querySelector('.modal-delete-account')
 const closed_modal = document.querySelector('.modal-delete-account .modal-form .modal-buttons .close-modal')
 const delete_btn = document.querySelector('.modal-delete-account .modal-form .modal-buttons .btn-delete')
 
-del_account.addEventListener('click', ()=>{
+del_account?.addEventListener('click', ()=>{
     modal_delete_account.classList.add('active')
 })
 
-closed_modal.addEventListener('click', ()=>{
+closed_modal?.addEventListener('click', ()=>{
     modal_delete_account.classList.remove('active')
 })
 
-delete_btn.addEventListener('click', ()=>{
+delete_btn?.addEventListener('click', ()=>{
     modal_delete_account.classList.remove('active')
 })
+
+// ------------- ************* ---------------------- //
+//              FOR LOADING FILE BTN
+// ------------- ************* ---------------------- //
+
+// function startLoadingBtn(){
+//     $('.loading-file-btn').forEach((btn) => {
+//
+//     })
+// }
 
