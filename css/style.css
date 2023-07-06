@@ -3540,6 +3540,7 @@ main {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-right: 21px;
 }
 @media (max-width: 767px) {
   .mobile-menu-board {
@@ -3629,4 +3630,9 @@ main {
 
 .menu-back-fon.active{
   pointer-events: auto;
+}
+.navbar-content-logo-menu{
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
