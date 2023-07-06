@@ -323,19 +323,19 @@
     height: 100%;
   }
 
-  .new-request .form .form-heading {
-    padding: 10px;
-    padding-right: 20px;
-  }
 
   .new-request .form .form-inputs {
     padding: 15px 5px;
   }
 
+
+
   .new-request .form .form-inputs .new-tickets-fields{
     height: 63px;
     font-size: 14px;
     background: none;
+    padding: 5px;
+    margin-left: -5px;
   }
 
   .new-request .form .form-inputs .new-tickets-fields .def-fields-icon{
@@ -354,10 +354,22 @@
     height: 63px;
     font-size: 14px;
     background: none;
+    padding: 5px;
+    margin-left: -5px;
   }
 
   .new-request .form .form-inputs .subject-fields.active{
    border: none;
+  }
+
+  .new-request .form .form-input-box .inputs .new-tickets-fields {
+    margin-right: 0;
+    margin-left: -5px;
+    padding: 5px !important;
+  }
+
+  .new-request .form .footer-buttons {
+    padding: 25px 5px;
   }
 
   .new-request .form .form-input-box .subject {
@@ -375,7 +387,8 @@
   .new-request .form .form-input-box .subject #Description{
     border: none;
     font-size: 14px;
-    height: 350px;
+    height: 200px;
+    padding: 5px;
   }
 
 
