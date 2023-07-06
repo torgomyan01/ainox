@@ -10,7 +10,6 @@
   --grey: #EAECEF;
   --green: #00CF91;
   --blueWhite: #DFE2E6;
-  --body-size: 100vh;
 }
 
 ::-webkit-scrollbar {
@@ -62,14 +61,8 @@ a {
   text-decoration: none;
 }
 
-body {
-  height: var(--body-size);
-}
-
-@Media only screen and (max-width : 400px) {
-  input:focus, textarea:focus{
-    --body-size: 50vh;
-  }
+body{
+  background-color: var(--green);
 }
 
 main {

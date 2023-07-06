@@ -133,3 +133,7 @@ Description.addEventListener('input', function (){
     writeMessage.style.background = '#e4fff9';
   }
 })
+
+Description.addEventListener('focus', function (){
+  document.body.classList.add('open-textarea')
+})
