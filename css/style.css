@@ -828,6 +828,25 @@ main {
   margin-bottom: 25px;
 }
 
+.container-finish .finish .finish-text{
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #EAECEF;
+  display: flex;
+  align-items: center;
+}
+
+.container-finish .finish .finish-text span{
+  color: #6E757C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 165%;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+
 
   /*............ end finish............. */
 
@@ -1077,7 +1096,7 @@ main {
   -webkit-box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
   box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
   cursor: pointer;
-
+  color: #222529;
 }
 
 .container-new-ticket .technical-support .footer-btn-new-ticket .fields-new-ticket .submit-new-ticket {
@@ -1349,11 +1368,30 @@ main {
   display: -ms-flexbox;
   display: flex;
   background: #F8F8F8;
-  margin-top: 25px;
+  margin-top: 22px;
   width: 100%;
   padding: 25px 20px;
   position: relative;
 }
+
+.new-request .form .footer-buttons .footer-img-file{
+  display: none;
+}
+
+.new-request .form .footer-buttons .footer-img-file.active{
+  display: initial;
+}
+
+.new-request .form .footer-buttons .footer-img-loading{
+  display: none;
+}
+
+.new-request .form .footer-buttons .footer-img-loading.active{
+  display: initial;
+}
+
+
+
 
 .new-request .form .footer-buttons .footer-buttons-btn-green {
   margin-left: 15px;

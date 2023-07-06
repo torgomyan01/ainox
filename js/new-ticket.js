@@ -10,6 +10,8 @@ const loading_input = $element('.input-loading')
 const upload_box = $element('.upload-box')
 const upload_box_img = $element('.upload-box img')
 const todos = $element('.todos')
+const footer_img_file = $element('.footer-img-file')
+const footer_img_loading = $element('.footer-img-loading')
 
 //  btn loading
 
@@ -17,7 +19,12 @@ loading_btn.addEventListener('click', startValidation)
 
 
 function startValidation(){
-  loading_btn.classList.remove(btnLoading)
+  footer_img_file.classList.remove('active')
+  footer_img_loading.classList.add('active')
+  setTimeout(()=>{
+    footer_img_loading.classList.remove('active')
+    footer_img_file.classList.add('active')
+  },1500)
 }
 
 // open modal
