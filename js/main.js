@@ -272,26 +272,33 @@ function checkItems(){
 const profileDropdowns = $('.profile-dropdowns');
 
 profileDropdowns.forEach((item) => {
+    const backFonMenu = $element('.menu-back-fon');
+
+    if(!backFonMenu){
+        document.body.insertAdjacentHTML('beforeend','<div class="menu-back-fon"></div>');
+        $element('.menu-back-fon').addEventListener('click', closeOpenedMenu)
+    }
+
     item.addEventListener('click', function (){
-        profileDropdowns.forEach((dropdown) => dropdown.classList.remove(active))
-        this.classList.toggle(active);
+        if (this.classList.contains(active)){
+            this.classList.remove(active);
+            $element('.menu-back-fon').classList.remove(active);
+        } else {
+            profileDropdowns.forEach((dropdown) => dropdown.classList.remove(active));
+            this.classList.add(active);
+            $element('.menu-back-fon').classList.add(active);
+        }
     })
 })
 
-window.onclick = function(event) {
-    const tagName = event.target.tagName.toLowerCase();
-    if (
-        !event.target.matches('.profile-dropdowns-icon') &&
-        tagName !== 'svg' &&
-        tagName !== 'path' &&
-        !event.target.matches('.profile-dropdowns-toggle-item') &&
-        !event.target.matches('.profile-dropdowns-toggle') &&
-        !event.target.matches('.profile-dropdowns-toggle-title') &&
-        !event.target.matches('.profile-dropdowns-toggle-icon')
-    ) {
-        const dropdowns = $('.profile-dropdowns');
-        dropdowns.forEach((item) => item.classList.contains(active) && item.classList.remove(active) )
-    }
+
+$('.navbar-item').forEach((item) => {
+    item.addEventListener('click', closeOpenedMenu)
+})
+
+function closeOpenedMenu(){
+    profileDropdowns.forEach((item) => item.classList.contains(active) && item.classList.remove(active) );
+    $element('.menu-back-fon').classList.remove(active);
 }
 
 const navbar = $element('.navbar');
