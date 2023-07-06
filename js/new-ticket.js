@@ -112,3 +112,19 @@ function dropFunc(e){
   // todos.appendChild(todo_item)
 }
 
+
+
+const writeMessage = $element('.fields-new-ticket');
+const Description = $element('#Description');
+const submit_input = $element('.submit-new-ticket')
+
+Description.addEventListener('input', function (){
+  const val = this.value;
+  if(val.length > 0){
+    submit_input.value = val;
+    writeMessage.style.background = '#fff';
+  } else {
+    submit_input.value = 'Опишите вашу проблему...';
+    writeMessage.style.background = '#e4fff9';
+  }
+})

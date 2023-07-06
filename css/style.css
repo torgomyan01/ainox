@@ -1437,8 +1437,6 @@ main {
 }
 
 
-
-
 .new-request .form .footer-buttons .footer-buttons-btn-green {
   margin-left: 15px;
 
@@ -1485,7 +1483,43 @@ main {
 .ticket-container .chat{
   max-width: 620px;
   width: 100%;
+  margin-bottom: 112px;
 }
+
+.ticket-container .chat .footer-btn-ticket{
+  position: fixed;
+  bottom: 25px;
+  background: var(--white);
+  padding: 10px;
+  width: 620px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
+  box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
+}
+
+.ticket-container .chat .footer-btn-ticket .fields-ticket{
+  background: var(--white);
+  width: 100%;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
+  box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
+  cursor: pointer;
+  color: #222529;
+}
+
+.ticket-container .chat  .footer-btn-ticket .fields-ticket .submit-ticket{
+  color: var(--black);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  background: none;
+  cursor: pointer;
+}
+
+
 
 .ticket-container .chat .btn-transparent-ticket{
   padding: 10px 0;
@@ -1812,6 +1846,9 @@ main {
   line-height: 145%;
   text-transform: uppercase;
 }
+
+
+
 
 /*.................  Ticket End ................. */
 

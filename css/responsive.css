@@ -435,6 +435,15 @@
     font-size: 12px;
   }
 
+  .ticket-container .chat .footer-btn-ticket{
+    width: 95%;
+  }
+
+
+  .ticket-container .chat  .footer-btn-ticket .fields-ticket .submit-ticket{
+    font-size: 14px;
+  }
+
   .ticket-container .chat .btn-transparent-ticket{
     font-size: 10px;
   }
