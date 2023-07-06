@@ -323,6 +323,11 @@
     height: 100%;
   }
 
+  .new-request .form .form-heading {
+    padding: 10px;
+    padding-right: 20px;
+  }
+
   .new-request .form .form-inputs {
     padding: 15px 5px;
   }
