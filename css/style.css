@@ -1,3 +1,16 @@
+:root {
+  --textCrey: #AEB5BC;
+  --blue: #0056D3;
+  --black: #222529;
+  --linkColor: #2398AB;
+  --openWhite: #F8F8F8;
+  --openGreen: #E4FFF9;
+  --white: #FFF;
+  --red: #FF756B;
+  --grey: #EAECEF;
+  --green: #00CF91;
+  --blueWhite: #DFE2E6;
+}
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -83,21 +96,12 @@ main {
   padding: 0 10px;
 }
 
-/*[placeholder]:empty::before {*/
-/*  content: attr(placeholder);*/
-/*  color: #555;*/
-/*}*/
-
-/*[placeholder]:empty:focus::before {*/
-/*  content: "";*/
-/*}*/
-
 /* password  */
 
 .def-fields {
   display: block;
   border-radius: 5px;
-  background: #E4FFF9;
+  background: var(--openGreen);
   padding: 10px;
   width: 100%;
   height: 63px;
@@ -127,7 +131,7 @@ main {
   position: absolute;
   left: 10px;
   top: 20px;
-  color: #222529;
+  color: var(--black);
   font-size: 16px;
   font-weight: 500;
   line-height: 140%;
@@ -136,7 +140,7 @@ main {
 }
 
 .def-fields-input {
-  color: #222529;
+  color: var(--black);
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 1.6px;
@@ -152,35 +156,35 @@ main {
 
 
 .def-fields-input::-webkit-input-placeholder {
-  color: #DFE2E6;
+  color: var(--blueWhite);
   font-size: 16px;
   line-height: 140%;
 }
 
 
 .def-fields-input::-moz-placeholder {
-  color: #DFE2E6;
+  color: var(--blueWhite);
   font-size: 16px;
   line-height: 140%;
 }
 
 
 .def-fields-input:-ms-input-placeholder {
-  color: #DFE2E6;
+  color: var(--blueWhite);
   font-size: 16px;
   line-height: 140%;
 }
 
 
 .def-fields-input::-ms-input-placeholder {
-  color: #DFE2E6;
+  color: var(--blueWhite);
   font-size: 16px;
   line-height: 140%;
 }
 
 
 .def-fields-input::placeholder {
-  color: #DFE2E6;
+  color: var(--blueWhite);
   font-size: 16px;
   line-height: 140%;
 }
@@ -193,7 +197,7 @@ main {
 
 .def-fields.text .def-fields-text-body {
   display: block;
-  color: #222529;
+  color: var(--black);
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 1.6px;
@@ -243,7 +247,7 @@ main {
 }
 
 .def-fields.password .def-fields-input {
-  color: #222529;
+  color: var(--black);
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -257,7 +261,7 @@ main {
 
 
 /*#password::placeholder {*/
-/*    color: #222529;*/
+/*    color: var(--black);*/
 /*  font-size: 14px;*/
 /*}*/
 
@@ -275,8 +279,8 @@ main {
 }
 
 .def-fields.active {
-  border: 1px solid #EAECEF;
-  background: #FFF;
+  border: 1px solid var(--grey);
+  background: var(--white);
 }
 
 .def-fields.active .def-fields-title{
@@ -316,7 +320,7 @@ main {
 .def-fields.disabled.disabled-active .def-fields-input {
   opacity: 1;
   height: 22px;
-  color: #222529;
+  color: var(--black);
 }
 
 .def-fields.disabled.disabled-active .def-fields-icon-edit {
@@ -342,31 +346,42 @@ main {
   top: 0;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background: rgba(34, 37, 41, 0.90);
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   z-index: 2222;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
 .modal-delete-account.active{
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
 .modal-delete-account .modal-form{
   padding: 30px;
   border-radius: 30px;
-  background: #F8F8F8;
+  background: var(--openWhite);
   max-width: 466px;
   width: 100%;
 }
 
 .modal-delete-account .modal-form .modal-form-heading{
-  color: #222529;
+  color: var(--black);
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -374,7 +389,7 @@ main {
 }
 
 .modal-delete-account .modal-form .modal-form-title{
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -392,7 +407,11 @@ main {
 }
 
 .modal-delete-account .modal-form .wrapper-modal-form .switch-modal{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 15px;
 }
@@ -402,7 +421,7 @@ main {
 }
 
 .modal-delete-account .modal-form .wrapper-modal-form .switch-modal p{
-  color: #222529;
+  color: var(--black);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -416,15 +435,25 @@ main {
 
 .modal-delete-account .modal-form .modal-buttons{
   margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .modal-delete-account .modal-form .modal-buttons .close-modal{
   background: none;
   padding: 10px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: #353A3F;
   text-align: center;
@@ -442,11 +471,15 @@ main {
 
 .modal-delete-account .modal-form .modal-buttons .btn-delete{
   padding: 10px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-radius: 5px;
-  background: #FF756B;
-  color: #F8F8F8;
+  background: var(--red);
+  color: var(--openWhite);
   text-align: center;
   font-size: 20px;
   font-style: normal;
@@ -456,7 +489,7 @@ main {
 }
 
 
-  /* ............. Login .......*/
+/* ............. Login .......*/
 
 .email {
   min-height: 100vh;
@@ -469,7 +502,7 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #F8F8F8;
+  background: var(--openWhite);
 }
 
 .email .email-box {
@@ -479,7 +512,7 @@ main {
 
 .wrapper {
   border-radius: 30px;
-  background: #FFF;
+  background: var(--white);
   width: 100%;
   -webkit-box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
   box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
@@ -535,21 +568,21 @@ main {
 }
 
 .email .email-box .email-change-kod {
-  color: #AEB5BC;
+  color: var(--textCrey);
   font-size: 13px;
   line-height: 120%;
   margin-top: 10px;
 }
 
 .email .email-box .email-change-kod a {
-  color: #AEB5BC;
+  color: var(--textCrey);
   font-size: 13px;
   line-height: 120%;
   text-decoration: underline;
 }
 
 .email .email-box .email-password a {
-  color: #AEB5BC;
+  color: var(--textCrey);
   font-size: 13px;
   line-height: 120%;
   text-decoration: underline;
@@ -571,7 +604,7 @@ main {
   transform: translateY(-50%);
   width: 100%;
   height: 1px;
-  background: #DFE2E6;
+  background: var(--blueWhite);
 }
 
 .email-box .solid-text span {
@@ -580,10 +613,10 @@ main {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: #F8F8F8;
+  background: var(--openWhite);
   height: 100%;
   padding: 0 20px;
-  color: #DFE2E6;
+  color: var(--blueWhite);
   font-size: 14px;
   font-weight: 500;
   line-height: 145%;
@@ -615,7 +648,7 @@ main {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 5px;
-  background: #EAECEF;
+  background: var(--grey);
   cursor: pointer;
   color: #353A3F;
   text-align: center;
@@ -670,7 +703,7 @@ main {
 }
 
 .emaile .emaile-box .email-box-subtitle {
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   line-height: 165%;
   width: 100%;
@@ -679,7 +712,7 @@ main {
 .emaile .emaile-box .email-box-subtitle a {
   font-size: 15px;
   font-weight: 700;
-  color: #222529;
+  color: var(--black);
 
 }
 
@@ -711,7 +744,7 @@ main {
 }
 
 .container-robo .alert-robo p{
-  color: #222529;
+  color: var(--black);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -720,7 +753,7 @@ main {
 
 .container-robo .alert-robo p a{
   font-weight: 500;
-  color: #222529;
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -731,7 +764,7 @@ main {
 }
 
 .container-robo .robo .robo-heading{
-  color: #222529;
+  color: var(--black);
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -740,7 +773,7 @@ main {
 }
 
 .container-robo .robo .robo-title{
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -748,13 +781,13 @@ main {
 }
 
 .container-robo .robo .robo-title span{
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .container-robo .robo .robo-box {
   padding: 10px 20px;
   border-radius: 10px;
-  background: #EAECEF;
+  background: var(--grey);
   margin: 25px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -784,11 +817,11 @@ main {
 }
 
 
-  /* ......... end Robo ........*/
+/* ......... end Robo ........*/
 
 
 
-  /* ............ Finish.......... */
+/* ............ Finish.......... */
 
 .container-finish{
   margin-top: 90px;
@@ -801,7 +834,7 @@ main {
 }
 
 .container-finish .finish .finish-heading{
-  color: #222529;
+  color: var(--black);
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -810,7 +843,7 @@ main {
 }
 
 .container-finish  .finish .finish-title{
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -819,7 +852,7 @@ main {
 }
 
 .container-finish .finish .finish-subtitle{
-  color: #AEB5BC;
+  color: var(--textCrey);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -848,18 +881,18 @@ main {
 
 
 
-  /*............ end finish............. */
+/*............ end finish............. */
 
 
 /*  ...........trial .......*/
 
 
 .got-a-message-trial{
-  background:  #FFFCBB !important;
+  background:  var(--white)CBB !important;
 }
 
 .got-a-message-trial p{
-  color: #222529 !important;
+  color: var(--black) !important;
 }
 
 .trial-container{
@@ -878,7 +911,7 @@ main {
 }
 
 .trial .trial-heading{
-  color: #222529;
+  color: var(--black);
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -887,7 +920,7 @@ main {
 
 
 .trial .trial-title{
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -896,12 +929,12 @@ main {
 }
 
 .trial .trial-title a{
-  color: #2398AB;
+  color: var(--linkColor);
   text-decoration: underline;
 }
 
 .trial .trial-heading2{
-  color: #222529;
+  color: var(--black);
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -915,6 +948,8 @@ main {
 
 
 .trial .one-box{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 25px;
 }
@@ -925,7 +960,7 @@ main {
 }
 
 .trial .one-box .one-box-titles h4{
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -933,7 +968,7 @@ main {
 }
 
 .trial .one-box .one-box-titles p{
-  color: #AEB5BC;
+  color: var(--textCrey);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -942,7 +977,7 @@ main {
 }
 
 .trial .one-box .one-box-titles p a{
-  color: #2398AB;
+  color: var(--linkColor);
   text-decoration: underline;
 }
 
@@ -951,7 +986,7 @@ main {
 
 .faq{
   border-radius: 10px;
-  border: 1px solid #EAECEF;
+  border: 1px solid var(--grey);
   margin-bottom: 25px;
 }
 
@@ -959,20 +994,22 @@ main {
   position: relative;
   cursor: pointer;
   display: block;
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: 165%;
-  border-bottom: 1px solid #EAECEF;
+  border-bottom: 1px solid var(--grey);
   padding: 20px;
 }
 
 .faq .faq-title img{
+  -webkit-transition: .3s;
   transition: .3s;
   position: absolute;
   top: 25px;
   right: 20px;
+  -webkit-transform: rotate(0);
   transform: rotate(0)
 }
 
@@ -980,6 +1017,7 @@ main {
   width: 0;
   height: 0;
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   position: absolute;
 }
@@ -990,21 +1028,23 @@ main {
 }
 
 .faq .faq-input:checked ~ .faq-title img{
+  -webkit-transform: rotate(-180deg)  ;
   transform: rotate(-180deg)  ;
 
 }
 
 .faq .faq-text{
+  -webkit-transition: .3s;
   transition: .3s;
   height: 100%;
   max-height: 0;
   overflow: hidden;
   padding: 0 20px;
-  border-bottom: 1px solid #EAECEF;
+  border-bottom: 1px solid var(--grey);
 }
 
 .faq .faq-text p{
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -1019,10 +1059,10 @@ main {
 
 
 
-  /* .......... New ticket ..................    */
+/* .......... New ticket ..................    */
 
 .new-ticket-body{
-  background: #F8F8F8;
+  background: var(--openWhite);
 }
 
 .container-new-ticket .technical-support {
@@ -1032,7 +1072,7 @@ main {
 
 
 .heading-tew-ticket {
-  color: #222529;
+  color: var(--black);
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -1041,7 +1081,7 @@ main {
 }
 
 .title-new-ticket {
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -1051,13 +1091,13 @@ main {
 
 .container-new-ticket .technical-support .title-new-ticket a {
   text-decoration: underline;
-  color: #2398AB;
+  color: var(--linkColor);
 }
 
 .container-new-ticket .technical-support .watch-box {
   padding: 10px 20px;
   border-radius: 10px;
-  background: #EAECEF;
+  background: var(--grey);
   margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1079,7 +1119,7 @@ main {
 .container-new-ticket .technical-support .footer-btn-new-ticket {
   position: fixed;
   bottom: 25px;
-  background: #fff;
+  background: var(--white);
   padding: 10px;
   width: 620px;
   border-radius: 5px;
@@ -1088,7 +1128,7 @@ main {
 }
 
 .container-new-ticket .technical-support .footer-btn-new-ticket .fields-new-ticket {
-  background: #E4FFF9;
+  background: var(--openGreen);
   width: 100%;
   padding: 10px;
   display: block;
@@ -1100,7 +1140,7 @@ main {
 }
 
 .container-new-ticket .technical-support .footer-btn-new-ticket .fields-new-ticket .submit-new-ticket {
-  color: #222529;
+  color: var(--black);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -1169,7 +1209,7 @@ main {
 .new-request .form {
   max-width: 755px;
   width: 100%;
-  background: #fff;
+  background: var(--white);
   margin: 50px auto;
 }
 
@@ -1190,7 +1230,7 @@ main {
 }
 
 .new-request .form .form-heading span {
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -1248,9 +1288,9 @@ main {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   resize: none;
-  border: 1px solid #EAECEF;
-  background: #FFF;
-  color: #222529;
+  border: 1px solid var(--grey);
+  background: var(--white);
+  color: var(--black);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1258,7 +1298,7 @@ main {
 }
 
 .new-request .form .form-input-box .subject #Description::-webkit-input-placeholder {
-  color: #DFE2E6;
+  color: var(--blueWhite);
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 16px;
@@ -1268,7 +1308,7 @@ main {
 }
 
 .new-request .form .form-input-box .subject #Description::-moz-placeholder {
-  color: #DFE2E6;
+  color: var(--blueWhite);
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 16px;
@@ -1278,7 +1318,7 @@ main {
 }
 
 .new-request .form .form-input-box .subject #Description:-ms-input-placeholder {
-  color: #DFE2E6;
+  color: var(--blueWhite);
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 16px;
@@ -1288,7 +1328,7 @@ main {
 }
 
 .new-request .form .form-input-box .subject #Description::-ms-input-placeholder {
-  color: #DFE2E6;
+  color: var(--blueWhite);
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 16px;
@@ -1298,7 +1338,7 @@ main {
 }
 
 .new-request .form .form-input-box .subject #Description::placeholder {
-  color: #DFE2E6;
+  color: var(--blueWhite);
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 16px;
@@ -1319,16 +1359,22 @@ main {
 .new-request .form .todos .todo-item {
   padding: 5px 15px;
   border-radius: 10px;
-  background: #EAECEF;
-  color: #222529;
+  background: var(--grey);
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: 165%;
   margin-right: 15px;
   white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1350,7 +1396,7 @@ main {
 
 
 .new-request .form .switch-new-ticket .switch-new-ticket-title {
-  color: #222529;
+  color: var(--black);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -1359,7 +1405,7 @@ main {
 }
 
 .new-request .form .switch-new-ticket .switch-new-ticket-title a {
-  color: #2398AB;
+  color: var(--linkColor);
   text-decoration: underline;
 }
 
@@ -1367,7 +1413,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #F8F8F8;
+  background: var(--openWhite);
   margin-top: 22px;
   width: 100%;
   padding: 25px 20px;
@@ -1409,12 +1455,12 @@ main {
 /*................  Ticket................ */
 
 .ticket{
-  background: #F8F8F8;
+  background: var(--openWhite);
 }
 
 .ticket-container{
   margin-top: 90px;
-  background: #F8F8F8;
+  background: var(--openWhite);
 }
 
 .ticket-container .request-box{
@@ -1423,7 +1469,7 @@ main {
 
 
 .ticket-container .request-box p{
-  color: #222529;
+  color: var(--black);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -1431,7 +1477,7 @@ main {
 }
 
 .ticket-container .request-box p a{
-  color: #222529;
+  color: var(--black);
   font-weight: 500;
   text-decoration: none;
 }
@@ -1443,7 +1489,7 @@ main {
 
 .ticket-container .chat .btn-transparent-ticket{
   padding: 10px 0;
-  color: #222529;
+  color: var(--black);
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -1452,7 +1498,7 @@ main {
 }
 
 .ticket-container .chat .heading-ticket{
-  color: #222529;
+  color: var(--black);
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -1474,7 +1520,7 @@ main {
 
 
 .ticket-container .chat .submissions a{
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -1496,7 +1542,7 @@ main {
 .ticket-container .chat .watch-box {
   padding: 10px 20px;
   border-radius: 10px;
-  background: #EAECEF;
+  background: var(--grey);
   margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1517,9 +1563,9 @@ main {
 
 .ticket-container .chat .wrapper-ticket{
   padding: 35px 20px;
-  border: 1px solid #EAECEF;
+  border: 1px solid var(--grey);
   margin-top: 25px;
-  background: #F8F8F8;
+  background: var(--openWhite);
 }
 
 /*  message*/
@@ -1561,7 +1607,7 @@ main {
 }
 
 .message .message-ticket p{
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -1569,7 +1615,7 @@ main {
 }
 
 .message  .message-ticket p a{
-  color: #2398AB;
+  color: var(--linkColor);
   text-decoration: underline;
 }
 
@@ -1593,7 +1639,7 @@ main {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: end;
-  color:  #222529;
+  color:  var(--black);
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
@@ -1601,7 +1647,7 @@ main {
 }
 
 .message .user .user-about .data-message{
-  color: #222529;
+  color: var(--black);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -1630,12 +1676,12 @@ main {
 
 .my-message .my-message-ticket{
   border-radius: 5px;
-  background: #fff;
+  background: var(--white);
   padding: 10px;
 }
 
 .my-message .my-message-ticket p{
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -1643,18 +1689,18 @@ main {
 }
 
 .my-message  .my-message-ticket p a{
-  color: #2398AB;
+  color: var(--linkColor);
   text-decoration: underline;
 }
 
 .my-message .file-download{
-  color: #222529;
+  color: var(--black);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
   border-radius: 5px;
-  background: #EAECEF;
+  background: var(--grey);
   padding: 10px;
   margin: 10px 0;
   white-space: nowrap;
@@ -1688,7 +1734,7 @@ main {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
-  color:  #222529;
+  color:  var(--black);
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
@@ -1696,7 +1742,7 @@ main {
 }
 
 .my-message .my-user .my-user-about .my-data-message{
-  color: #222529;
+  color: var(--black);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -1736,7 +1782,7 @@ main {
 
 .contacts a{
   display: block;
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -1774,7 +1820,7 @@ main {
 
 
 .ticket-message{
-  background: #F8F8F8;
+  background: var(--openWhite);
 }
 
 .got-a-message{
@@ -1783,22 +1829,28 @@ main {
   left: 0;
   width: 100%;
   padding: 5px 10px;
-  background: #FF756B;
+  background: var(--red);
+  -webkit-transition: all .4s;
   transition: all .4s;
 }
 
 .got-a-message.active{
+  -webkit-transition: all .4s;
   transition: all .4s;
   top: -40px;
 }
 
 .got-a-message .got-a-message-container{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .got-a-message .got-a-message-container p{
-  color: #FFF;
+  color: var(--white);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -1814,7 +1866,7 @@ main {
 
 
 .got-a-message .got-a-message-container{
-  color: #FFF;
+  color: var(--white);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -1839,7 +1891,7 @@ main {
 .ticket-message-description .btn-transparent-ticket{
   padding: 0;
   background: none;
-  color: #222529;
+  color: var(--black);
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -1847,7 +1899,7 @@ main {
 }
 
 .ticket-message-description .heading-ticket-message{
-  color: #222529;
+  color: var(--black);
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -1856,7 +1908,7 @@ main {
 }
 
 .ticket-message-description .title-ticket-message{
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -1866,7 +1918,7 @@ main {
 .ticket-message-description .watch-box{
   padding: 10px 20px;
   border-radius: 10px;
-  background: #EAECEF;
+  background: var(--grey);
   margin: 25px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1897,7 +1949,7 @@ main {
 }
 
 .history-of-dialogues .history-of-dialogues-heading{
-  color: #222529;
+  color: var(--black);
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -1940,7 +1992,7 @@ main {
 }
 
 .history-of-dialogues .wrapper .buttons-wrapper a{
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -1954,7 +2006,7 @@ main {
 }
 
 .history-of-dialogues .wrapper .wrapper-title{
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
@@ -1963,7 +2015,7 @@ main {
 }
 
 .history-of-dialogues .wrapper .wrapper-subtitle{
-  color: #222529;
+  color: var(--black);
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -1971,7 +2023,7 @@ main {
 }
 
 .history-of-dialogues .wrapper .wrapper-title-min{
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -1980,7 +2032,7 @@ main {
 }
 
 .history-of-dialogues .wrapper .wrapper-subtitle-min{
-  color: #222529;
+  color: var(--black);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -1989,7 +2041,7 @@ main {
 
 
 .history-of-dialogues .footer-title{
-  color: #AEB5BC;
+  color: var(--textCrey);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -2009,7 +2061,7 @@ main {
 
 .btn-link {
   background: none;
-  color: #2398AB;
+  color: var(--linkColor);
   font-size: 16px;
   font-weight: 500;
   line-height: 140%;
@@ -2026,7 +2078,7 @@ main {
 }
 
 .btn-link:hover path {
-  stroke: #2398AB;
+  stroke: var(--linkColor);
 }
 
 .btn-link svg {
@@ -2048,7 +2100,7 @@ main {
   border-radius: 5px;
   background: #353A3F;
   cursor: pointer;
-  color: #F8F8F8;
+  color: var(--openWhite);
   text-align: center;
   font-size: 20px;
   font-weight: 500;
@@ -2113,7 +2165,7 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #fff;
+  background: var(--white);
   border-radius: 5px;
   cursor: pointer;
   color: #353A3F;
@@ -2126,7 +2178,7 @@ main {
 }
 
 .go-to-back{
-  color: #222529;
+  color: var(--black);
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -2163,7 +2215,7 @@ main {
   border-radius: 5px;
   cursor: pointer;
   color: #282C30;
-  background: #EAECEF;
+  background: var(--grey);
   text-align: center;
   font-size: 20px;
   font-weight: 500;
@@ -2173,7 +2225,7 @@ main {
 }
 
 .btn-gray:hover {
-  background-color: #DFE2E6;
+  background-color: var(--blueWhite);
 }
 
 .btn-gray img {
@@ -2192,9 +2244,9 @@ main {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 5px;
-  background: #00CF91;
+  background: var(--green);
   cursor: pointer;
-  color: #F8F8F8;
+  color: var(--openWhite);
   text-align: center;
   font-size: 20px;
   font-weight: 500;
@@ -2250,7 +2302,7 @@ main {
 
 .def-switch span {
   border-radius: 30px;
-  background: #EAECEF;
+  background: var(--grey);
   width: 44px;
   height: 24px;
   padding: 0 2px;
@@ -2261,7 +2313,7 @@ main {
 }
 
 .def-switch span:hover{
-  background: #DFE2E6;
+  background: var(--blueWhite);
 }
 
 .def-switch span:after {
@@ -2269,7 +2321,7 @@ main {
   width: 20px;
   height: 20px;
   border-radius: 22px;
-  background: #FFF;
+  background: var(--white);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: absolute;
@@ -2286,7 +2338,7 @@ main {
 }
 
 .def-switch input:checked ~ span {
-  background-color: #00CF91;
+  background-color: var(--green);
 }
 
 .def-switch input:checked ~ span:hover{
@@ -2357,7 +2409,7 @@ main {
   -ms-flex-align: center;
   align-items: center;
   padding: 10px 15px;
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-weight: 500;
   line-height: 165%;
@@ -2365,12 +2417,12 @@ main {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-right: 2px;
-  /*background: #00CF91;*/
+  /*background: var(--green);*/
 }
 
 .navbar-item.active {
-  background: #00CF91;
-  color: #fff;
+  background: var(--green);
+  color: var(--white);
 }
 
 .navbar-item svg {
@@ -2380,8 +2432,8 @@ main {
 }
 
 .navbar-item.active svg path {
-  stroke: #FFF;
-  /*fill: #fff !important;*/
+  stroke: var(--white);
+  /*fill: var(--white) !important;*/
 }
 
 .navbar-item:hover {
@@ -2412,7 +2464,7 @@ main {
 }
 
 .rocket-icon.active {
-  background: #00CF91;
+  background: var(--green);
 }
 
 .rocket-icon.active .rocket-icon-green {
@@ -2438,7 +2490,7 @@ main {
 .navbar.fixed {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  background-color: #ffffff3d;
+  background-color: var(--white)fff3d;
 }
 
 .mobile-menu {
@@ -2453,9 +2505,9 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-top: 1px solid #EAECEF;
-  border-bottom: 1px solid #EAECEF;
-  background: #FFF;
+  border-top: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
+  background: var(--white);
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   width: 100%;
@@ -2477,7 +2529,7 @@ main {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  color: #222529;
+  color: var(--black);
   font-size: 10px;
   font-style: normal;
   font-weight: 500;
@@ -2499,7 +2551,7 @@ main {
   position: fixed;
   left: 0;
   bottom: 65px;
-  background: #fff;
+  background: var(--white);
   padding: 10px;
   width: 100%;
   display: none;
@@ -2511,7 +2563,7 @@ main {
 }
 
 .mobile-menu-item-toggle-item {
-  color: #222529;
+  color: var(--black);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -2577,7 +2629,7 @@ main {
 .profile-dropdowns.menu .profile-dropdowns-icon {
   width: auto;
   padding: 0 10px;
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-weight: 500;
   line-height: 165%;
@@ -2586,7 +2638,7 @@ main {
 .profile-dropdowns.menu.active .profile-dropdowns-icon {
   width: auto;
   padding: 0 10px;
-  color: #fff;
+  color: var(--white);
 }
 
 .profile-dropdowns-toggle {
@@ -2603,7 +2655,7 @@ main {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background: #FFF;
+  background: var(--white);
   -webkit-box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
   box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
   margin-top: 5px;
@@ -2618,11 +2670,11 @@ main {
 }
 
 .profile-dropdowns.active .profile-dropdowns-icon {
-  background: #00CF91;
+  background: var(--green);
 }
 
 .profile-dropdowns.active .profile-dropdowns-icon path {
-  stroke: #fff;
+  stroke: var(--white);
 }
 
 .profile-dropdowns-toggle-title {
@@ -2636,7 +2688,7 @@ main {
 }
 
 .profile-dropdowns-toggle-item {
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -2659,7 +2711,7 @@ main {
 }
 
 .profile-dropdowns-toggle-item:hover {
-  background: #EAECEF;
+  background: var(--grey);
 }
 
 .profile-dropdowns-toggle-item img {
@@ -2694,7 +2746,7 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #222529;
+  color: var(--black);
   font-size: 13px;
   font-weight: 400;
   line-height: 120%;
@@ -2719,7 +2771,7 @@ main {
 }
 
 .alert.success a {
-  color: #2398AB;
+  color: var(--linkColor);
 }
 
 .note {
@@ -2749,15 +2801,15 @@ main {
 .note a {
   text-decoration: underline;
   margin-left: 8px;
-  color: #2398AB;
+  color: var(--linkColor);
 }
 
 .note.big {
-  background: #EAECEF;
+  background: var(--grey);
 }
 
 .note.warning {
-  background: #FFFCBB;
+  background: var(--white)CBB;
 }
 
 
@@ -2776,7 +2828,7 @@ main {
   justify-content: center;
   gap: 10px;
   border-radius: 10px;
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -2786,46 +2838,46 @@ main {
 }
 
 .btn-status.all-opened {
-  background: #EAECEF;
+  background: var(--grey);
 }
 
 .btn-status.all-opened:hover{
   background: transparent;
-  border: 1px solid  #222529;
-  color: #222529;
+  border: 1px solid  var(--black);
+  color: var(--black);
 }
 
 
 .btn-status.all-opened.disabled {
-  color: #AEB5BC;
+  color: var(--textCrey);
   background: transparent;
-  border: 1px solid #EAECEF;
+  border: 1px solid var(--grey);
 }
 
 .btn-status.all-opened.disabled path {
-  stroke: #AEB5BC;
+  stroke: var(--textCrey);
 }
 
 
 .btn-status.no-read {
-  color: #FFFFFF;
-  background: #FF756B;
+  color: var(--white)FFF;
+  background: var(--red);
 }
 
 .btn-status.no-read:hover{
   background: transparent;
-  border: 1px solid  #FF756B;
-  color: #FF756B;
+  border: 1px solid  var(--red);
+  color: var(--red);
 }
 
 .btn-status.no-read.disabled {
-  color: #AEB5BC;
+  color: var(--textCrey);
   background: transparent;
-  border: 1px solid #EAECEF;
+  border: 1px solid var(--grey);
 }
 
 .btn-status.no-read.disabled path {
-  stroke: #FF756B;
+  stroke: var(--red);
 }
 
 .btn-status.no-read svg {
@@ -2834,21 +2886,21 @@ main {
 
 
 .btn-status.wait {
-  color: #222529;
+  color: var(--black);
   background: #BDCCFF;
 }
 
 .btn-status.wait:hover{
   background: transparent;
   border: 1px solid  #BDCCFF;
-  color: #222529;
+  color: var(--black);
 }
 
 
 .btn-status.wait.disabled {
-  color: #AEB5BC;
+  color: var(--textCrey);
   background: transparent;
-  border: 1px solid #EAECEF;
+  border: 1px solid var(--grey);
 }
 
 .btn-status.wait.disabled path {
@@ -2857,20 +2909,20 @@ main {
 
 
 .btn-status.read-it {
-  color: #222529;
+  color: var(--black);
   background: #D7E1E9;
 }
 
 .btn-status.read-it:hover{
   background: transparent;
   border: 1px solid  #D7E1E9;
-  color: #222529;
+  color: var(--black);
 }
 
 .btn-status.read-it.disabled {
-  color: #AEB5BC;
+  color: var(--textCrey);
   background: transparent;
-  border: 1px solid #EAECEF;
+  border: 1px solid var(--grey);
 }
 
 .btn-status.read-it.disabled path {
@@ -2879,7 +2931,7 @@ main {
 
 
 .btn-status.closed {
-  color: #FFFFFF;
+  color: var(--white)FFF;
   background: #4BB462;
 }
 
@@ -2890,9 +2942,9 @@ main {
 }
 
 .btn-status.closed.disabled {
-  color: #AEB5BC;
+  color: var(--textCrey);
   background: transparent;
-  border: 1px solid #EAECEF;
+  border: 1px solid var(--grey);
 }
 
 .btn-status.closed.disabled path {
@@ -2909,30 +2961,30 @@ main {
 
 
 .standard-h1 {
-  color: #222529;
+  color: var(--black);
   font-size: 28px;
   font-weight: 700;
   line-height: 120%;
 }
 
 .standard-p {
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-weight: 400;
   line-height: 165%;
 }
 
 .standard-p a {
-  color: #2398AB;
+  color: var(--linkColor);
   text-decoration: underline;
 }
 
 .standard-p b {
-  color: #222529;
+  color: var(--black);
 }
 
 .standard-explanation {
-  color: #AEB5BC;
+  color: var(--textCrey);
   font-size: 13px;
   font-weight: 400;
   line-height: 120%;
@@ -2958,18 +3010,19 @@ main {
   -ms-flex-item-align: stretch;
   -ms-grid-row-align: stretch;
   align-self: stretch;
-  color: #AEB5BC;
+  color: var(--textCrey);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 165%;
   border-radius: 5px;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
 }
 .menu-list-with-content:hover{
-  background-color: #EAECEF;
-  color: #222529;
+  background-color: var(--grey);
+  color: var(--black);
 }
 .menu-list-with-content span{
   width: 25px;
@@ -2985,8 +3038,8 @@ main {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 10px;
-  border: 1px solid #EAECEF;
-  background: #EAECEF;
+  border: 1px solid var(--grey);
+  background: var(--grey);
   color: #6E757C;
   font-size: 13px;
   font-style: normal;
@@ -2997,30 +3050,30 @@ main {
 }
 
 .menu-list-with-content.active{
-  color: #222529;
+  color: var(--black);
   font-weight: 600;
   cursor: pointer;
 }
 .menu-list-with-content.active span{
-  border: 1px solid #00CF91;
-  background: #00CF91;
-  color: #fff;
+  border: 1px solid var(--green);
+  background: var(--green);
+  color: var(--white);
 }
 
 
 .menu-list-with-content.no-active{
-  color: #222529;
+  color: var(--black);
 }
 .menu-list-with-content.no-active span{
-  border: 1px solid #EAECEF;
+  border: 1px solid var(--grey);
   background: transparent;
   color: #6E757C;
 }
 .menu-list-with-content:hover span{
-  background-color: #fff;
+  background-color: var(--white);
 }
 .menu-list-with-content.active:hover span{
-  background-color: #00CF91;
+  background-color: var(--green);
 }
 
 
@@ -3043,7 +3096,7 @@ main {
   margin-top: 5px;
 }
 .step-page-list-title{
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -3052,7 +3105,7 @@ main {
 }
 
 .step-page-list-subtitle{
-  color: #AEB5BC;
+  color: var(--textCrey);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -3074,14 +3127,14 @@ main {
   width: 300px;
   padding: 25px 20px;
   border-radius: 30px;
-  border: 1px solid #EAECEF;
+  border: 1px solid var(--grey);
   margin-left: 20px;
 }
 .step-page-row-left{
   width: calc(100% - 317px);
 }
 .error-form{
-  color: #FF756B;
+  color: var(--red);
   font-size: 12px;
   font-weight: 400;
   line-height: 120%;
@@ -3097,7 +3150,7 @@ main {
 }
 .error-form a{
   text-decoration: underline;
-  color: #FF756B;
+  color: var(--red);
 }
 .error-form-count{
   font-weight: 500;
@@ -3116,7 +3169,7 @@ main {
   height: 63px;
   padding: 10px;
   border-radius: 5px;
-  background: #E4FFF9;
+  background: var(--openGreen);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3127,7 +3180,7 @@ main {
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  border: 1px solid #E4FFF9;
+  border: 1px solid var(--openGreen);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: relative;
@@ -3135,7 +3188,7 @@ main {
 }
 
 .def-select-header-title{
-  color: #222529;
+  color: var(--black);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -3148,7 +3201,7 @@ main {
   text-transform: uppercase;
 }
 .def-select-header-selected-name{
-  color: #222529;
+  color: var(--black);
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
@@ -3172,7 +3225,7 @@ main {
   width: 100%;
   border-radius: 5px;
   border: 1px solid transparent;
-  background: #FFF;
+  background: var(--white);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -3187,6 +3240,8 @@ main {
   margin-top: 5px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   z-index: 10000;
   overflow: auto;
@@ -3219,7 +3274,7 @@ main {
 }
 
 .def-select-body-item{
-  border-bottom: 1px solid #EAECEF;
+  border-bottom: 1px solid var(--grey);
   width: 100%;
   padding-bottom: 15px;
   -webkit-transition: 0.3s;
@@ -3233,7 +3288,7 @@ main {
 }
 
 .def-select-body-item-title{
-  color: #222529;
+  color: var(--black);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -3249,8 +3304,8 @@ main {
 }
 
 .def-select.selected .def-select-header{
-  background: #FFF;
-  border: 1px solid #EAECEF;
+  background: var(--white);
+  border: 1px solid var(--grey);
 
 }
 
@@ -3272,7 +3327,7 @@ main {
 .def-select.active .def-select-body{
   padding: 10px;
   height: 300px;
-  border: 1px solid #EAECEF;
+  border: 1px solid var(--grey);
 }
 
 /*.def-select-header:focus ~ .def-select-body{*/
@@ -3295,7 +3350,7 @@ main {
   pointer-events: auto;
 }
 .user-information-title{
-  color: #222529;
+  color: var(--black);
   font-size: 16px;
   font-weight: 500;
   line-height: 140%;
@@ -3306,7 +3361,7 @@ main {
   width: 100%;
   height: 64px;
   border-radius: 5px;
-  background: #EAECEF;
+  background: var(--grey);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3318,7 +3373,7 @@ main {
   align-items: center;
   gap: 10px;
   padding: 5px 10px 5px 5px;
-  color: #222529;
+  color: var(--black);
   font-size: 15px;
   font-weight: 500;
   line-height: 165%;
@@ -3339,7 +3394,7 @@ main {
   border-radius: 5px;
   -o-object-fit: cover;
   object-fit: cover;
-  background-color: #fff;
+  background-color: var(--white);
   cursor: pointer;
 }
 .files-drag-drop-center-item-info{
@@ -3365,7 +3420,7 @@ main {
 }
 .files-drag-drop-center{
   border-radius: 5px;
-  border: 3px dashed #EAECEF;
+  border: 3px dashed var(--grey);
   padding: 15px 10px;
 }
 
@@ -3386,7 +3441,7 @@ main {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 0px;
   flex: 1 0 0;
-  color:  #FF756B;
+  color:  var(--red);
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -3394,7 +3449,7 @@ main {
   gap: 10px;
 }
 .icon-accent a{
-  color:  #FF756B;
+  color:  var(--red);
   text-decoration: underline;
 }
 .view-image{
@@ -3459,7 +3514,7 @@ main {
   max-height: calc(100vh - 95px);
   -o-object-fit: cover;
   object-fit: cover;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 5px;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -3479,7 +3534,7 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #DFE2E6;
+  color: var(--blueWhite);
   font-size: 13px;
   font-weight: 400;
   line-height: 165%;
@@ -3523,6 +3578,7 @@ main {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-right: 21px;
 }
 @media (max-width: 767px) {
   .mobile-menu-board {
@@ -3571,7 +3627,7 @@ main {
   top: 0;
 }
 .btn-transparent-new-ticket {
-  color: #222529;
+  color: var(--black);
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -3581,23 +3637,23 @@ main {
 }
 
 .step-page{
-  background-color: #F8F8F8;
+  background-color: var(--openWhite);
 }
 .loading-file-btn{
-  color: #AEB5BC;
+  color: var(--textCrey);
   font-weight: 500;
-  background: #EAECEF;
+  background: var(--grey);
   border: 0;
   cursor: default;
 }
 
 .loading-file-btn:hover{
   border: 0;
-  color: #AEB5BC;
+  color: var(--textCrey);
 }
 
 .link-blue:hover{
-  color: #0056D3 !important;
+  color: var(--blue) !important;
 }
 
 .menu-back-fon{
@@ -3612,4 +3668,9 @@ main {
 
 .menu-back-fon.active{
   pointer-events: auto;
+}
+.navbar-content-logo-menu{
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
