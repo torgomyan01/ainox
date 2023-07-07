@@ -1138,8 +1138,6 @@ main {
   padding: 10px;
   display: block;
   border-radius: 5px;
-  -webkit-box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
-  box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
   cursor: pointer;
   color: #222529;
 }

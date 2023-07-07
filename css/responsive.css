@@ -324,6 +324,7 @@
 
   .new-request .form .form-inputs {
     padding: 15px 5px;
+    height: calc(100% - 113px);
   }
 
 
@@ -373,6 +374,7 @@
   .new-request .form .form-input-box .subject {
     margin-top: 5px;
     margin-bottom: 5px;
+    height: 100%;
   }
 
   .new-request .form .form-inputs .subject-fields span{
@@ -385,8 +387,8 @@
   .new-request .form .form-input-box .subject #Description{
     border: none;
     font-size: 14px;
-    height: 200px;
     padding: 5px;
+    height: calc(100% - 200px);
   }
 
 
@@ -407,6 +409,12 @@
 
   .new-request .form .form-input-box {
     margin-top: 10px;
+    height: calc(100% - 100px);
+  }
+
+  .textarea-fields{
+    display: block;
+    height: 100%;
   }
 
   .new-request .form .footer-buttons {
@@ -692,7 +700,9 @@
 
   .modal-delete-account .modal-form .modal-buttons .close-modal{
      justify-content: center;
+    margin-top: 10px;
   }
+
 
   .modal-delete-account .modal-form .modal-buttons .btn-delete{
     justify-content: center;
