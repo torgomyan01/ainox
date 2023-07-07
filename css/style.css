@@ -2389,6 +2389,9 @@ main {
 
 /*----------------- MENU SITE -------------- */
 
+.menu-active .navbar{
+  background-color: #fff;
+}
 
 .navbar {
   width: 100%;
@@ -2530,7 +2533,7 @@ main {
 .navbar.fixed {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  background-color: var(--white)fff3d;
+  background-color: var(--white);
 }
 
 .mobile-menu {
