@@ -284,10 +284,12 @@ profileDropdowns.forEach((item) => {
     item.addEventListener('click', function (){
         if (this.classList.contains(active)){
             this.classList.remove(active);
+            document.body.classList.remove('menu-active');
             $element('.menu-back-fon').classList.remove(active);
         } else {
             profileDropdowns.forEach((dropdown) => dropdown.classList.remove(active));
             this.classList.add(active);
+            document.body.classList.add('menu-active');
             $element('.menu-back-fon').classList.add(active);
         }
     })
