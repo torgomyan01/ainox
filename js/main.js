@@ -62,10 +62,12 @@ const icons = [
     },
 ]
 
-$('.icon').forEach((item) => {
-    item.outerHTML = icons.find((icon) => icon.name === item.dataset.name).icon
-})
-
+function startConvertIcons(){
+    $('.icon').forEach((item) => {
+        item.outerHTML = icons.find((icon) => icon.name === item.dataset.name).icon
+    })
+}
+startConvertIcons()
 
 
 class ToolMasks {

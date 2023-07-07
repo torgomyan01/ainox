@@ -1003,7 +1003,7 @@ main {
   font-style: normal;
   font-weight: 500;
   line-height: 165%;
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid transparent;
   padding: 20px;
 }
 
@@ -1035,6 +1035,9 @@ main {
   -webkit-transform: rotate(-180deg)  ;
   transform: rotate(-180deg)  ;
 
+}
+.faq .faq-input:checked ~ .faq-title{
+  border-bottom: 1px solid var(--grey);
 }
 
 .faq .faq-text{
@@ -2911,6 +2914,10 @@ main {
   color: var(--red);
 }
 
+.btn-status.no-read:hover path{
+  stroke: var(--red);
+}
+
 .btn-status.no-read.disabled {
   color: var(--textCrey);
   background: transparent;
@@ -2980,6 +2987,10 @@ main {
   background: transparent;
   border: 1px solid  #4BB462;
   color: #4BB462;
+}
+
+.btn-status.closed:hover path{
+  stroke: #4BB462;
 }
 
 .btn-status.closed.disabled {
