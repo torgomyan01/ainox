@@ -339,6 +339,11 @@
     background: none;
     padding: 5px;
     margin-left: -5px;
+    display: none;
+  }
+
+  .new-request .form .form-inputs .new-tickets-fields-mobile{
+    display: flex;
   }
 
   .new-request .form .form-inputs .new-tickets-fields .def-fields-icon{
@@ -359,6 +364,15 @@
     background: none;
     padding: 5px;
     margin-left: -5px;
+    display: none;
+  }
+
+
+  .subject-fields-mobile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
   }
 
   .new-request .form .form-inputs .subject-fields.active{

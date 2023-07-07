@@ -1282,6 +1282,42 @@ main {
   margin-right: 15px;
 }
 
+.new-tickets-fields-mobile{
+  padding: 10px;
+  margin-left: -6px;
+  display: none;
+  align-items: center;
+  width: 100%;
+}
+
+.new-tickets-fields-mobile img{
+  margin-right: 15px;
+}
+
+.new-tickets-fields-mobile input{
+  overflow: hidden;
+  color: var(--black);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  width: 100%;
+}
+
+.new-tickets-fields-mobile input::placeholder{
+  overflow: hidden;
+  color: #DFE2E6;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+
 .new-request .form .form-input-box .subject {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -1290,6 +1326,49 @@ main {
 .new-request .form .form-input-box .subject .subject-fields {
   margin-bottom: 15px;
 }
+
+ .subject-fields-mobile{
+  width: 100%;
+  display: none;
+  align-items: center;
+   padding: 10px;
+   margin-left: -6px;
+}
+
+
+.subject-fields-mobile span{
+  color: #6E757C;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 165%;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+
+.subject-fields-mobile input{
+  overflow: hidden;
+  color: var(--black);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.subject-fields-mobile input::placeholder{
+  overflow: hidden;
+  color:  #DFE2E6;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 
 .new-request .form .form-input-box .subject #Description {
   display: block;
