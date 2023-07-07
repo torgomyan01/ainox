@@ -2670,6 +2670,10 @@ main {
   margin-right: 2px;
 }
 
+.profile-dropdowns .btn-black-parent{
+  width: 100%;
+}
+
 .profile-dropdowns.menu {
   width: auto;
 }
