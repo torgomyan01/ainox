@@ -1290,6 +1290,7 @@ main {
   width: 100%;
 }
 
+
 .new-tickets-fields-mobile img{
   margin-right: 15px;
 }
@@ -2996,7 +2997,7 @@ main {
 
 
 .btn-status.no-read {
-  color: var(--white)FFF;
+  color: var(--white);
   background: var(--red);
 }
 
@@ -3071,7 +3072,7 @@ main {
 
 
 .btn-status.closed {
-  color: var(--white)FFF;
+  color: var(--white);
   background: #4BB462;
 }
 

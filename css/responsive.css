@@ -644,6 +644,7 @@
   .history-of-dialogues .wrapper .wrapper-title{
     margin: 5px 0;
     font-size: 13px;
+    font-weight: 500;
   }
 
   .history-of-dialogues .wrapper .wrapper-subtitle{
@@ -792,6 +793,12 @@
 
   .history-of-dialogues .buttons button{
     margin-right: 8px;
+  }
+
+
+  .new-request .form .form-inputs {
+    padding: 15px 5px;
+    height: calc(100% - 96.5px);
   }
 
 }

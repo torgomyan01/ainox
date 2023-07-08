@@ -11,7 +11,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="android-chrome-192x192.png">
-  <meta name="msapplication-config" content="browserconfig.xml" />
+  <meta name="msapplication-config" content="browserconfig.xml"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,8 +100,6 @@
 </nav>
 
 
-
-
 <div class="container container-new-ticket">
 
   <div class="technical-support">
@@ -110,7 +108,8 @@
       Техническая поддержка
     </button>
     <h2 class="heading-tew-ticket">Новый запрос в техподдержку</h2>
-    <p class="title-new-ticket">Ваш запрос будет обработан специалистом техподдержки Ainox. Перед отправкой запроса рекомендуем поискать ответ в нашей
+    <p class="title-new-ticket">Ваш запрос будет обработан специалистом техподдержки Ainox. Перед отправкой запроса
+      рекомендуем поискать ответ в нашей
       <a class="link-blue" href="#">базе знаний.</a>
     </p>
     <div class="watch-box">
@@ -132,77 +131,77 @@
 
 
     <div class="form-inputs">
+        <div class="form-heading">
+          <span>Новый запрос</span>
+          <div class="icons">
+            <img class="X botom-left" src="assets/icons/bottom-left-arrow.svg" alt="botom-left">
+            <img class="exit-newRequest" src="assets/icons/X.svg" alt="X">
+          </div>
+        </div>
+        <div class="form-input-box">
+          <span class="title">Введите свой запрос</span>
+          <div class="inputs">
+            <label class="def-fields new-tickets-fields">
+              <span class="def-fields-title new-tickets-span">E-mail</span>
+              <input type="email" class="def-fields-input mask-email new-tickets-email" placeholder="_@_._">
+              <img class="def-fields-icon" src="assets/icons/mail.svg" alt="email-icon">
+              <img class="def-fields-icon-edit" src="assets/icons/edit-input.svg" alt="key-icon">
+            </label>
+            <label class="def-fields new-tickets-fields">
+              <span class="def-fields-title">Телефон</span>
+              <input type="text" class="def-fields-input mask-phone" placeholder="+7 (999) 123-45-67">
+              <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+              <img class="def-fields-icon-edit" src="assets/icons/edit-input.svg" alt="key-icon">
+            </label>
+            <label class="new-tickets-fields-mobile">
+              <img src="assets/icons/mail.svg" alt="mail">
+              <input type="email" placeholder="Ваш e-mail">
+            </label>
+            <label class="new-tickets-fields-mobile">
+              <img src="assets/icons/phone.svg" alt="phone">
+              <input type="number" placeholder="Ваш телефон">
+            </label>
+          </div>
+          <div class="subject">
+            <label class="def-fields subject-fields">
+              <span class="def-fields-title">Тема</span>
+              <input type="text" class="def-fields-input mask-fio" placeholder="О чем мой запрос...">
+            </label>
+            <label class="subject-fields-mobile">
+              <span class="sub">Тема</span>
+              <input type="text" class="def-fields-input-mobile" placeholder="О чем мой запрос...">
+            </label>
+            <label class="textarea-fields">
+              <!--          <span class="def-fields-title">Тема</span>-->
+              <textarea name="subject-textarea" id="Description" placeholder="Опишите вашу проблему..."></textarea>
+            </label>
+          </div>
+        </div>
 
-    <div class="form-heading">
-      <span>Новый запрос</span>
-      <div class="icons">
-        <img class="X botom-left" src="assets/icons/bottom-left-arrow.svg" alt="botom-left">
-        <img class="exit-newRequest" src="assets/icons/X.svg" alt="X">
-      </div>
-    </div>
-
-    <div class="form-input-box">
-      <span class="title">Введите свой запрос</span>
-      <div class="inputs">
-        <label class="def-fields new-tickets-fields">
-          <span class="def-fields-title new-tickets-span">E-mail</span>
-          <input type="email" class="def-fields-input mask-email new-tickets-email" placeholder="_@_._">
-          <img class="def-fields-icon" src="assets/icons/mail.svg" alt="email-icon">
-          <img class="def-fields-icon-edit" src="assets/icons/edit-input.svg" alt="key-icon">
-        </label>
-        <label class="def-fields new-tickets-fields">
-          <span class="def-fields-title">Телефон</span>
-          <input type="text" class="def-fields-input mask-phone" placeholder="+7 (999) 123-45-67">
-          <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
-          <img class="def-fields-icon-edit" src="assets/icons/edit-input.svg" alt="key-icon">
-        </label>
-        <label class="new-tickets-fields-mobile">
-          <img src="assets/icons/mail.svg" alt="mail">
-          <input type="email" placeholder="Ваш e-mail">
-        </label>
-        <label class="new-tickets-fields-mobile">
-          <img src="assets/icons/phone.svg" alt="phone">
-          <input type="number" placeholder="Ваш телефон">
-        </label>
-      </div>
-      <div class="subject">
-        <label class="def-fields subject-fields">
-          <span class="def-fields-title">Тема</span>
-          <input type="text" class="def-fields-input mask-fio" placeholder="О чем мой запрос..." >
-        </label>
-        <label class="subject-fields-mobile">
-          <span class="sub">Тема</span>
-          <input type="text" class="def-fields-input-mobile" placeholder="О чем мой запрос..." >
-        </label>
-        <label class="textarea-fields">
-<!--          <span class="def-fields-title">Тема</span>-->
-          <textarea name="subject-textarea" id="Description" placeholder="Опишите вашу проблему..." ></textarea>
-        </label>
-      </div>
-    </div>
-    <div class="todos">
-      <div class="todo-item">
-        Документ.pdf
-        <img class="fa-trash" src="assets/icons/fa-trash.svg" alt="trash">
-      </div>
-    </div>
-    <div class="switch-new-ticket">
-      <label class="def-switch">
-        <input type="checkbox">
-        <span></span>
-      </label>
-      <p class="switch-new-ticket-title">
-        Даю
-        <a class="link-blue" href="#">согласие</a>
-        на обработку моих персональных данных
-      </p>
-    </div>
+         <div class="todos">
+           <div class="todo-item">
+             Документ.pdf
+             <img class="fa-trash" src="assets/icons/fa-trash.svg" alt="trash">
+           </div>
+         </div>
+         <div class="switch-new-ticket">
+           <label class="def-switch">
+             <input type="checkbox">
+             <span></span>
+           </label>
+           <p class="switch-new-ticket-title">
+             Даю
+             <a class="link-blue" href="#">согласие</a>
+             на обработку моих персональных данных
+           </p>
+         </div>
     </div>
     <div class="footer-buttons">
       <label class="btn-white footer-buttons-btn">
         <img class="footer-img-file active" src="assets/icons/loading-icon.svg" alt="loading">
         <img class="footer-img-loading" src="assets/icons/loading.svg" alt="arrow">
-        <input type="file" class="input-loading d-none" multiple="multiple" accept="image/png, image/jpeg, image/jpg, application/pdf">
+        <input type="file" class="input-loading d-none" multiple="multiple"
+               accept="image/png, image/jpeg, image/jpg, application/pdf">
         Загрузить
       </label>
       <a href="ticket.html">
@@ -223,37 +222,37 @@
 
 
 <div class="modal-delete-account">
-    <div class="modal-delete-account-body"></div>
-    <div class="modal-form">
-      <h2 class="modal-form-heading">Подтвердите удаление аккаунта</h2>
-      <p class="modal-form-title">Все данные об аккаунте будут незамедлительно удалены. Восстановление не возможно.</p>
-      <div class="wrapper wrapper-modal-form">
-        <span>Подтвердите удаление</span>
-        <div class="switch-modal">
-          <label class="def-switch">
-            <input type="checkbox">
-            <span></span>
-          </label>
-          <p>Подтверждаю удаление аккаунта без возможности восстановления.</p>
-        </div>
-        <div class="switch-modal switch-modal-mobile">
-          <p>Подтверждаю удаление аккаунта без возможности восстановления.</p>
-          <label class="def-switch">
-            <input type="checkbox">
-            <span></span>
-          </label>
-        </div>
+  <div class="modal-delete-account-body"></div>
+  <div class="modal-form">
+    <h2 class="modal-form-heading">Подтвердите удаление аккаунта</h2>
+    <p class="modal-form-title">Все данные об аккаунте будут незамедлительно удалены. Восстановление не возможно.</p>
+    <div class="wrapper wrapper-modal-form">
+      <span>Подтвердите удаление</span>
+      <div class="switch-modal">
+        <label class="def-switch">
+          <input type="checkbox">
+          <span></span>
+        </label>
+        <p>Подтверждаю удаление аккаунта без возможности восстановления.</p>
       </div>
-      <div class="modal-buttons">
-          <button class="close-modal">
-            <img src="assets/icons/X.svg" alt="X">
-            Отмена
-          </button>
-        <button class="btn-delete">
-          Удалить аккаунт
-        </button>
+      <div class="switch-modal switch-modal-mobile">
+        <p>Подтверждаю удаление аккаунта без возможности восстановления.</p>
+        <label class="def-switch">
+          <input type="checkbox">
+          <span></span>
+        </label>
       </div>
     </div>
+    <div class="modal-buttons">
+      <button class="close-modal">
+        <img src="assets/icons/X.svg" alt="X">
+        Отмена
+      </button>
+      <button class="btn-delete">
+        Удалить аккаунт
+      </button>
+    </div>
+  </div>
 </div>
 
 <script src="js/main.js"></script>
