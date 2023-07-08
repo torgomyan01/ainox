@@ -134,5 +134,21 @@ menuList.forEach((item, index) => {
     })
 })
 
+const errorForInn = $element('#error-for-inn');
+const errorForInnCount = $element('#error-for-inn-count');
+
+$element('.def-fields-input.mask-physical').addEventListener('keyup', function (){
+    const val = this.value;
+    const maskCount = 12;
+
+    if(val.length < maskCount){
+        errorForInn.classList.remove(none);
+        errorForInnCount.innerText = `+${maskCount - val.length}`;
+        $element('.def-fields.for-inn').classList.remove('mb-15');
+    } else if(val.length === maskCount){
+        errorForInn.classList.add(none);
+        $element('.def-fields.for-inn').classList.add('mb-15');
+    }
+})
 
 

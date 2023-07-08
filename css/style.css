@@ -216,7 +216,7 @@ main {
   margin-top: -22px;
 }
 .def-fields-text input{
-  white-space: unset;
+  letter-spacing: 0;
 }
 .def-fields.text{
   /*height: auto;*/
@@ -2479,7 +2479,7 @@ main {
 /*----------------- MENU SITE -------------- */
 
 .menu-active .navbar{
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 .navbar {
@@ -2622,7 +2622,7 @@ main {
 .navbar.fixed {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  background-color: var(--white);
+  background-color: rgba(248, 248, 248, 0.80);
 }
 
 .mobile-menu {
@@ -2945,7 +2945,7 @@ main {
 }
 
 .note.warning {
-  background: var(--white)CBB;
+  background: #fffCBB;
 }
 
 
@@ -3723,6 +3723,7 @@ main {
   -ms-flex-direction: column;
   flex-direction: column;
   margin-right: 21px;
+  margin-bottom: 8px;
 }
 @media (max-width: 767px) {
   .mobile-menu-board {
@@ -3817,4 +3818,16 @@ main {
   display: flex;
   justify-content: start;
   align-items: center;
+}
+
+.go-to-back-step{
+  color: #222529;
+  font-size: 13px !important;
+  padding: 0 !important;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.step-page main{
+  padding-bottom: 70px;
 }

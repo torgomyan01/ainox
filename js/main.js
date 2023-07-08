@@ -303,6 +303,7 @@ $('.navbar-item').forEach((item) => {
 function closeOpenedMenu(){
     profileDropdowns.forEach((item) => item.classList.contains(active) && item.classList.remove(active) );
     $element('.menu-back-fon').classList.remove(active);
+    document.body.classList.remove('menu-active')
 }
 
 const navbar = $element('.navbar');
@@ -454,7 +455,7 @@ delete_btn?.addEventListener('click', ()=>{
 
 
 
- $element('.modal-delete-account-body').addEventListener('click', ()=>{
+ $element('.modal-delete-account-body')?.addEventListener('click', ()=>{
      modal_delete_account.classList.remove('active')
  })
 

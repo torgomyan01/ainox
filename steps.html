@@ -106,7 +106,7 @@
 
 
 
-<main>
+<main class="pt-20">
   <div class="container container-steps">
     <div class="alert success">
       <p>
@@ -156,7 +156,7 @@
         </div>
         <div class="steps-block d-none" data-step="2">
           <div class="mb-25">
-            <button class="btn-transparent btn-transparent-new-ticket change-step" data-step="1">
+            <button class="btn-transparent btn-transparent-new-ticket go-to-back-step change-step" data-step="1">
               <img src="assets/icons/arrow-left.svg" alt="arrow-left">
               Быстрая настройка Ainox
             </button>
@@ -173,11 +173,10 @@
             <p class="form-title mb-15">
               Заполните форму
             </p>
-            <label class="def-fields text">
+            <label class="def-fields def-fields-text">
               <span class="def-fields-title">Название или ИНН</span>
-              <input type="email" class="def-fields-input" placeholder="_@_._">
-              <span class="def-fields-text-body" contenteditable="true"></span>
-              <img class="def-fields-icon" src="assets/icons/mail.svg" alt="email-icon">
+              <input type="text" class="def-fields-input">
+              <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
             </label>
             <p class="standard-explanation mt-6 mb-15">
               Укажите какие-либо данные, остальное мы найдем и заполним из справочника.
@@ -188,14 +187,14 @@
               <span class="def-fields-text-body" contenteditable="true"></span>
               <img class="def-fields-icon" src="assets/icons/mail.svg" alt="email-icon">
             </label>
-            <label class="def-fields">
+            <label class="def-fields for-inn mb-15">
               <span class="def-fields-title">ИНН</span>
               <input type="text" class="def-fields-input mask-physical" placeholder="0000000000" value="123456789987">
               <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
             </label>
-            <p class="error-form mt-6 mb-15">
-              Некорректный номер ИНН. Должно быть 9 цифр.
-              <span class="error-form-count">-3</span>
+            <p class="error-form mt-6 mb-15 d-none" id="error-for-inn">
+              <span>Некорректный номер ИНН. Должно быть 12 цифр.</span>
+              <span class="error-form-count" id="error-for-inn-count">-3</span>
             </p>
             <label class="def-fields disabled active disabled-active mb-15 def-fields-text">
               <span class="def-fields-title">E-mail</span>

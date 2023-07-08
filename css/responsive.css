@@ -83,6 +83,9 @@
 }
 
 @media (max-width: 576px){
+  .step-page .btn-green, .step-page .btn-black{
+    width: 100%;
+  }
 
   .ticket-message .navbar.actives{
     margin-top: 30px;
