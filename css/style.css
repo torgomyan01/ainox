@@ -246,7 +246,7 @@ main {
   opacity: 1;
   height: auto;
   min-height: 26px;
-  margin-top: 0;
+  margin-top: 5px;
   letter-spacing: 0;
 }
 
@@ -873,6 +873,10 @@ main {
   margin-bottom: 25px;
 }
 
+.container-finish .finish .finish-subtitle span{
+  font-weight: 500;
+}
+
 .container-finish .finish .finish-text{
   padding: 20px;
   border-radius: 10px;
@@ -900,7 +904,7 @@ main {
 
 
 .got-a-message-trial{
-  background:  var(--white)CBB !important;
+  background:  #FFFCBB !important;
 }
 
 .got-a-message-trial p{
@@ -920,6 +924,10 @@ main {
 .trial{
   max-width: 620px;
   width: 100%;
+}
+
+.trial-body main{
+  padding-bottom: 65px;
 }
 
 .trial .trial-heading{
@@ -1047,6 +1055,8 @@ main {
 .faq .faq-input:checked ~ .faq-title{
   border-bottom: 1px solid var(--grey);
 }
+
+
 
 .faq .faq-text{
   -webkit-transition: .3s;
@@ -1596,8 +1606,8 @@ main {
   padding: 10px;
   display: block;
   border-radius: 5px;
-  -webkit-box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
-  box-shadow: 0 4px 10px 0 rgba(53, 58, 63, 0.05);
+  border: 1px solid  #EAECEF;
+  background: #FFF;
   cursor: pointer;
   color: #222529;
 }
@@ -1615,7 +1625,6 @@ main {
 
 
 .ticket-container .chat .btn-transparent-ticket{
-  padding: 10px 0;
   color: var(--black);
   font-size: 13px;
   font-style: normal;
@@ -2004,7 +2013,7 @@ main {
 }
 
 .ticket-message .navbar.actives{
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 
@@ -2015,7 +2024,7 @@ main {
 }
 
 .ticket-message-description.actives{
-  margin-top: 115px;
+  margin-top: 105px;
 }
 
 .ticket-message-description .btn-transparent-ticket{
@@ -2308,6 +2317,7 @@ main {
 }
 
 .go-to-back{
+  margin-top: 25px;
   color: var(--black);
   font-size: 13px;
   font-style: normal;
