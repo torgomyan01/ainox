@@ -1459,7 +1459,6 @@ main {
   display: -ms-flexbox;
   display: flex;
   overflow-y: auto;
-  padding-bottom: 10px;
 }
 
 
@@ -1489,6 +1488,29 @@ main {
   margin-left: 10px;
   cursor: pointer;
 }
+
+.new-request .form .todos::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+  border-radius: 5px;
+}
+
+/* Track */
+.new-request .form .todos::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+.new-request .form .todos::-webkit-scrollbar-thumb {
+  background: rgb(17, 13, 35);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.new-request .form .todos::-webkit-scrollbar-thumb:hover {
+  background: #2a2929;
+}
+
 
 
 .new-request .form .switch-new-ticket {
@@ -3848,7 +3870,7 @@ main {
 }
 
 .step-page main{
-  padding-bottom: 70px;
+  padding-bottom: 0;
 }
 
 .new-tickets-fields-last{
