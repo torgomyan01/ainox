@@ -79,6 +79,9 @@
   .profile-dropdowns-toggle .btn-black{
     width: 100%;
   }
+  .menu-active .navbar{
+    background-color: #fff !important;
+  }
 
 }
 
