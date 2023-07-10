@@ -20,9 +20,7 @@
         display: flex;
     }
 
-  .trial-container {
-    margin-bottom: 120px;
-  }
+
   .menu-back-fon.active{
     background: rgba(34, 37, 41, 0.90);
     backdrop-filter: blur(6px);
@@ -90,6 +88,13 @@
     width: 100%;
   }
 
+  .alert svg {
+    margin-left: 10px;
+    cursor: pointer;
+    width: 12px;
+    height: 12px ;
+  }
+
   .ticket-message .navbar.actives{
     margin-top: 30px;
   }
@@ -128,7 +133,16 @@
     padding: 0 20px;
   }
 
- .email-box .social-sites .btn-social{
+  .email .email-box {
+    margin-top: -45px;
+  }
+
+  .email-box .register-now {
+    bottom: 15px;
+  }
+
+
+  .email-box .social-sites .btn-social{
     font-size: 0;
     width: calc((100% / 3) - 10px);
   }
@@ -230,7 +244,6 @@
 
   .trial-container{
     margin-top: 75px;
-    margin-bottom: 100px;
   }
 
   .trial-container.active{
@@ -276,7 +289,7 @@
   /* new-ticket */
 
   .container-new-ticket .technical-support .footer-btn-new-ticket{
-    width: 95%;
+    width: 94%;
   }
 
   .container-new-ticket .technical-support {
@@ -322,6 +335,10 @@
   }
   .menu-list-with-content{
     font-size: 13px;
+  }
+
+  .btn-white-steps{
+    width: 100% !important;
   }
 
 
@@ -733,10 +750,6 @@
     justify-content: center;
   }
 
-
-  .trial-container{
-    margin-bottom: 125px;
-  }
 
 }
 
