@@ -77,6 +77,13 @@
   .profile-dropdowns-toggle .btn-black{
     width: 100%;
   }
+  .menu-active .navbar{
+    background-color: #fff !important;
+  }
+
+}
+
+@media (max-width: 576px){
   .step-page .btn-green, .step-page .btn-black{
     width: 100%;
   }
