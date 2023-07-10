@@ -630,7 +630,7 @@ main {
   background: var(--openWhite);
   height: 100%;
   padding: 0 20px;
-  color: #AEB5BC;
+  color: var(--textCrey);
   font-size: 14px;
   font-weight: 500;
   line-height: 145%;
@@ -878,7 +878,7 @@ main {
 
 
 .container-finish .finish .finish-subtitle span{
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .container-finish .finish .finish-text{
@@ -1549,6 +1549,11 @@ main {
   position: relative;
 }
 
+
+.ticket .new-request .form .footer-buttons{
+  margin-top: 0;
+}
+
 .new-request .form .footer-buttons .footer-img-file{
   display: none;
 }
@@ -2033,8 +2038,6 @@ main {
 }
 
 
-
-
 .got-a-message .got-a-message-container{
   color: var(--white);
   font-size: 13px;
@@ -2148,6 +2151,12 @@ main {
   padding: 20px 20px;
   margin-bottom: 25px;
 }
+
+.history-of-dialogues .wrapper-ticket-message:hover{
+  border: 1px solid #DFE2E6;
+}
+
+
 
 .history-of-dialogues .wrapper .buttons-wrapper{
   display: -webkit-box;
@@ -3018,7 +3027,7 @@ main {
   background: var(--grey);
 }
 
-.btn-status.all-opened:hover{
+.btn-status.all-opened.disabled:hover{
   background: transparent;
   border: 1px solid  var(--black);
   color: var(--black);
@@ -3041,14 +3050,14 @@ main {
   background: var(--red);
 }
 
-.btn-status.no-read:hover{
+.btn-status.no-read.disabled:hover{
   background: transparent;
   border: 1px solid  var(--red);
   color: var(--red);
 }
 
 .btn-status.no-read:hover path{
-  stroke: var(--red);
+  stroke: var(--white);
 }
 
 .btn-status.no-read.disabled {
@@ -3058,6 +3067,10 @@ main {
 }
 
 .btn-status.no-read.disabled path {
+  stroke: var(--red);
+}
+
+.btn-status.no-read.disabled:hover path {
   stroke: var(--red);
 }
 
@@ -3071,7 +3084,7 @@ main {
   background: #BDCCFF;
 }
 
-.btn-status.wait:hover{
+.btn-status.wait.disabled:hover{
   background: transparent;
   border: 1px solid  #BDCCFF;
   color: var(--black);
@@ -3089,12 +3102,12 @@ main {
 }
 
 
-.btn-status.read-it {
+.btn-status.read-it.disabled {
   color: var(--black);
   background: #D7E1E9;
 }
 
-.btn-status.read-it:hover{
+.btn-status.read-it.disabled:hover{
   background: transparent;
   border: 1px solid  #D7E1E9;
   color: var(--black);
@@ -3116,13 +3129,17 @@ main {
   background: #4BB462;
 }
 
-.btn-status.closed:hover {
+.btn-status.closed.disabled:hover {
   background: transparent;
   border: 1px solid  #4BB462;
   color: #4BB462;
 }
 
 .btn-status.closed:hover path{
+  stroke: #fff;
+}
+
+.btn-status.closed.disabled:hover path{
   stroke: #4BB462;
 }
 
@@ -3831,6 +3848,22 @@ main {
   background: var(--grey);
   border: 0;
   cursor: default;
+}
+
+.loading-file-btn-default{
+  display: inline-block;
+}
+.loading-file-btn-loading{
+  display: none;
+}
+.loading-file-btn .loading-file-btn-default{
+  display: none;
+}
+.loading-file-btn .loading-file-btn-loading{
+  display: inline-block;
+}
+.menu-btn{
+  width: 100%;
 }
 
 .loading-file-btn:hover{

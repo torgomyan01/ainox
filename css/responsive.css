@@ -168,7 +168,7 @@
     font-size: 12px;
   }
 
- .email-box .social-sites .btn-social img{
+  .email-box .social-sites .btn-social img{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -277,7 +277,7 @@
   }
 
   .trial .one-box .one-box-titles h4{
-      font-size: 13px;
+    font-size: 13px;
   }
 
   .trial .one-box .one-box-titles p{
@@ -355,7 +355,7 @@
   }
 
 
-/*  request */
+  /*  request */
   .new-request .form {
     margin: 0 auto;
     height: 100%;
@@ -412,7 +412,7 @@
   }
 
   .new-request .form .form-inputs .subject-fields.active{
-   border: none;
+    border: none;
   }
 
   .new-request .form .form-input-box .inputs .new-tickets-fields {
@@ -503,7 +503,7 @@
     font-size: 13px;
   }
 
-/*  ticket   */
+  /*  ticket   */
 
   .ticket-container{
     margin-top: 75px;
@@ -572,6 +572,7 @@
 
   .my-message .file-download{
     font-size: 10px;
+    width: 100%;
   }
 
   .my-message .file-download .pdf-icon{
@@ -611,7 +612,7 @@
   }
 
 
-/*  Ticket-message  */
+  /*  Ticket-message  */
 
   .ticket-message-description{
     margin-top: 75px;
@@ -667,7 +668,7 @@
   }
 
   .history-of-dialogues .buttons button svg{
-   margin-left: 10px;
+    margin-left: 10px;
   }
 
   .history-of-dialogues .wrapper .buttons-wrapper a{
@@ -702,6 +703,14 @@
     margin-bottom: 25px;
     width: 100%;
   }
+
+  .ticket-container .chat{
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 576px){
 
 
 

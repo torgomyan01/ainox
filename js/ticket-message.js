@@ -54,9 +54,9 @@ window.addEventListener('scroll', ()=>{
 
 
 function startValidation(){
-  btn_gray.classList.add(btnLoading)
+  btn_gray.classList.add('loading-file-btn')
   setTimeout(() =>{
-    btn_gray.classList.remove(btnLoading)
+    btn_gray.classList.remove('loading-file-btn')
     wrappers.insertAdjacentHTML('beforeend', ` 
       <div class="wrapper wrapper-ticket-message" data-type="no-read">
         <div class="buttons-wrapper">
