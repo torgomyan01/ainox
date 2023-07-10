@@ -1629,6 +1629,7 @@ main {
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
+  padding: 0;
   line-height: 120%;
   background: transparent;
 }
@@ -2903,6 +2904,8 @@ main {
 .alert svg {
   margin-left: 10px;
   cursor: pointer;
+  width: 12px !important;
+  height: 12px !important;
 }
 
 .alert svg:hover path {
