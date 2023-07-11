@@ -2152,6 +2152,11 @@ main {
   margin-bottom: 25px;
 }
 
+.history-of-dialogues .wrapper-ticket-message{
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
 .history-of-dialogues .wrapper-ticket-message:hover{
   border: 1px solid #DFE2E6;
 }
@@ -3131,7 +3136,7 @@ main {
 
 .btn-status.closed.disabled:hover {
   background: transparent;
-  border: 1px solid  #4BB462;
+  border: 1px solid #4BB462;
   color: #4BB462;
 }
 
