@@ -49,11 +49,7 @@ function closeRequest (){
 // file todos
 
 loading_input.addEventListener('change', (e)=>{
-    const todo_item = document.createElement('div')
-    todo_item.classList.add('todo-item')
-    todo_item.insertAdjacentHTML('beforeend', ` ${e.target.files[0].name}
-    <img class="fa-trash" src="assets/icons/fa-trash.svg" alt="trash">`)
-      todos.appendChild(todo_item)
+  appendFilesModal([...e.target.files]);
 })
 
 todos.addEventListener('click', (e)=>{
@@ -91,9 +87,14 @@ function dropFunc(e){
   e.stopPropagation();
   console.log( e.dataTransfer.files)
   upload_box.classList.remove(active)
-  let filesObj = [...e.dataTransfer.files];
+
+  appendFilesModal([...e.dataTransfer.files])
 
 
+}
+
+
+function appendFilesModal(filesObj){
   filesObj.forEach((file) => {
     const todo_item = document.createElement('div')
     todo_item.classList.add('todo-item')
@@ -101,15 +102,6 @@ function dropFunc(e){
     <img class="fa-trash" src="assets/icons/fa-trash.svg" alt="trash">`);
     todos.appendChild(todo_item)
   })
-
-  // let filesName = []
-  // for(let elem of filesObj){
-  //  filesName.push(elem.name)
-  // }
-  // console.log(filesName)
-  // todo_item.insertAdjacentHTML('beforeend', ` ${filesName.forEach(el =>{el} )}
-  //   <img class="fa-trash" src="assets/icons/fa-trash.svg" alt="trash">`)
-  // todos.appendChild(todo_item)
 }
 
 
