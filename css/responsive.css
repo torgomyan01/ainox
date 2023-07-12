@@ -101,6 +101,7 @@
     width: 100%;
   }
 
+
   .alert svg {
     margin-left: 10px;
     cursor: pointer;
@@ -368,6 +369,12 @@
   }
 
 
+ .ticket .new-request .form .form-inputs-ticket {
+    padding: 15px 0;
+    height: calc(100% - 98px);
+  }
+
+
 
   .new-request .form .form-inputs .new-tickets-fields{
     height: 63px;
@@ -521,6 +528,8 @@
   .ticket-container .request-box p{
     font-size: 12px;
   }
+
+
 
   .ticket-container .chat .footer-btn-ticket{
     width: 95%;
@@ -721,6 +730,10 @@
     padding: 0 10px;
   }
 
+  .todos-switch-ticket{
+    margin-top: 30px;
+  }
+
 }
 
 @media (max-width: 576px){
@@ -813,6 +826,18 @@
 
   .new-request .form .footer-buttons{
     margin-top: 30px;
+  }
+
+  .ticket .new-request .form-inputs-ticket{
+    height: calc(100% - 66.5px) !important;
+  }
+
+  /*.ticket .new-request .todos-switch-ticket{*/
+  /*  margin-top: 41px;*/
+  /*}*/
+
+  .ticket  .new-request .form .form-input-box-ticket{
+    height: calc(100% - 80px);
   }
 
   .new-request .form .switch-new-ticket .switch-new-ticket-title{
