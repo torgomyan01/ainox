@@ -203,8 +203,6 @@ main {
   display: block;
   color: var(--black);
   font-size: 16px;
-  line-height: 140%;
-  letter-spacing: 1.6px;
   width: calc(100% - 45px);
   opacity: 0;
   position: relative;
@@ -1172,6 +1170,8 @@ main {
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
+  width: 100%;
+  text-align: left;
   background: none;
   cursor: pointer;
 }
@@ -1307,6 +1307,8 @@ main {
 
 .new-tickets-fields-mobile img{
   margin-right: 15px;
+  width: 16px;
+  height: 16px;
 }
 
 .new-tickets-fields-mobile input{
@@ -1371,6 +1373,11 @@ main {
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
+}
+
+.subject-fields-mobile img{
+  width: 16px;
+  height: 16px;
 }
 
 .subject-fields-mobile input::placeholder{
@@ -1538,6 +1545,18 @@ main {
   text-decoration: underline;
 }
 
+.new-request .form .switch-new-ticket-mobile{
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.new-request .form .switch-new-ticket-mobile .switch-new-ticket-title{
+  margin-left: 0;
+  margin-right: 20px;
+}
+
 .new-request .form .footer-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1638,7 +1657,7 @@ main {
   display: block;
   border-radius: 5px;
   border: 1px solid  #EAECEF;
-  background: #FFF;
+  background: var(--openGreen);
   cursor: pointer;
   color: #222529;
 }
@@ -1655,6 +1674,7 @@ main {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 }
 
 

@@ -363,7 +363,7 @@
 
 
   .new-request .form .form-inputs {
-    padding: 15px 5px;
+    padding: 15px 0;
     height: calc(100% - 113px);
   }
 
@@ -403,6 +403,10 @@
     display: none;
   }
 
+  .todos-switch{
+    background: var(--openWhite);
+  }
+
 
   .subject-fields-mobile{
     width: 100%;
@@ -422,7 +426,7 @@
   }
 
   .new-request .form .footer-buttons {
-    padding: 25px 5px;
+    padding: 25px 10px;
   }
 
   .new-request .form .form-input-box .subject {
@@ -788,6 +792,14 @@
 
   .new-request .form .switch-new-ticket .switch-new-ticket-title{
     font-size: 10px;
+  }
+
+  .new-request .form .switch-new-ticket{
+    display: none;
+  }
+
+  .new-request .form .switch-new-ticket-mobile{
+    display: flex;
   }
 
   .new-request .form .footer-buttons {
