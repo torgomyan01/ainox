@@ -1241,7 +1241,14 @@ main {
 }
 
 .new-request .form .form-inputs {
-  padding: 15px 20px;
+  padding: 0 20px;
+  padding-top: 15px;
+}
+
+.new-request .form .form-inputs-ticket{
+  padding: 0 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .new-request .form .form-heading {
@@ -3126,6 +3133,10 @@ main {
   stroke: #BDCCFF;
 }
 
+.btn-status.read-it{
+  background: #D7E1E9;
+  color: var(--black);
+}
 
 .btn-status.read-it.disabled {
   color: var(--black);
