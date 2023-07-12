@@ -1473,6 +1473,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   overflow-y: auto;
+  padding-bottom: 7px;
 }
 
 
@@ -1505,7 +1506,7 @@ main {
 
 .new-request .form .todos::-webkit-scrollbar {
   width: 5px;
-  height: 0;
+  height: 4px;
   border-radius: 5px;
 }
 
@@ -1516,13 +1517,13 @@ main {
 
 /* Handle */
 .new-request .form .todos::-webkit-scrollbar-thumb {
-  background: rgb(17, 13, 35);
+  background: var(--grey);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 .new-request .form .todos::-webkit-scrollbar-thumb:hover {
-  background: #2a2929;
+  background: #cacace;
 }
 
 
@@ -2034,6 +2035,7 @@ main {
   background: var(--red);
   -webkit-transition: all .4s;
   transition: all .4s;
+  z-index: 100;
 }
 
 .got-a-message.active{
@@ -2163,10 +2165,10 @@ main {
   margin: 25px 0;
   overflow-y: auto;
   padding-bottom: 10px;
+  justify-content: space-between;
 }
 
 .history-of-dialogues .buttons button{
-  margin-right: 15px;
   white-space: nowrap;
 }
 
@@ -3037,6 +3039,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  white-space: nowrap;
   padding: 5px 15px;
   -webkit-box-align: center;
   -ms-flex-align: center;
