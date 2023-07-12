@@ -2165,11 +2165,11 @@ main {
   margin: 25px 0;
   overflow-y: auto;
   padding-bottom: 10px;
-  justify-content: space-between;
 }
 
 .history-of-dialogues .buttons button{
   white-space: nowrap;
+  margin-right: 15px;
 }
 
 .history-of-dialogues .buttons button:last-child{

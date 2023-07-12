@@ -749,6 +749,15 @@
     margin-top: 30px;
   }
 
+  .history-of-dialogues .buttons{
+    justify-content: space-between;
+  }
+
+  .history-of-dialogues .buttons button{
+    white-space: nowrap;
+    margin-right: 0;
+  }
+
 }
 
 @media (max-width: 576px){
