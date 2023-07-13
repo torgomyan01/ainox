@@ -841,7 +841,7 @@
     background: var(--openWhite);
     padding: 3px 10px;
     padding-top: 10px;
-    margin-top: 21px;
+    margin-top: 24px;
   }
 
   .new-request .form .footer-buttons{
@@ -881,9 +881,12 @@
 
   }
 
+
+
   .new-request .form .footer-buttons .footer-buttons-btn-green {
     margin-left: 10px;
     white-space: nowrap;
+    width: 100% ;
   }
 
   .new-request .form .footer-buttons .footer-img-file{

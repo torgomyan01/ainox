@@ -704,5 +704,6 @@ delete_btn?.addEventListener('click', ()=>{
 
  $element('.modal-delete-account-body')?.addEventListener('click', ()=>{
      modal_delete_account.classList.remove('active')
+     console.log(55)
  })
 
