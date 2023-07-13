@@ -704,7 +704,7 @@
     margin-left: 5px;
   }
 
-  .history-of-dialogues .wrapper .buttons-wrapper a{
+  .history-of-dialogues .wrapper .buttons-wrapper span{
     font-size: 13px;
   }
 
@@ -881,7 +881,10 @@
 
   }
 
-
+  .new-request .form .footer-buttons a{
+    width: 100%;
+    padding-right: 10px;
+  }
 
   .new-request .form .footer-buttons .footer-buttons-btn-green {
     margin-left: 10px;

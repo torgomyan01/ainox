@@ -2188,6 +2188,7 @@ main {
 
 .history-of-dialogues .wrapper-ticket-message:hover{
   border: 1px solid #DFE2E6;
+  cursor: pointer;
 }
 
 
@@ -2204,7 +2205,7 @@ main {
   align-items: center;
 }
 
-.history-of-dialogues .wrapper .buttons-wrapper a{
+.history-of-dialogues .wrapper .buttons-wrapper span{
   color: var(--black);
   font-size: 15px;
   font-style: normal;
