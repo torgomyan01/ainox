@@ -64,12 +64,25 @@
     transition: 0.3s;
     transform: translateX(-100%);
     opacity: 0;
-    backdrop-filter: blur(10px);
-    background-color: rgba(248, 248, 248, 0.80);
+    z-index: 1000;
+    padding: 10px;
   }
   .step-page-row-right.active{
     transform: translateX(0);
     opacity: 1;
+  }
+  .step-page-row-right::-webkit-scrollbar {
+    width: 10px;
+    height: 2px;
+    padding: 10px;
+  }
+  .step-page-row-right::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    padding: 10px;
+    border: 4px solid rgba(0, 0, 0, 0);
+  }
+  .step-page-row-right::-webkit-scrollbar-track {
+    margin-block: 15px;
   }
   .step-page-row-left{
     width: 100%;
@@ -95,7 +108,7 @@
     background-color: transparent;
   }
   .step-page-row-right{
-    height: calc(100% - 60px);
+    height: calc(100% - 120px);
   }
   .menu-list-with-content:hover span{
     background-color: transparent;

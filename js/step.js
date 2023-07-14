@@ -101,7 +101,16 @@ $('.change-step').forEach((item) => {
 $element('.mobile-menu-board').addEventListener('click', function (){
     this.classList.toggle(active)
     $element('.step-page-row-right').classList.toggle(active)
+    $element('.menu-back-fon').classList.toggle(active)
+    $element('.navbar').classList.toggle(active)
 })
+
+$element('.menu-back-fon').addEventListener('click', function (){
+    $element('.mobile-menu-board').classList.remove(active);
+    $element('.step-page-row-right').classList.remove(active);
+    $element('.navbar').classList.remove(active)
+})
+
 
 $element('.view-image-bg').addEventListener('click', function (){
     this.parentElement.classList.remove(active)
