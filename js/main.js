@@ -614,7 +614,7 @@ $('.def-select select').forEach((select) => {
     `)
     select.querySelectorAll('option').forEach((option) => {
         optionItems += `
-            <div class="def-select-body-item" data-value="${option.value}" data-title="${option.innerText}">
+            <div class="def-select-body-item ${!option.dataset.subtitle ? 'no-subtitle' : ''}" data-value="${option.value}" data-title="${option.innerText}">
               <p class="def-select-body-item-title">${option.innerText}</p>
               ${option.dataset.subtitle ? `<p class="def-select-body-item-subtitle">${option.dataset.subtitle}</p>` : ''}
             </div>

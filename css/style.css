@@ -3482,7 +3482,7 @@ main {
   flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: flex-start;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -3537,6 +3537,11 @@ main {
   padding-bottom: 0;
 }
 
+.def-select-body-item.no-subtitle .def-select-body-item-title{
+  margin-bottom: 15px;
+  transform: translateY(10px);
+}
+
 .def-select-body-item-title{
   color: var(--black);
   font-size: 16px;
@@ -3578,6 +3583,7 @@ main {
   padding: 10px;
   height: 300px;
   border: 1px solid var(--grey);
+  margin-bottom: 20px;
 }
 
 /*.def-select-header:focus ~ .def-select-body{*/
