@@ -39,7 +39,6 @@
 
 
 
-
 @media (max-width: 768px){
 
 
@@ -117,9 +116,6 @@
     font-size: 10px !important;
   }
 
-}
-
-@media (max-width: 768px){
   .step-page .btn-green, .step-page .btn-black{
     width: 100%;
   }
@@ -929,8 +925,6 @@
     align-items: center;
     margin-left: 7px;
   }
-
-
 
 
   .new-request .form .form-inputs {
