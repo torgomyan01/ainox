@@ -2033,14 +2033,14 @@ main {
   width: 100%;
   padding: 5px 10px;
   background: var(--red);
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
   z-index: 100;
 }
 
 .got-a-message.active{
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
   top: -40px;
 }
 
@@ -2572,7 +2572,6 @@ main {
   top: 0;
   left: 0;
   -webkit-transition: 0.3s background-color;
-  transition: 0.3s background-color;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2583,6 +2582,7 @@ main {
   -ms-flex-align: center;
   align-items: center;
   z-index: 100;
+  transition: 0.3s;
 }
 .navbar.active{
   background-color: #fff !important;
