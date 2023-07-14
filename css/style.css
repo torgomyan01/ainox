@@ -1,3 +1,4 @@
+
 :root {
   --textCrey: #AEB5BC;
   --blue: #0056D3;
@@ -883,7 +884,11 @@ main {
   padding: 20px;
   border-radius: 10px;
   border: 2px solid #EAECEF;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1307,6 +1312,8 @@ main {
   padding: 10px;
   margin-left: -6px;
   display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
 }
@@ -1330,6 +1337,50 @@ main {
   width: 100%;
 }
 
+.new-tickets-fields-mobile input::-webkit-input-placeholder{
+  overflow: hidden;
+  color: #DFE2E6;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.new-tickets-fields-mobile input::-moz-placeholder{
+  overflow: hidden;
+  color: #DFE2E6;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.new-tickets-fields-mobile input:-ms-input-placeholder{
+  overflow: hidden;
+  color: #DFE2E6;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.new-tickets-fields-mobile input::-ms-input-placeholder{
+  overflow: hidden;
+  color: #DFE2E6;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 .new-tickets-fields-mobile input::placeholder{
   overflow: hidden;
   color: #DFE2E6;
@@ -1351,12 +1402,14 @@ main {
   margin-bottom: 15px;
 }
 
- .subject-fields-mobile{
+.subject-fields-mobile{
   width: 100%;
   display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-   padding: 10px;
-   margin-left: -6px;
+  padding: 10px;
+  margin-left: -6px;
 }
 
 
@@ -1385,6 +1438,50 @@ main {
 .subject-fields-mobile img{
   width: 16px;
   height: 16px;
+}
+
+.subject-fields-mobile input::-webkit-input-placeholder{
+  overflow: hidden;
+  color:  #DFE2E6;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.subject-fields-mobile input::-moz-placeholder{
+  overflow: hidden;
+  color:  #DFE2E6;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.subject-fields-mobile input:-ms-input-placeholder{
+  overflow: hidden;
+  color:  #DFE2E6;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.subject-fields-mobile input::-ms-input-placeholder{
+  overflow: hidden;
+  color:  #DFE2E6;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
 }
 
 .subject-fields-mobile input::placeholder{
@@ -1555,7 +1652,11 @@ main {
 
 .new-request .form .switch-new-ticket-mobile{
   display: none;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -2183,6 +2284,7 @@ main {
 
 .history-of-dialogues .wrapper-ticket-message{
   border: 1px solid transparent;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -2582,6 +2684,7 @@ main {
   -ms-flex-align: center;
   align-items: center;
   z-index: 100;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .navbar.active{
@@ -3539,6 +3642,7 @@ main {
 
 .def-select-body-item.no-subtitle .def-select-body-item-title{
   margin-bottom: 15px;
+  -webkit-transform: translateY(10px);
   transform: translateY(10px);
 }
 
@@ -3943,8 +4047,14 @@ main {
   pointer-events: auto;
 }
 .navbar-content-logo-menu{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
