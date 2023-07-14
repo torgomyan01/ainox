@@ -3951,3 +3951,15 @@ main {
 .new-tickets-fields-last{
   margin-right: 0 !important;
 }
+
+.profile-dropdowns-icon svg{
+  width: 22px;
+  height: 22px;
+}
+.rocket-icon img{
+  width: 22px;
+}
+
+.navbar-content img[src="assets/images/logo-site.svg"]{
+  margin-top: 2px;
+}
