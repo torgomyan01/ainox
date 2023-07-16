@@ -4042,6 +4042,7 @@ main {
   height: 100vh;
   background-color: transparent;
   pointer-events: none;
+  transition: 0.3s;
 }
 
 .menu-back-fon.active{

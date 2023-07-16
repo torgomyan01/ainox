@@ -290,6 +290,8 @@ profileDropdowns.forEach((item) => {
             this.classList.add(active);
             document.body.classList.add('menu-active');
             $element('.menu-back-fon').classList.add(active);
+            $element('.step-page-row-right')?.classList.remove(active);
+            $element('.mobile-menu-board')?.classList.remove(active);
         }
     })
 })

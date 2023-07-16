@@ -99,10 +99,23 @@ $('.change-step').forEach((item) => {
 })
 
 $element('.mobile-menu-board').addEventListener('click', function (){
-    this.classList.toggle(active)
-    $element('.step-page-row-right').classList.toggle(active)
-    $element('.menu-back-fon').classList.toggle(active)
-    $element('.navbar').classList.toggle(active)
+
+    if(this.classList.contains(active)){
+        this.classList.toggle(active)
+        $element('.step-page-row-right').classList.remove(active)
+        $element('.menu-back-fon').classList.remove(active);
+        $element('.navbar').classList.remove(active);
+    } else {
+        this.classList.toggle(active)
+        $element('.step-page-row-right').classList.add(active)
+        $element('.menu-back-fon').classList.add(active);
+        $element('.navbar').classList.add(active);
+        profileDropdowns.forEach((item) => {
+            item.classList.remove(active)
+        })
+    }
+
+
 })
 
 $element('.menu-back-fon').addEventListener('click', function (){
