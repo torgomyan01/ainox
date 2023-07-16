@@ -458,6 +458,35 @@ delete_btn?.addEventListener('click', ()=>{
 
  $element('.modal-delete-account-body')?.addEventListener('click', ()=>{
      modal_delete_account.classList.remove('active')
-     console.log(55)
  })
 
+$('.field-name-surname').forEach((item) => {
+    item.addEventListener('blur', function (){
+        const value = this.value;
+        const valArr = value.split(' ');
+
+        if(valArr.length < 2){
+            valArr[1] = '- -';
+            this.value = valArr.join(' ')
+        } else if(valArr.length < 3) {
+            valArr[2] = '-';
+            this.value = valArr.join(' ')
+        }
+    })
+
+    item.addEventListener('keyup', function (e){
+
+        if(e.key === 'Enter'){
+            const value = this.value;
+            const valArr = value.split(' ');
+
+            if(valArr.length < 2){
+                valArr[1] = '- -';
+                this.value = valArr.join(' ')
+            } else if(valArr.length < 3) {
+                valArr[2] = '-';
+                this.value = valArr.join(' ')
+            }
+        }
+    })
+})

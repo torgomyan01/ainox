@@ -129,6 +129,10 @@ main {
   opacity: 0;
 }
 
+.def-fields-input{
+  text-align: left;
+}
+
 .def-fields-title {
   text-transform: uppercase;
   display: block;
