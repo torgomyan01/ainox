@@ -42,7 +42,9 @@ function startValidation(){
             checkKey = false;
             document.getElementById('email-alert').classList.add(none);
             inputKod.classList.add(active)
-            footerEmail.style.display = 'none'
+            footerEmail.style.display = 'none';
+            inputEmail.setAttribute('disabled', 'true');
+            inputEmail.parentElement.classList.add('disabled')
         } else {
             document.getElementById('email-alert').classList.remove(none);
         }
