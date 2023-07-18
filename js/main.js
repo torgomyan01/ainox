@@ -455,39 +455,43 @@ delete_btn?.addEventListener('click', ()=>{
 
 
 
- $element('.modal-delete-account-body').addEventListener('click', ()=>{
+ $element('.modal-delete-account-body')?.addEventListener('click', ()=>{
      modal_delete_account.classList.remove('active')
  })
 
 $('.field-name-surname').forEach((item) => {
-    item.addEventListener('blur', function (){
-        const value = this.value;
-        const valArr = value.split(' ');
 
-        if(valArr.length < 2){
-            valArr[1] = '- -';
-            this.value = valArr.join(' ')
-        } else if(valArr.length < 3) {
-            valArr[2] = '-';
-            this.value = valArr.join(' ')
+    item.addEventListener('keyup', function (){
+        const val = this.value;
+        const valArr = val.split(' ');
+
+        if(valArr.length <= 1){
+            errorBlockNameAndSurname(true, 'Имя, фамилия, отчество должны быть заполнены')
+        } else if(valArr.length < 2){
+            errorBlockNameAndSurname(true, 'Фамилия отсутствует')
+        } else if(valArr.length < 3){
+            errorBlockNameAndSurname(true, 'Отсутствует отчество')
+        } else {
+            errorBlockNameAndSurname(false, '')
         }
-    })
 
-    item.addEventListener('keyup', function (e){
-
-        if(e.key === 'Enter'){
-            const value = this.value;
-            const valArr = value.split(' ');
-
-            if(valArr.length < 2){
-                valArr[1] = '- -';
-                this.value = valArr.join(' ')
-            } else if(valArr.length < 3) {
-                valArr[2] = '-';
-                this.value = valArr.join(' ')
-            }
+        if(val === ''){
+            errorBlockNameAndSurname(false, '')
         }
+
     })
 })
+
+function errorBlockNameAndSurname(status, text){
+    $('.error-user-name-surname').forEach((item) => {
+        if(status){
+            item.classList.remove(none);
+            item.innerText = text;
+        } else {
+            item.classList.add(none);
+            item.innerText = '';
+        }
+    })
+}
 
 

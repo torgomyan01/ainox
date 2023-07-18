@@ -35,6 +35,9 @@
     background: rgba(34, 37, 41, 0.90);
     backdrop-filter: blur(6px);
   }
+  .menu-active .navbar{
+    background-color: #fff !important;
+  }
 }
 
 

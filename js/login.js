@@ -54,3 +54,8 @@ function startValidation(){
     }
 }
 
+$element('#def-fields-icon-edit-email').addEventListener('click', function (){
+    $element('.input-kod').classList.remove(active);
+    checkKey = true;
+})
+
