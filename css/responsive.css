@@ -633,13 +633,6 @@
     font-size: 13px;
   }
 
-  .my-message .file-download{
-    font-size: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
 
   .my-message .my-user .my-user-about .my-user-name{
     font-size: 10px;
@@ -787,6 +780,12 @@
 
 @media (max-width: 576px){
 
+  .my-message .file-download{
+    font-size: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 
 
 }
