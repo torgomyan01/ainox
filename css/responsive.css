@@ -615,15 +615,10 @@
   .my-message .file-download{
     font-size: 10px;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
-  .my-message .file-download .pdf-icon{
-    margin-right: 6px;
-  }
-
-  .my-message .file-download .download-icon{
-    margin-left: 6px;
-  }
 
   .my-message .my-user .my-user-about .my-user-name{
     font-size: 10px;

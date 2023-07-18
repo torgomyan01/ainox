@@ -2,7 +2,6 @@ const $ = (className) => document.querySelectorAll(className);
 const $element = (className) => document.querySelector(className);
 
 
-
 // ------------- ************* ---------------------- //
 //                   ICONS
 // ------------- ************* ---------------------- //
@@ -429,6 +428,7 @@ const del_account = $element('.btn-delete-account')
 const modal_delete_account = $element('.modal-delete-account')
 const closed_modal = $element('.modal-delete-account .modal-form .modal-buttons .close-modal')
 const delete_btn = $element('.modal-delete-account .modal-form .modal-buttons .btn-delete')
+const new_reques = $element('.new-request')
 
 del_account?.addEventListener('click', ()=>{
     modal_delete_account.classList.add('active')
@@ -454,8 +454,9 @@ delete_btn?.addEventListener('click', ()=>{
 
 
 
- $element('.modal-delete-account-body')?.addEventListener('click', ()=>{
+ $element('.modal-delete-account-body').addEventListener('click', ()=>{
      modal_delete_account.classList.remove('active')
-     console.log(55)
  })
+
+
 

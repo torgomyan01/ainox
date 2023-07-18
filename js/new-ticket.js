@@ -12,6 +12,7 @@ const upload_box_img = $element('.upload-box img')
 const todos = $element('.todos')
 const footer_img_file = $element('.footer-img-file')
 const footer_img_loading = $element('.footer-img-loading')
+const modal_delete = $element('.modal-delete-new-ticket')
 
 //  btn loading
 
@@ -119,4 +120,8 @@ Description.addEventListener('input', function (){
     submit_input.value = 'Опишите вашу проблему...';
     writeMessage.style.background = '#e4fff9';
   }
+})
+
+modal_delete.addEventListener('click', ()=>{
+ new_request.classList.remove('active')
 })
