@@ -4108,3 +4108,11 @@ main {
 .navbar-content img[src="assets/images/logo-site.svg"]{
   margin-top: 2px;
 }
+
+.write-number-ans-select-country-code{
+  display: flex;
+}
+.write-number-ans-select-country-code .def-select{
+  width: 120px;
+  margin-right: 10px;
+}

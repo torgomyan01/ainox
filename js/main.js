@@ -85,7 +85,7 @@ class ToolMasks {
 
 
     static russianPhoneMask(){
-        this.numberMaskElements.forEach((item) => this.startMask(item, '+{0}(000)000-00-00'))
+        this.numberMaskElements.forEach((item) => this.startMask(item, '(000)000-00-00'))
     }
     static maskOneKey(){
         this.maskOneKeyElements.forEach((item) => this.startMask(item,  '000 - 000'))
@@ -371,7 +371,18 @@ $('.def-select select').forEach((select) => {
               <p class="def-select-body-item-title">${option.innerText}</p>
               ${option.dataset.subtitle ? `<p class="def-select-body-item-subtitle">${option.dataset.subtitle}</p>` : ''}
             </div>
-        `
+        `;
+
+        if(option.getAttribute('selected') !== null){
+            option.parentElement.parentElement.classList.add(selected);
+            option.parentElement.parentElement.classList.remove(active);
+            option.parentElement.parentElement.querySelector('.def-select-header-selected-name').innerText = option.innerText
+            // option.parentElement.parentElement.querySelector('.def-select-header-title').innerText = this.dataset.title;
+            option.parentElement.parentElement.querySelectorAll(`select option`).forEach((option) => {
+                option.removeAttribute(selected)
+            })
+            option.parentElement.parentElement.querySelector(`select option[value="${option.value}"]`).setAttribute(selected, 'true')
+        }
     })
     select.parentElement.insertAdjacentHTML('beforeend',
         `
