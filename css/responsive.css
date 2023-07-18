@@ -489,6 +489,27 @@
   }
 
 
+  .new-request .form .form-input-box .subject #Description::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+
+  .new-request .form .form-input-box .subject #Description::-moz-placeholder {
+   font-size: 14px;
+  }
+
+  .new-request .form .form-input-box .subject #Description:-ms-input-placeholder {
+    font-size: 14px;
+  }
+
+  .new-request .form .form-input-box .subject #Description::-ms-input-placeholder {
+    font-size: 14px;
+  }
+
+  .new-request .form .form-input-box .subject #Description::placeholder {
+    font-size: 14px;
+  }
+
+
   .new-request .form .todos .todo-item {
     font-size: 13px;
     padding: 5px 10px;
@@ -618,15 +639,10 @@
   .my-message .file-download{
     font-size: 10px;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
-  .my-message .file-download .pdf-icon{
-    margin-right: 6px;
-  }
-
-  .my-message .file-download .download-icon{
-    margin-left: 6px;
-  }
 
   .my-message .my-user .my-user-about .my-user-name{
     font-size: 10px;

@@ -382,6 +382,9 @@ main {
   background: transparent;
 }
 
+
+
+
 .modal-delete-account.active{
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -1172,6 +1175,7 @@ main {
   border-radius: 5px;
   cursor: pointer;
   color: #222529;
+  border: 1px solid #EAECEF;
 }
 
 .container-new-ticket .technical-support .footer-btn-new-ticket .fields-new-ticket .submit-new-ticket {
@@ -1182,6 +1186,9 @@ main {
   line-height: 140%;
   width: 100%;
   text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   background: none;
   cursor: pointer;
 }
@@ -1190,9 +1197,9 @@ main {
 
 .new-request {
   position: fixed;
-  z-index: 1000;
   left: 0;
   top: 0;
+  z-index: 2222;
   width: 100%;
   height: 100%;
   background: rgba(34, 37, 41, 0.90);
@@ -1204,6 +1211,18 @@ main {
   -webkit-transition: .4s;
   transition: .4s;
   opacity: 0;
+}
+
+
+
+.modal-delete-new-ticket{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -5;
 }
 
 .upload-box{
