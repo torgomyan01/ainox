@@ -4116,3 +4116,5 @@ main {
   width: 120px;
   margin-right: 10px;
 }
+
+input[type="date"]::-webkit-date-and-time-value{ text-align:left; }
