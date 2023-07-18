@@ -2678,7 +2678,7 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  -webkit-transition: 0.3s background-color;
+  -webkit-transition: 0.1s background-color;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2689,8 +2689,6 @@ main {
   -ms-flex-align: center;
   align-items: center;
   z-index: 100;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 .navbar.active{
   background-color: #fff !important;
