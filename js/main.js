@@ -289,6 +289,8 @@ profileDropdowns.forEach((item) => {
             this.classList.add(active);
             document.body.classList.add('menu-active');
             $element('.menu-back-fon').classList.add(active);
+            $element('.step-page-row-right')?.classList.remove(active);
+            $element('.mobile-menu-board')?.classList.remove(active);
         }
     })
 })
@@ -428,7 +430,6 @@ const del_account = $element('.btn-delete-account')
 const modal_delete_account = $element('.modal-delete-account')
 const closed_modal = $element('.modal-delete-account .modal-form .modal-buttons .close-modal')
 const delete_btn = $element('.modal-delete-account .modal-form .modal-buttons .btn-delete')
-const new_reques = $element('.new-request')
 
 del_account?.addEventListener('click', ()=>{
     modal_delete_account.classList.add('active')
@@ -458,5 +459,35 @@ delete_btn?.addEventListener('click', ()=>{
      modal_delete_account.classList.remove('active')
  })
 
+$('.field-name-surname').forEach((item) => {
+    item.addEventListener('blur', function (){
+        const value = this.value;
+        const valArr = value.split(' ');
+
+        if(valArr.length < 2){
+            valArr[1] = '- -';
+            this.value = valArr.join(' ')
+        } else if(valArr.length < 3) {
+            valArr[2] = '-';
+            this.value = valArr.join(' ')
+        }
+    })
+
+    item.addEventListener('keyup', function (e){
+
+        if(e.key === 'Enter'){
+            const value = this.value;
+            const valArr = value.split(' ');
+
+            if(valArr.length < 2){
+                valArr[1] = '- -';
+                this.value = valArr.join(' ')
+            } else if(valArr.length < 3) {
+                valArr[2] = '-';
+                this.value = valArr.join(' ')
+            }
+        }
+    })
+})
 
 
