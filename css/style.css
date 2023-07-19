@@ -1175,7 +1175,6 @@ main {
   border-radius: 5px;
   cursor: pointer;
   color: #222529;
-  border: 1px solid #EAECEF;
 }
 
 .container-new-ticket .technical-support .footer-btn-new-ticket .fields-new-ticket .submit-new-ticket {
@@ -1789,7 +1788,6 @@ main {
   padding: 10px;
   display: block;
   border-radius: 5px;
-  border: 1px solid  #EAECEF;
   background: var(--openGreen);
   cursor: pointer;
   color: #222529;
