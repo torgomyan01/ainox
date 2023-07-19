@@ -2029,6 +2029,9 @@ main {
   padding: 10px;
   margin: 10px 0;
   white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .my-message .file-download .pdf-icon{
@@ -2037,6 +2040,12 @@ main {
 
 .my-message .file-download .download-icon{
   margin-left: 10px;
+}
+
+.file-download span{
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .my-message .my-user{
