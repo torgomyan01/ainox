@@ -4114,6 +4114,7 @@ main {
 }
 .write-number-ans-select-country-code .def-select{
   width: 120px;
+  min-width: 100px;
   margin-right: 10px;
 }
 
