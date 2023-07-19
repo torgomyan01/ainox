@@ -779,6 +779,10 @@
     margin-right: 0;
   }
 
+  .got-a-message{
+    height: 22px;
+  }
+
 }
 
 @media (max-width: 576px){

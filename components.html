@@ -301,11 +301,30 @@
 </div>
 
 
-<label class="def-fields">
-  <span class="def-fields-title">Телефон</span>
-  <input type="text" class="def-fields-input mask-phone" placeholder="+7 (999) 123-45-67">
-  <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
-</label>
+<div class="write-number-ans-select-country-code">
+  <div class="def-select">
+    <select data-title="Код страны">
+      <option value="+7" selected>+7</option>
+      <option value="+996">+996</option>
+      <option value="+374">+374</option>
+      <option value="+995">+995</option>
+      <option value="+375">+375</option>
+      <option value="+371">+371</option>
+      <option value="+370">+370</option>
+      <option value="+373">+373</option>
+      <option value="+996">+996</option>
+      <option value="+372">+372</option>
+      <option value="+998">+998</option>
+    </select>
+    <div class="def-select-content"></div>
+  </div>
+
+  <label class="def-fields">
+    <span class="def-fields-title">Телефон</span>
+    <input type="text" class="def-fields-input mask-phone" placeholder="(999) 123-45-67">
+    <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+  </label>
+</div>
 <br>
 
 <pre>
@@ -341,7 +360,7 @@
 
 <br>
 
-<label class="def-fields">
+<label class="def-fields def-fields-text">
   <span class="def-fields-title">ИФО</span>
   <input type="email" class="def-fields-input field-name-surname" placeholder="Иванов Иван Иванович">
   <img class="def-fields-icon" src="assets/icons/mail.svg" alt="email-icon">
