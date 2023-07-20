@@ -44,6 +44,9 @@
 
 @media (max-width: 768px){
 
+  .write-number-ans-select-country-code.new-tickets{
+    display: none;
+  }
 
   .menu-list-with-content{
     padding: 10px 0;
