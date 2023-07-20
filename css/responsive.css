@@ -461,11 +461,11 @@
   }
 
   .new-request .form .form-heading{
-    padding: 0 10px;
+    padding: 10px;
   }
 
   .new-request .form .form-input-box{
-    padding: 0 10px;
+    padding: 0 10px 0 7px;
   }
 
   .new-request .form .form-input-box .subject {
@@ -861,7 +861,7 @@
 
 @media (max-width: 480px){
   .new-request .form .form-input-box {
-    margin-top: 10px;
+    margin-top: 0;
   }
 
   .new-request .form .form-input-box .title {
@@ -950,7 +950,7 @@
 
 
   .new-request .form .form-inputs {
-    padding: 12px 0;
+    padding: 0 0 10px 0;
     height: calc(100% - 96.5px);
   }
 
