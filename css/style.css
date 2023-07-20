@@ -4123,6 +4123,7 @@ main {
 
 .write-number-ans-select-country-code{
   display: flex;
+  width: 100%;
 }
 .write-number-ans-select-country-code .def-select{
   width: 120px;

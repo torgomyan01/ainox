@@ -138,20 +138,38 @@
           </div>
         </div>
         <div class="form-input-box">
-          <span class="title">Введите свой запрос</span>
+          <p class="title mb-15">Введите свой запрос</p>
           <div class="inputs">
-            <label class="def-fields new-tickets-fields">
+            <label class="def-fields def-fields-text new-tickets-fields">
               <span class="def-fields-title new-tickets-span">E-mail</span>
               <input type="email" class="def-fields-input mask-email new-tickets-email" placeholder="_@_._">
               <img class="def-fields-icon" src="assets/icons/mail.svg" alt="email-icon">
               <img class="def-fields-icon-edit" src="assets/icons/edit-input.svg" alt="key-icon">
             </label>
-            <label class="def-fields new-tickets-fields new-tickets-fields-last">
-              <span class="def-fields-title">Телефон</span>
-              <input type="text" class="def-fields-input mask-phone" placeholder="+7 (999) 123-45-67">
-              <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
-              <img class="def-fields-icon-edit" src="assets/icons/edit-input.svg" alt="key-icon">
-            </label>
+            <div class="write-number-ans-select-country-code">
+              <div class="def-select">
+                <select data-title="Код страны">
+                  <option value="+7" selected>+7</option>
+                  <option value="+996">+996</option>
+                  <option value="+374">+374</option>
+                  <option value="+995">+995</option>
+                  <option value="+375">+375</option>
+                  <option value="+371">+371</option>
+                  <option value="+370">+370</option>
+                  <option value="+373">+373</option>
+                  <option value="+996">+996</option>
+                  <option value="+372">+372</option>
+                  <option value="+998">+998</option>
+                </select>
+                <div class="def-select-content"></div>
+              </div>
+
+              <label class="def-fields">
+                <span class="def-fields-title">Телефон</span>
+                <input type="text" class="def-fields-input mask-phone" placeholder="(999) 123-45-67">
+                <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+              </label>
+            </div>
             <label class="new-tickets-fields-mobile">
               <img src="assets/icons/mail.svg" alt="mail">
               <input type="email" placeholder="Ваш e-mail">
@@ -266,6 +284,7 @@
   </div>
 </div>
 
+<script src="js/fastfront.js"></script>
 <script src="js/main.js"></script>
 <script src="js/new-ticket.js"></script>
 </body>

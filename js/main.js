@@ -85,7 +85,7 @@ class ToolMasks {
 
 
     static russianPhoneMask(){
-        this.numberMaskElements.forEach((item) => this.startMask(item, '(000)000-00-00'))
+        // this.numberMaskElements.forEach((item) => this.startMask(item, '(000)000-00-00'))
     }
     static maskOneKey(){
         this.maskOneKeyElements.forEach((item) => this.startMask(item,  '000 - 000'))

@@ -527,7 +527,7 @@
 
   .new-request .form .form-input-box {
     margin-top: 10px;
-    height: calc(100% - 100px);
+    height: calc(100% - 110px);
   }
 
   .textarea-fields{
