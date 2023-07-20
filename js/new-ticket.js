@@ -116,9 +116,11 @@ Description.addEventListener('input', function (){
   if(val.length > 0){
     submit_input.value = val;
     writeMessage.style.background = '#fff';
+    writeMessage.style.border = '1px solid #EAECEF';
   } else {
     submit_input.value = 'Опишите вашу проблему...';
     writeMessage.style.background = '#e4fff9';
+    writeMessage.style.border = null;
   }
 })
 

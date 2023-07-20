@@ -124,14 +124,19 @@ const writeMessage = $element('.fields-ticket');
 const Description = $element('#Description');
 const submit_input = $element('.submit-ticket')
 
+
+
+
 Description.addEventListener('input', function (){
   const val = this.value;
   if(val.length > 0){
     submit_input.value = val;
     writeMessage.style.background = '#fff';
+    writeMessage.style.border = '1px solid #EAECEF';
   } else {
     submit_input.value = 'Опишите вашу проблему...';
     writeMessage.style.background = '#e4fff9';
+    writeMessage.style.border = null;
   }
 })
 
