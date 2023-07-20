@@ -1789,8 +1789,7 @@ main {
   padding: 10px;
   display: block;
   border-radius: 5px;
-  /*border: 1px solid  #EAECEF;*/
-  background: var(--openGreen);
+  border: 1px solid  #EAECEF;
   cursor: pointer;
   color: #222529;
 }
