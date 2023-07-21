@@ -174,7 +174,7 @@
   }
 
   .email{
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   .email .email-box {
@@ -583,7 +583,7 @@
 
 
   .ticket-container .chat .footer-btn-ticket{
-    width: 95%;
+    width: calc(100% - 20px);
   }
 
 

@@ -1238,7 +1238,7 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  z-index: 1500;
+  z-index: 15000;
   background: rgba(34, 37, 41, 0.90);
 }
 
@@ -2327,6 +2327,19 @@ main {
 .history-of-dialogues .wrapper-ticket-message:hover{
   border: 1px solid #DFE2E6;
   cursor: pointer;
+}
+
+.wrapper-ticket-message{
+  transform: scale(1);
+  transform-origin: top;
+}
+
+.wrapper-ticket-message.close{
+  transform: scale(0);
+  height: 0;
+  padding: 0;
+  margin-bottom: 0;
+  opacity: 0;
 }
 
 

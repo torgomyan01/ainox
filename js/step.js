@@ -42,7 +42,7 @@ function startPrintHtml(file){
             `
                    <div class="files-drag-drop-center-item" id="${RandomId}">
                         <div class="files-drag-drop-center-item-info">
-                          <img src="${imageUrl}" alt="uesr-passport" class="file-image" onclick="openModalViewImage('${imageUrl}', '${RandomId}', '${file.type}')">
+                          <img src="${imageUrl}" alt="uesr-passport" class="file-image" onclick="openModalViewImage('${imageUrl}', '${RandomId}', '${file.type}', '${file.name}')">
                           <span>${file.name}</span>
                         </div>
                         <img class="fa-trash" src="assets/icons/remove-img-steps.svg" alt="trash">
@@ -63,11 +63,15 @@ viewBlockClose.addEventListener('click', function (){
     viewBlock.classList.remove(active);
 })
 
-function openModalViewImage(image, id, type){
+function openModalViewImage(image, id, type, name){
     if(type !== 'application/pdf'){
         viewBlock.classList.add(active);
         $element('.view-image-content-image').setAttribute('src', image)
         $element('.view-image svg').setAttribute('data-id', id);
+        $element('.view-image-content-image-information-text').innerHTML = `
+            <img src="assets/icons/trash-white.svg" alt="trash-white" class="view-image-content-image-information-remove">
+            ${name}
+        `;
         removeItemToModal(id)
     }
 }

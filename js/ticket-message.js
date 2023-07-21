@@ -26,8 +26,8 @@ buttons.forEach(btn =>{
   btn.addEventListener('click', function ()  {
     const tabName = this.dataset.type;
     const getType = tabName === 'all' ? '' : `[data-type="${tabName}"]`;
-    $('.wrapper-ticket-message').forEach((item) => item.classList.add(none))
-    $(`.wrapper-ticket-message${getType}`).forEach((item) => item.classList.remove(none))
+    $('.wrapper-ticket-message').forEach((item) => item.classList.add('close'))
+    $(`.wrapper-ticket-message${getType}`).forEach((item) => item.classList.remove('close'))
 
   })
 })
