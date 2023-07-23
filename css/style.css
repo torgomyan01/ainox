@@ -678,6 +678,10 @@ main {
   line-height: 165%;
 }
 
+.email-box .social-sites .btn-social:hover{
+    background: #DFE2E6;
+  }
+
 .email-box .social-sites .btn-social img {
   margin-right: 10px;
 }
@@ -1238,7 +1242,7 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  z-index: 1500;
+  z-index: 5000;
   background: rgba(34, 37, 41, 0.90);
 }
 
@@ -3626,7 +3630,6 @@ main {
   gap: 10px;
   margin-top: 5px;
   -webkit-transition: 0.3s;
-  transition: 0.3s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3634,7 +3637,7 @@ main {
   overflow: auto;
   padding: 0 10px;
   height: 0;
-  transition: 0.3s;
+  transition: .3s;
   position: absolute;
 }
 
@@ -3833,7 +3836,7 @@ main {
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 0px;
+  -ms-flex: 1 0 0;
   flex: 1 0 0;
   color:  var(--red);
   font-size: 10px;
