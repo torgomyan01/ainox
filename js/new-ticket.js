@@ -44,7 +44,11 @@ function extiRequest(){
 }
 
 function closeRequest (){
-  new_request.classList.add('close')
+  new_request.classList.add('close');
+
+  new_request.querySelectorAll('input').forEach((item) => item.value = '')
+  new_request.querySelectorAll('textarea').forEach((item) => item.value = '')
+  new_request.querySelector('.todos').innerHTML = '';
 }
 
 // file todos
