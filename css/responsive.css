@@ -1,3 +1,12 @@
+
+@media (max-height: 423px) {
+  .email-box .register-now {
+    position: relative;
+    margin-top: 35px;
+  }
+}
+
+
 @media (max-width: 1200px){
 
 }
