@@ -72,7 +72,8 @@ function openModalViewImage(image, id, type, name){
             <img src="assets/icons/trash-white.svg" alt="trash-white" class="view-image-content-image-information-remove">
             ${name}
         `;
-        removeItemToModal(id)
+        removeItemToModal(id);
+        document.body.style.overflow = 'hidden';
     }
 }
 
@@ -130,7 +131,10 @@ $element('.menu-back-fon').addEventListener('click', function (){
 
 
 $element('.view-image-bg').addEventListener('click', function (){
-    this.parentElement.classList.remove(active)
+    this.parentElement.classList.remove(active);
+
+
+    document.body.style.overflow = null;
 })
 
 const menuList = $('.menu-list-with-content');
