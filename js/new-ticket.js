@@ -13,7 +13,7 @@ const todos = $element('.todos')
 const footer_img_file = $element('.footer-img-file')
 const footer_img_loading = $element('.footer-img-loading')
 const modal_delete = $element('.modal-delete-new-ticket')
-const todos_switch = $element('.todos-switch')
+const new_ticket_body = $element('.new-ticket-body')
 
 //  btn loading
 
@@ -38,15 +38,17 @@ exit_newRequest.addEventListener('click', closeRequest)
 function openRequest(){
   new_request.classList.remove('close')
   new_request.classList.add('active')
+  new_ticket_body.style.overflow = 'hidden'
 }
 
 function extiRequest(){
   new_request.classList.remove('active')
+  new_ticket_body.style.overflow = null
 }
 
 function closeRequest (){
   new_request.classList.add('close');
-
+  new_ticket_body.style.overflow = null
   new_request.querySelectorAll('input').forEach((item) => item.value = '')
   new_request.querySelectorAll('textarea').forEach((item) => item.value = '')
   new_request.querySelector('.todos').innerHTML = '';
