@@ -1,5 +1,10 @@
 
 @media (max-height: 423px) {
+
+  .email .email-box{
+    margin-top: 80px !important;
+  }
+
   .email-box .register-now {
     position: relative;
     margin-top: 35px;
@@ -792,6 +797,10 @@
   }
 
 
+  .form-title{
+    font-size: 12px;
+  }
+
 }
 
 @media (max-width: 576px){
@@ -882,7 +891,25 @@
     padding: 3px 10px;
     padding-top: 10px;
     margin-top: 24px;
+    height: 85px;
   }
+
+  /*.todos-switch.active{*/
+  /*  margin-top: 55px;*/
+  /*}*/
+
+  .new-request .form .todos{
+    height: 39px;
+  }
+
+  .todos-switch-ticket{
+    height: 51px;
+    margin-top: 0;
+  }
+
+  /*.todos-switch-ticket.active{*/
+  /*  margin-top: 29px;*/
+  /*}*/
 
   .new-request .form .footer-buttons{
     padding: 10px;

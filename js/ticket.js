@@ -18,6 +18,7 @@ const todos = $element('.todos')
 const footer_img_file = $element('.footer-img-file')
 const footer_img_loading = $element('.footer-img-loading')
 const modal_delete = $element('.modal-delete-new-ticket')
+const todos_switch_ticket = $element('.todos-switch-ticket')
 
 
 
@@ -68,6 +69,11 @@ todos.addEventListener('click', (e)=>{
     let todo = item.parentElement;
     todo.remove()
   }
+ /* const todo_length = $('.todo-item')
+  console.log(todo_length.length)
+  if(todo_length.length === 0){
+    todos_switch_ticket.classList.add('active')
+  }*/
 })
 
 
@@ -106,6 +112,10 @@ function dropFunc(e){
     todo_item.insertAdjacentHTML('beforeend', ` ${file.name}
     <img class="fa-trash" src="assets/icons/fa-trash.svg" alt="trash">`);
     todos.appendChild(todo_item)
+    /*const todo_length = $('.todo-item')
+    if (todo_length.length > 0) {
+      todos_switch_ticket.classList.remove('active')
+    }*/
   })
 
   // let filesName = []
