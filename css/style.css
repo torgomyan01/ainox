@@ -560,6 +560,22 @@ main {
   margin-right: 10px;
 }
 
+.btn-email .exit{
+  display: block;
+}
+
+.btn-email .icon-loading{
+  display: none;
+}
+
+.btn-email.loading .exit{
+  display: none;
+}
+
+.btn-email.loading .icon-loading{
+  display: block;
+}
+
 .email .email-box .input-kod {
   display: none;
 }
@@ -2912,6 +2928,7 @@ main {
   margin: 0 2px;
   border-radius: 10px;
   padding: 7px;
+  width: 100%;
 }
 
 .mobile-menu-item svg {

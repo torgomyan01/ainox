@@ -14,11 +14,13 @@ let checkKey = true;
 
 function checkCodeActivate(e){
     if(e.target.value.length === 9){
-        fieldsKod.classList.add(btnLoading)
-        setTimeout(() => {
-            inputKod.classList.remove(active)
-            passwordEmail.classList.add(active)
-        },2000)
+        inputKod.classList.remove(active)
+        passwordEmail.classList.add(active)
+        // fieldsKod.classList.add(btnLoading)
+        // setTimeout(() => {
+        //     inputKod.classList.remove(active)
+        //     passwordEmail.classList.add(active)
+        // },2000)
     }
 }
 
@@ -49,8 +51,8 @@ function startValidation(){
             document.getElementById('email-alert').classList.remove(none);
         }
     } else {
-        btnEmail.classList.add(btnLoading)
-        setTimeout(() => btnEmail.classList.remove(btnLoading), 2000)
+        btnEmail.classList.add('loading')
+        setTimeout(() => btnEmail.classList.remove('loading'), 2000)
     }
 }
 

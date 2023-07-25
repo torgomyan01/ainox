@@ -689,7 +689,7 @@
   }
 
   .got-a-message .got-a-message-container p{
-    font-size: 10px;
+    font-size: 12px;
   }
 
 
@@ -791,9 +791,6 @@
     margin-right: 0;
   }
 
-  .got-a-message{
-    height: 22px;
-  }
 
 }
 
