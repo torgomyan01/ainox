@@ -1253,9 +1253,10 @@ main {
 }
 
 .new-request.close{
-  -webkit-transform: translateY(-100%);
+  /*-webkit-transform: translateY(-100%);
   transform: translateY(-100%);
-  opacity: 0;
+  opacity: 0;*/
+  display: none;
 }
 
 .new-request.active{
@@ -1449,6 +1450,7 @@ main {
   line-height: 165%;
   text-transform: uppercase;
   margin-right: 15px;
+  margin-top: 1px;
 }
 
 
