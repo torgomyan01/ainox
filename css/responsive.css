@@ -410,6 +410,7 @@
   .new-request .form {
     margin: 0 auto;
     height: 100vh;
+    z-index: 2;
   }
 
 
