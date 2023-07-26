@@ -63,7 +63,8 @@ a {
 }
 
 body{
-  background-color: var(--green);
+  /*background-color: var(--green);*/
+  background: var(--openWhite);
   /*touch-action: none;*/
 }
 

@@ -52,7 +52,7 @@ function extiRequest(){
 }
 
 function closeRequest (){
-  new_ticket_body.style.overflow = null
+  ticket_body.style.overflow = null
   new_request.classList.add('close')
 }
 

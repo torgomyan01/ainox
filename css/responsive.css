@@ -38,7 +38,7 @@
     top: 80px;
   }
   .got-a-message-trial{
-    height: 27px;
+    height: 26px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,7 +58,9 @@
 
 @media (max-width: 768px){
 
-
+  .got-a-message{
+    height: 30px;
+  }
 
   .modal-delete-new-ticket{
     display: none;
