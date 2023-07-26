@@ -506,3 +506,6 @@ function errorBlockNameAndSurname(status, text){
 }
 
 
+// document.addEventListener('gesturestart', function (e) {
+//     e.preventDefault();
+// });
