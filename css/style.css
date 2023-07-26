@@ -3941,7 +3941,7 @@ main {
 }
 .view-image-content-image{
   width: 100%;
-  max-height: calc(100vh - 95px);
+  max-height: calc(100vh - 225px);
   -o-object-fit: cover;
   object-fit: cover;
   background-color: var(--white);
