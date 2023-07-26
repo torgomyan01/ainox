@@ -64,7 +64,7 @@ a {
 
 body{
   background-color: var(--green);
-  touch-action: none;
+  /*touch-action: none;*/
 }
 
 main {
