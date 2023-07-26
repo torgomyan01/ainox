@@ -4154,6 +4154,10 @@ main {
   width: 22px;
 }
 
+.rocket-icon:hover{
+  background: #E3E5E7;
+}
+
 .navbar-content img[src="assets/images/logo-site.svg"]{
   margin-top: 2px;
 }

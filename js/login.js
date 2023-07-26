@@ -52,7 +52,11 @@ function startValidation(){
         }
     } else {
         btnEmail.classList.add('loading')
-        setTimeout(() => btnEmail.classList.remove('loading'), 2000)
+        btnEmail.style.background = '#DFE2E6'
+        setTimeout(() =>{
+            btnEmail.classList.remove('loading')
+            btnEmail.style.background = '#00C58A'
+        }, 2000)
     }
 }
 
