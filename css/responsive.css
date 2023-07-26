@@ -58,6 +58,12 @@
 
 @media (max-width: 768px){
 
+
+
+  .modal-delete-new-ticket{
+    display: none;
+  }
+
   .write-number-ans-select-country-code.new-tickets{
     display: none;
   }
@@ -403,7 +409,8 @@
   /*  request */
   .new-request .form {
     margin: 0 auto;
-    height: 100%;
+    height: 100vh;
+    z-index: 2;
   }
 
 
