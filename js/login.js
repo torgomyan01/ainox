@@ -14,13 +14,15 @@ let checkKey = true;
 
 function checkCodeActivate(e){
     if(e.target.value.length === 9){
-        inputKod.classList.remove(active)
-        passwordEmail.classList.add(active)
-        // fieldsKod.classList.add(btnLoading)
-        // setTimeout(() => {
-        //     inputKod.classList.remove(active)
-        //     passwordEmail.classList.add(active)
-        // },2000)
+        btnEmail.classList.add('loading')
+        btnEmail.style.background = '#DFE2E6';
+        setTimeout(() =>{
+            btnEmail.classList.remove('loading')
+            btnEmail.style.background = '#00C58A';
+            inputKod.classList.remove(active)
+            passwordEmail.classList.add(active)
+        }, 2000)
+
     }
 }
 
@@ -52,10 +54,10 @@ function startValidation(){
         }
     } else {
         btnEmail.classList.add('loading')
-        btnEmail.style.background = '#DFE2E6'
+        btnEmail.style.background = '#DFE2E6';
         setTimeout(() =>{
             btnEmail.classList.remove('loading')
-            btnEmail.style.background = '#00C58A'
+            btnEmail.style.background = '#00C58A';
         }, 2000)
     }
 }
