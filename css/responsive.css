@@ -1,5 +1,5 @@
 
-@media (max-height: 423px) {
+@media (max-height: 400px) {
 
   .email .email-box{
     margin-top: 80px !important;
@@ -200,7 +200,7 @@
   }
 
   .email .email-box {
-    margin-top: -45px;
+    margin-top: -30px;
   }
 
   .email-box .register-now {
