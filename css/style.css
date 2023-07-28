@@ -4015,7 +4015,6 @@ main {
   -ms-flex-direction: column;
   flex-direction: column;
   margin-right: 21px;
-  margin-bottom: 8px;
 }
 @media (max-width: 767px) {
   .mobile-menu-board {
@@ -4164,7 +4163,7 @@ main {
 }
 
 .navbar-content img[src="assets/images/logo-site.svg"]{
-  margin-top: 2px;
+  margin-top: 5px;
 }
 
 .write-number-ans-select-country-code{

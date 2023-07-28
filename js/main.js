@@ -1973,6 +1973,7 @@ $('.filed-phone-numbers-item').forEach((item) => {
 
         const input = parent.querySelector('.filed-phone-input');
         console.log(input.id)
+        const mask = arrayMaks
         // IMask(input, {}).destroy();
         console.log(arrayMaks)
     })
