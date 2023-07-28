@@ -1963,19 +1963,12 @@ $('.filed-phone-numbers-item').forEach((item) => {
 
 
         const getMask = data[countryCode];
-        // const reg = new RegExp(['+', 'l'], 'g')
-        // const  placeholder = getMask.replace(reg, "")
-        //
-        //
-        // console.log(reg, placeholder)
-
-        // parent.querySelector('.filed-phone-input').setAttribute('placeholder', getMask);
 
         const input = parent.querySelector('.filed-phone-input');
-        console.log(input.id)
-        const mask = arrayMaks
-        // IMask(input, {}).destroy();
-        console.log(arrayMaks)
+        const mask = arrayMaks.find((_input) => _input.id === input.id);
+
+        mask.value = '';
+        mask.mask.updateOptions({mask: getMask});
     })
 })
 
