@@ -57,6 +57,9 @@
 
 
 @media (max-width: 768px){
+  .filed-phone-numbers{
+    width: 250px;
+  }
 
   .got-a-message{
     height: 30px;

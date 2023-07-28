@@ -304,7 +304,6 @@ const filedPhoneCountries = $('.filed-phone-countries');
 
 function closeOpenedMenu(){
     profileDropdowns.forEach((item) => item.classList.contains(active) && item.classList.remove(active) );
-    filedPhoneCountries.forEach((item) => item.classList.contains(active) && item.classList.remove(active) );
     $element('.menu-back-fon').classList.remove(active);
     document.body.classList.remove('menu-active');
 }
@@ -1936,7 +1935,6 @@ countryCodeAndName.forEach((country) => {
             </span>
         </span>
         `)
-        // item.parentElement.parentElement.querySelector('.filed-phone-input').setAttribute('data-code', country.code)
     })
 })
 
@@ -1945,13 +1943,18 @@ countryCodeAndName.forEach((country) => {
 
 filedPhoneCountries.forEach((item) => {
     item.addEventListener('click', function (){
-        this.classList.toggle(active);
-        $element('.menu-back-fon').classList.toggle(active)
+        if(this.classList.contains(active)){
+            this.classList.remove(active);
+            $element('.menu-back-fon-tel').classList.remove(active)
+        } else {
+            this.classList.add(active);
+            $element('.menu-back-fon-tel').classList.add(active)
+        }
     })
 })
 
 
-const arrayMaks = [];
+const arrayMask = [];
 
 $('.filed-phone-numbers-item').forEach((item) => {
     item.addEventListener('click', function (){
@@ -1965,7 +1968,7 @@ $('.filed-phone-numbers-item').forEach((item) => {
         const getMask = data[countryCode];
 
         const input = parent.querySelector('.filed-phone-input');
-        const mask = arrayMaks.find((_input) => _input.id === input.id);
+        const mask = arrayMask.find((_input) => _input.id === input.id);
 
         mask.value = '';
         mask.mask.updateOptions({mask: getMask});
@@ -1975,10 +1978,20 @@ $('.filed-phone-numbers-item').forEach((item) => {
 $('.filed-phone-input').forEach((input) => {
     const inputID = Math.floor(Math.random() * 3000) + '_ainox_input';
     input.id = inputID
-    arrayMaks.push({
+    arrayMask.push({
         id: inputID,
         mask: IMask(input, { mask: '(000)000-00-00' })
     })
+})
+
+$('.filed-phone').forEach((item) => {
+    if(!$('.menu-back-fon-tel').length){
+        document.body.insertAdjacentHTML('beforeend', '<div class="menu-back-fon-tel"></div>');
+    }
+})
+
+$element('.menu-back-fon-tel').addEventListener('click', function (){
+    filedPhoneCountries.forEach((item) => item.classList.contains(active) && item.classList.remove(active));
 })
 
 
