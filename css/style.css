@@ -2828,6 +2828,11 @@ main {
   gap: 10px;
   margin-right: 2px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.rocket-icon:hover{
+  background: #E3E5E7;
 }
 
 .rocket-icon-green {
