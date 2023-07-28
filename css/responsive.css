@@ -1,3 +1,17 @@
+
+@media (max-height: 423px) {
+
+  .email .email-box{
+    margin-top: 80px !important;
+  }
+
+  .email-box .register-now {
+    position: relative;
+    margin-top: 35px;
+  }
+}
+
+
 @media (max-width: 1200px){
 
 }
@@ -24,7 +38,7 @@
     top: 80px;
   }
   .got-a-message-trial{
-    height: 27px;
+    height: 26px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,6 +57,14 @@
 
 
 @media (max-width: 768px){
+
+  .got-a-message{
+    height: 30px;
+  }
+
+  .modal-delete-new-ticket{
+    display: none;
+  }
 
   .write-number-ans-select-country-code.new-tickets{
     display: none;
@@ -390,6 +412,7 @@
   .new-request .form {
     margin: 0 auto;
     height: 100%;
+    min-height: 100vh;
   }
 
 
@@ -680,7 +703,7 @@
   }
 
   .got-a-message .got-a-message-container p{
-    font-size: 10px;
+    font-size: 12px;
   }
 
 
@@ -782,8 +805,9 @@
     margin-right: 0;
   }
 
-  .got-a-message{
-    height: 22px;
+
+  .form-title{
+    font-size: 12px;
   }
 
 }
@@ -876,7 +900,25 @@
     padding: 3px 10px;
     padding-top: 10px;
     margin-top: 24px;
+    height: 85px;
   }
+
+  /*.todos-switch.active{*/
+  /*  margin-top: 55px;*/
+  /*}*/
+
+  .new-request .form .todos{
+    height: 39px;
+  }
+
+  .todos-switch-ticket{
+    height: 51px;
+    margin-top: 0;
+  }
+
+  /*.todos-switch-ticket.active{*/
+  /*  margin-top: 29px;*/
+  /*}*/
 
   .new-request .form .footer-buttons{
     padding: 10px;

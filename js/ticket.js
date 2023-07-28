@@ -18,6 +18,7 @@ const todos = $element('.todos')
 const footer_img_file = $element('.footer-img-file')
 const footer_img_loading = $element('.footer-img-loading')
 const modal_delete = $element('.modal-delete-new-ticket')
+const ticket_body = $element('.ticket')
 
 
 
@@ -42,13 +43,16 @@ exit_newRequest.addEventListener('click', closeRequest)
 function openRequest(){
   new_request.classList.remove('close')
   new_request.classList.add('active')
+  ticket_body.style.overflow = 'hidden'
 }
 
 function extiRequest(){
   new_request.classList.remove('active')
+  ticket_body.style.overflow = null
 }
 
 function closeRequest (){
+  ticket_body.style.overflow = null
   new_request.classList.add('close')
 }
 

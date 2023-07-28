@@ -13,6 +13,7 @@ const todos = $element('.todos')
 const footer_img_file = $element('.footer-img-file')
 const footer_img_loading = $element('.footer-img-loading')
 const modal_delete = $element('.modal-delete-new-ticket')
+const new_ticket_body = $element('.new-ticket-body')
 
 //  btn loading
 
@@ -37,15 +38,17 @@ exit_newRequest.addEventListener('click', closeRequest)
 function openRequest(){
   new_request.classList.remove('close')
   new_request.classList.add('active')
+  new_ticket_body.style.overflow = 'hidden'
 }
 
 function extiRequest(){
   new_request.classList.remove('active')
+  new_ticket_body.style.overflow = null
 }
 
 function closeRequest (){
   new_request.classList.add('close');
-
+  new_ticket_body.style.overflow = null
   new_request.querySelectorAll('input').forEach((item) => item.value = '')
   new_request.querySelectorAll('textarea').forEach((item) => item.value = '')
   new_request.querySelector('.todos').innerHTML = '';
@@ -63,6 +66,11 @@ todos.addEventListener('click', (e)=>{
     let todo = item.parentElement;
       todo.remove()
   }
+  /*const todo_length = $('.todo-item')
+  console.log(todo_length.length)
+  if(todo_length.length === 0){
+    todos_switch.classList.add('active')
+  }*/
 })
 
 
@@ -106,6 +114,10 @@ function appendFilesModal(filesObj){
     todo_item.insertAdjacentHTML('beforeend', ` ${file.name}
     <img class="fa-trash" src="assets/icons/fa-trash.svg" alt="trash">`);
     todos.appendChild(todo_item)
+    /*const todo_length = $('.todo-item')
+    if (todo_length.length > 0) {
+      todos_switch.classList.remove('active')
+    }*/
   })
 }
 
@@ -131,3 +143,4 @@ Description.addEventListener('input', function (){
 modal_delete.addEventListener('click', ()=>{
  new_request.classList.remove('active')
 })
+

@@ -63,7 +63,9 @@ a {
 }
 
 body{
-  background-color: var(--green);
+  /*background-color: var(--green);*/
+  background: var(--openWhite);
+  /*touch-action: none;*/
 }
 
 main {
@@ -560,6 +562,22 @@ main {
   margin-right: 10px;
 }
 
+.btn-email .exit{
+  display: block;
+}
+
+.btn-email .icon-loading{
+  display: none;
+}
+
+.btn-email.loading .exit{
+  display: none;
+}
+
+.btn-email.loading .icon-loading{
+  display: block;
+}
+
 .email .email-box .input-kod {
   display: none;
 }
@@ -677,6 +695,10 @@ main {
   font-weight: 500;
   line-height: 165%;
 }
+
+.email-box .social-sites .btn-social:hover{
+    background: #DFE2E6;
+  }
 
 .email-box .social-sites .btn-social img {
   margin-right: 10px;
@@ -1201,7 +1223,7 @@ main {
   top: 0;
   z-index: 2222;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: rgba(34, 37, 41, 0.90);
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
@@ -1249,9 +1271,10 @@ main {
 }
 
 .new-request.close{
-  -webkit-transform: translateY(-100%);
+  /*-webkit-transform: translateY(-100%);
   transform: translateY(-100%);
-  opacity: 0;
+  opacity: 0;*/
+  display: none;
 }
 
 .new-request.active{
@@ -1445,6 +1468,7 @@ main {
   line-height: 165%;
   text-transform: uppercase;
   margin-right: 15px;
+  margin-top: 1px;
 }
 
 
@@ -2913,6 +2937,7 @@ main {
   margin: 0 2px;
   border-radius: 10px;
   padding: 7px;
+  width: 100%;
 }
 
 .mobile-menu-item svg {
@@ -3644,7 +3669,6 @@ main {
   gap: 10px;
   margin-top: 5px;
   -webkit-transition: 0.3s;
-  transition: 0.3s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3652,7 +3676,7 @@ main {
   overflow: auto;
   padding: 0 10px;
   height: 0;
-  transition: 0.3s;
+  transition: .3s;
   position: absolute;
 }
 
@@ -3851,7 +3875,7 @@ main {
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 0px;
+  -ms-flex: 1 0 0;
   flex: 1 0 0;
   color:  var(--red);
   font-size: 10px;
@@ -3906,7 +3930,7 @@ main {
   width: 100%;
   max-width: 504px;
   overflow-y: auto;
-  height: 100vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3923,7 +3947,7 @@ main {
 }
 .view-image-content-image{
   width: 100%;
-  max-height: calc(100vh - 95px);
+  max-height: calc(100vh - 225px);
   -o-object-fit: cover;
   object-fit: cover;
   background-color: var(--white);
@@ -4135,6 +4159,10 @@ main {
   width: 22px;
 }
 
+.rocket-icon:hover{
+  background: #E3E5E7;
+}
+
 .navbar-content img[src="assets/images/logo-site.svg"]{
   margin-top: 2px;
 }
@@ -4150,3 +4178,90 @@ main {
 }
 
 input[type="date"]::-webkit-date-and-time-value{ text-align:left; }
+
+.filed-phone{
+  border-radius: 5px;
+  border: 1px solid #EAECEF;
+  background: #FFF;
+  width: 100%;
+  height: 63px;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: var(--black);
+  font-size: 16px;
+}
+.filed-phone-countries-flag{
+  width: 25px;
+  margin-right: 8px;
+}
+
+.filed-phone-countries-downIcon{
+  width: 15px;
+  margin-right: 5px;
+  transition: 0.3s;
+  transform: rotate(0);
+}
+
+.filed-phone-countries{
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  margin-right: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: var(--black);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.filed-phone-numbers{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: calc(100% + 15px);
+  left: -11px;
+  background-color: #fff;
+  display: none;
+  border-radius: 5px;
+  border: 1px solid #dddbdb;
+  box-shadow: 1px 1px 18px #dddbdb;
+  overflow-y: auto;
+}
+.filed-phone-numbers-item{
+  padding: 0 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  color: var(--black);
+  font-size: 16px;
+}
+.filed-phone-numbers-item:hover{
+  background-color: #e0e0e0;
+}
+.filed-phone-numbers-countryCode-flag{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.filed-phone-numbers-countryCode-flag span{
+  margin-right: 8px;
+}
+
+.filed-phone-countries.active .filed-phone-countries-downIcon{
+  transform: rotate(-180deg);
+}
+
+.filed-phone-countries.active .filed-phone-numbers{
+  display: block;
+}
+.filed-phone-input{
+  width: 100%;
+  height: 100%;
+  color: var(--black);
+  font-size: 16px;
+}
