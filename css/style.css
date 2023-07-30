@@ -4195,17 +4195,49 @@ input[type="date"]::-webkit-date-and-time-value{ text-align:left; }
 
 .filed-phone{
   border-radius: 5px;
-  border: 1px solid #EAECEF;
+  border: 1px solid transparent;
   background: #FFF;
   width: 100%;
   height: 63px;
-  padding: 10px;
   display: flex;
   justify-content: start;
   align-items: center;
   color: var(--black);
   font-size: 16px;
+  position: relative;
+  padding: 15px 10px 10px;
+  transition: 0.3s;
 }
+
+.filed-phone-country-code{
+  color: var(--black);
+  font-size: 16px;
+  border-right: 1px solid #f3f3f3;
+  margin-right: 5px;
+}
+
+.filed-phone-placeholder{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--openGreen);
+  z-index: 1;
+  left: 0;
+  top: 0;
+  padding-left: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+  cursor: text;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
 .filed-phone-countries-flag{
   width: 25px;
   margin-right: 8px;
@@ -4222,7 +4254,6 @@ input[type="date"]::-webkit-date-and-time-value{ text-align:left; }
   height: 100%;
   position: relative;
   z-index: 1;
-  margin-right: 10px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -4243,6 +4274,7 @@ input[type="date"]::-webkit-date-and-time-value{ text-align:left; }
   border: 1px solid #dddbdb;
   box-shadow: 1px 1px 18px #dddbdb;
   overflow-y: auto;
+  cursor: default;
 }
 .filed-phone-numbers-item{
   padding: 0 10px;
@@ -4253,6 +4285,7 @@ input[type="date"]::-webkit-date-and-time-value{ text-align:left; }
   height: 40px;
   color: var(--black);
   font-size: 16px;
+  cursor: pointer;
 }
 .filed-phone-numbers-item:hover{
   background-color: #e0e0e0;
@@ -4278,4 +4311,25 @@ input[type="date"]::-webkit-date-and-time-value{ text-align:left; }
   height: 100%;
   color: var(--black);
   font-size: 16px;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+}
+
+.filed-phone.active{
+  border: 1px solid #EAECEF;
+}
+
+.filed-phone.active .filed-phone-input{
+  position: relative;
+  z-index: 0;
+  opacity: 1;
+}
+.filed-phone.active .filed-phone-placeholder{
+  height: 15px;
+  font-size: 11px;
+  z-index: 0;
+  background-color: transparent;
+  top: 5px;
+  cursor: default;
 }
