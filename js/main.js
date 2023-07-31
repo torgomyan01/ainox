@@ -652,21 +652,23 @@ const optionCountryCode = {
     method: 'GET',
     redirect: 'follow'
 };
-fetch("https://api.ipregistry.co/?key=tryout", optionCountryCode)
+fetch("http://ip-api.com/json/?fields=countryCode", optionCountryCode)
     .then(response => response.json())
     .then(result => {
-        const isoCode = result.location.country.code;
+        const isoCode = result.countryCode;
 
         const mask = data[isoCode];
         const telNumber = countryCodeAndName.find((item) => item.code === isoCode)
-        console.log(mask, telNumber);
 
 
         $('.filed-phone').forEach((item) => {
             item.querySelector('.filed-phone-country-code').value = telNumber.dial_code;
+            console.log(telNumber.dial_code.length - 1)
             item.querySelector('.filed-phone-country-code').setAttribute('size', telNumber.dial_code.length - 1)
             item.querySelector('.filed-phone-countries-flag').setAttribute('src', `https://www.countryflagicons.com/FLAT/64/${isoCode}.png`)
         })
+
+        arrayMask.forEach((_mask) => _mask.mask.updateOptions({ mask: mask }))
     })
 
 
