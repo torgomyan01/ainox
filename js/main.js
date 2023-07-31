@@ -652,10 +652,10 @@ const optionCountryCode = {
     method: 'GET',
     redirect: 'follow'
 };
-fetch("http://ip-api.com/json/?fields=countryCode", optionCountryCode)
+fetch("https://api.ipregistry.co/?key=tryout", optionCountryCode)
     .then(response => response.json())
     .then(result => {
-        const isoCode = result.countryCode;
+        const isoCode = result.location.country.code;
 
         const mask = data[isoCode];
         const telNumber = countryCodeAndName.find((item) => item.code === isoCode)
