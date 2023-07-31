@@ -60,6 +60,12 @@
   .filed-phone-numbers{
     width: 250px;
   }
+  .filed-phone-new-tickets{
+    display: none;
+  }
+  .filed-phone-mobile{
+    display: flex;
+  }
 
   .got-a-message{
     height: 30px;

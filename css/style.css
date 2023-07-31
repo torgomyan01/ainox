@@ -4130,6 +4130,7 @@ main {
   background-color: transparent;
   pointer-events: none;
   transition: 0.3s;
+  z-index: 10000;
 }
 
 .menu-back-fon-tel.active{
@@ -4330,4 +4331,22 @@ input[type="date"]::-webkit-date-and-time-value{ text-align:left; }
   background-color: transparent;
   top: 5px;
   cursor: default;
+}
+
+.filed-phone-mobile{
+  display: none;
+}
+
+.filed-phone-mobile{
+  padding: 0;
+  font-size: 14px;
+  border: 0 !important;
+}
+.filed-phone-mobile input{
+  font-size: 14px;
+}
+
+.filed-phone-mobile .filed-phone-numbers{
+  left: -70px;
+  top: 50px;
 }

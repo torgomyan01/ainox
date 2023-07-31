@@ -663,8 +663,8 @@ fetch("http://ip-api.com/json/?fields=countryCode", optionCountryCode)
 
         $('.filed-phone').forEach((item) => {
             item.querySelector('.filed-phone-country-code').value = telNumber.dial_code;
-            console.log(telNumber.dial_code.length - 1)
             item.querySelector('.filed-phone-country-code').setAttribute('size', telNumber.dial_code.length - 1)
+            item.querySelector('.filed-phone-input').setAttribute('placeholder', mask)
             item.querySelector('.filed-phone-countries-flag').setAttribute('src', `https://www.countryflagicons.com/FLAT/64/${isoCode}.png`)
         })
 
