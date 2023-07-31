@@ -648,6 +648,27 @@ $('.filed-phone-country-code').forEach((item) => {
 })
 
 
+const optionCountryCode = {
+    method: 'GET',
+    redirect: 'follow'
+};
+fetch("http://ip-api.com/json/?fields=countryCode", optionCountryCode)
+    .then(response => response.json())
+    .then(result => {
+        const isoCode = result.countryCode;
+
+        const mask = data[isoCode];
+        const telNumber = countryCodeAndName.find((item) => item.code === isoCode)
+        console.log(mask, telNumber);
+
+
+        $('.filed-phone').forEach((item) => {
+            item.querySelector('.filed-phone-country-code').value = telNumber.dial_code;
+            item.querySelector('.filed-phone-countries-flag').setAttribute('src', `https://www.countryflagicons.com/FLAT/64/${isoCode}.png`)
+        })
+    })
+
+
 //
 // const PhoneClasses = [
 //     'filed-phone',
