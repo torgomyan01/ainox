@@ -664,6 +664,7 @@ fetch("https://api.ipregistry.co/?key=tryout", optionCountryCode)
 
         $('.filed-phone').forEach((item) => {
             item.querySelector('.filed-phone-country-code').value = telNumber.dial_code;
+            item.querySelector('.filed-phone-country-code').setAttribute('size', telNumber.dial_code.length - 1)
             item.querySelector('.filed-phone-countries-flag').setAttribute('src', `https://www.countryflagicons.com/FLAT/64/${isoCode}.png`)
         })
     })
