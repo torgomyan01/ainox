@@ -559,13 +559,11 @@ function startNowClickTelItems(){
             const number = this.dataset.countrynumber;
             const countryCode = this.dataset.countrycode;
             const parent = this.parentElement.parentElement.parentElement;
-            console.log(parent)
 
             parent.querySelector('.filed-phone-country-code').value = number;
             parent.querySelector('.filed-phone-country-code').setAttribute('size', number.length - 1)
             parent.querySelector('.filed-phone-countries-flag').setAttribute('src', `https://www.countryflagicons.com/FLAT/64/${countryCode}.png`);
 
-            console.log(parent.querySelector('.filed-phone-numbers'))
 
             parent.querySelector('.filed-phone-numbers').classList.remove(active)
 
@@ -615,15 +613,9 @@ $('.filed-phone-country-code').forEach((item) => {
         if(value === ''){
             this.value = '+';
         }
-
         this.setAttribute('size', value.length - 1);
-
         const getCountry = countryCodeAndName.filter((obj) => obj.dial_code.includes(value));
-
-        console.log(this.parentElement.querySelector('.filed-phone-numbers'))
-
         this.parentElement.querySelector('.filed-phone-numbers').innerHTML = '';
-
 
         getCountry.forEach((country) => {
             this.parentElement.querySelector('.filed-phone-numbers').insertAdjacentHTML('beforeend', `
@@ -641,9 +633,12 @@ $('.filed-phone-country-code').forEach((item) => {
 
     })
 
-    item.addEventListener('focus', function (){
-        this.parentElement.querySelector('.filed-phone-countries').classList.add(active)
-        switchTelInputBackFon(true)
+    item.addEventListener('input', function (){
+        const numbers = this.parentElement.querySelector('.filed-phone-countries').classList;
+        if(!numbers.contains(active)){
+            numbers.add(active)
+            switchTelInputBackFon(true)
+        }
     })
 })
 

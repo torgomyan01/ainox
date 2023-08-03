@@ -4130,7 +4130,7 @@ main {
   background-color: transparent;
   pointer-events: none;
   transition: 0.3s;
-  z-index: 10000;
+  /*z-index: 10000;*/
 }
 
 .menu-back-fon-tel.active{
@@ -4208,6 +4208,7 @@ input[type="date"]::-webkit-date-and-time-value{ text-align:left; }
   position: relative;
   padding: 15px 10px 10px;
   transition: 0.3s;
+  z-index: 10;
 }
 
 .filed-phone-country-code{
