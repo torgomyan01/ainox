@@ -427,7 +427,7 @@
 
   .new-request .form .form-inputs {
     padding: 15px 0;
-    height: calc(100% - 113px);
+    min-height: calc(100% - 113px);
   }
 
 
@@ -1005,7 +1005,8 @@
 
   .new-request .form .form-inputs {
     padding: 0 0 10px 0;
-    height: calc(100% - 96.5px);
+    min-height: calc(100% - 96.5px);
+    height: 100%;
   }
 
 }
