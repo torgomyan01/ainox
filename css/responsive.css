@@ -1005,7 +1005,7 @@
 
   .new-request .form .form-inputs {
     padding: 0 0 10px 0;
-    min-height: calc(100% - 96.5px);
+    max-height: calc(100% - 96.5px);
     height: 100%;
   }
 
