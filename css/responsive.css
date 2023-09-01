@@ -1005,8 +1005,8 @@
 
   .new-request .form .form-inputs {
     padding: 0 0 10px 0;
-    /*height: calc(100% - 96.5px);*/
-    height: calc(100% - 170px);
+    height: calc(100% - 96.5px);
+    /*height: calc(100% - 170px);*/
   }
 
 }
