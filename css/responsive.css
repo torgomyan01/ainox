@@ -1009,6 +1009,11 @@
     /*height: calc(100% - 170px);*/
   }
 
+  .step1-standard-explanation {
+   font-size: 10px;
+    margin-top: 5px;
+  }
+
 }
 
 @media (max-width: 375px){

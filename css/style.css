@@ -3522,6 +3522,8 @@ main {
   align-items: start;
   margin-bottom: 25px;
 }
+
+
 .step-page-list-icon{
   margin-right: 10px;
   margin-top: 5px;
@@ -3564,6 +3566,14 @@ main {
 .step-page-row-left{
   width: calc(100% - 317px);
 }
+
+/*.....step1 */
+
+.step1-standard-explanation {
+  margin-top: 5px;
+}
+
+
 .error-form{
   color: var(--red);
   font-size: 12px;

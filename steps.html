@@ -118,33 +118,72 @@
 
     <div class="step-page-row">
       <div class="step-page-row-left">
-        <div class="steps-block d-none" data-step="1">
+        <div class="steps-block" data-step="1">
+          <h1 class="standard-h1">Добро пожаловать в мастер настройки</h1>
+          <p class="standard-p mt-25 mb-25">
+            Вы в паре шагов от запуска продаж, осталось сделать несколько настроек. Процедура состоит из двух этапов:
+          </p>
+          <div class="step-page-list">
+            <img src="assets/icons/one.svg" alt="one" class="step-page-list-icon">
+            <div>
+              <p class="step-page-list-title">
+                Настройка Ainox
+              </p>
+              <p class="step-page-list-subtitle">
+                Первоначальная конфигурация сервиса
+              </p>
+            </div>
+          </div>
+          <div class="step-page-list">
+            <img src="assets/icons/two.svg" alt="one" class="step-page-list-icon">
+            <div>
+              <p class="step-page-list-title">
+                Подключение Robokassa
+              </p>
+              <p class="step-page-list-subtitle">
+                Подключение платежной системы для приема платежей
+              </p>
+            </div>
+          </div>
+          <p class="standard-p mt-25 mb-25">
+            После завершения настройки, система будет полностью функциональна. Вы сможете протестировать платежи с
+            собственной карты и запустить продажи.
+          </p>
+          <button class="btn-black change-step mb-25" data-step="2">
+            Начать настройку
+            <img src="assets/icons/arrow-right.svg" alt="arrow">
+          </button>
+        </div>
+        <div class="steps-block d-none" data-step="2">
           <div class="mb-25">
             <button class="btn-transparent btn-transparent-new-ticket go-to-back-step change-step" data-step="1">
               <img src="assets/icons/arrow-left.svg" alt="arrow-left">
-              Быстрая настройка Ainox
+              Настройка Ainox
             </button>
           </div>
-          <h1 class="standard-h1">Введите данные вашего ИП или компании</h1>
+          <h1 class="standard-h1">Подтвердите данные владельца аккаунта</h1>
           <p class="standard-p mt-25 mb-25">
-            Для работы везде требуются реквизиты продавца. Введите основную информацию, всё остальное мы загрузим из справочников.
+            В первую очередь нужно подтвердить ваш телефон, чтобы защитить ваш аккаунт и иметь возможность оперативно с вами связаться при необходимости.
           </p>
           <div class="note big">
-            <img src="assets/icons/russian-flag.svg" alt="flag">
-            Работаем только с юридическими лицами и ИП зарегистрированными в РФ
+            <img src="assets/icons/look.svg" alt="look">
+            Ваши личные контакты только для внутреннего использования. Мы не передадим их 3-м лицам.
           </div>
           <form action="#" method="post" class="wrapper mt-25">
             <p class="form-title mb-15">
-              Заполните форму
+              Подтвердите свои контакты
             </p>
-            <label class="def-fields def-fields-text">
-              <span class="def-fields-title">Название или ИНН</span>
-              <input type="text" class="def-fields-input">
-              <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+            <label class="filed-phone">
+                <span class="filed-phone-countries">
+                  <img src="https://www.countryflagicons.com/FLAT/64/RU.png" alt="flag" width="30" class="filed-phone-countries-flag">
+                  <img src="assets/icons/down.svg" alt="down" class="filed-phone-countries-downIcon">
+                  <span class="filed-phone-numbers"></span>
+                </span>
+              <input class="filed-phone-country-code" value="+7" size="2" maxlength="5" />
+              <input type="text" class="filed-phone-input">
+              <span class="filed-phone-placeholder">Телефон</span>
             </label>
-            <p class="standard-explanation mt-6 mb-15">
-              Укажите какие-либо данные, остальное мы найдем и заполним из справочника.
-            </p>
+            <p class="standard-explanation step1-standard-explanation">Проверьте правильность телефона</p>
             <label class="def-fields text mb-15">
               <span class="def-fields-title">Название компании или ИП</span>
               <input type="email" class="def-fields-input" placeholder="_@_._">
@@ -195,42 +234,6 @@
           </div>
           <button class="btn-green mt-25 mb-25 change-step" data-step="3">
             Отправить
-            <img src="assets/icons/arrow-right.svg" alt="arrow">
-          </button>
-        </div>
-        <div class="steps-block" data-step="2">
-          <h1 class="standard-h1">Добро пожаловать в мастер настройки</h1>
-          <p class="standard-p mt-25 mb-25">
-            Вы в паре шагов от запуска продаж, осталось сделать несколько настроек. Процедура состоит из двух этапов:
-          </p>
-          <div class="step-page-list">
-            <img src="assets/icons/one.svg" alt="one" class="step-page-list-icon">
-            <div>
-              <p class="step-page-list-title">
-                Настройка Ainox
-              </p>
-              <p class="step-page-list-subtitle">
-                Первоначальная конфигурация сервиса
-              </p>
-            </div>
-          </div>
-          <div class="step-page-list">
-            <img src="assets/icons/two.svg" alt="one" class="step-page-list-icon">
-            <div>
-              <p class="step-page-list-title">
-                Подключение Robokassa
-              </p>
-              <p class="step-page-list-subtitle">
-                Подключение платежной системы для приема платежей
-              </p>
-            </div>
-          </div>
-          <p class="standard-p mt-25 mb-25">
-            После завершения настройки, система будет полностью функциональна. Вы сможете протестировать платежи с
-            собственной карты и запустить продажи.
-          </p>
-          <button class="btn-black change-step mb-25" data-step="2">
-            Начать настройку
             <img src="assets/icons/arrow-right.svg" alt="arrow">
           </button>
         </div>
