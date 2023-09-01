@@ -3555,7 +3555,7 @@ main {
   align-items: start;
 }
 .step-page-row-right{
-  width: 300px;
+  width: 301px;
   padding: 25px 20px;
   border-radius: 30px;
   border: 1px solid var(--grey);
