@@ -6,17 +6,17 @@ const upload_box = document.querySelector('.upload-box');
 const upload_box_img = document.querySelector('.upload-box img')
 
 
-uploadInput.addEventListener('change', function (e){
+uploadInput?.addEventListener('change', function (e){
     const files  = [...e.target.files];
     files.forEach((file) => startPrintHtml(file))
 })
 
 
-dropCenter.addEventListener('dragover', function (e) {
+dropCenter?.addEventListener('dragover', function (e) {
     e.preventDefault()
 })
 
-dropCenter.addEventListener('dragenter', function (){
+dropCenter?.addEventListener('dragenter', function (){
     upload_box.classList.add(active)
 })
 

@@ -3569,9 +3569,71 @@ main {
 
 /*.....step1 */
 
-.step1-standard-explanation {
+.steps-block2 .step1-standard-explanation {
   margin-top: 5px;
 }
+
+.steps-block2 .step1-standard-explanation2 {
+  margin-top: 5px;
+  color: #AEB5BC;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 120%; /* 15.6px */
+}
+
+.steps-block2 .step-sms-info{
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.steps-block2 .step-sms-info img{
+    margin-right: 10px;
+}
+
+.steps-block2 .step-sms-info .step-sms-text{
+  color: #6E757C;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 120%; /* 12px */
+}
+
+.steps-block2 .step-sms-info .step-sms-text .link-blue{
+  color: #2398AB;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-decoration-line: underline;
+}
+
+/*..........step2 end */
+
+
+/*............Step3.... */
+
+.steps-block3 .step1-standard-explanation  {
+  margin-top: 5px;
+}
+
+/*..........Step3 End*/
+
+
+/* ......Step4............ */
+
+.steps-block4 .step1-standard-explanation  {
+  margin-top: 5px;
+}
+
+/*............ Step4 End.*/
+
+/*.............. Step 5..  */
+
+.steps-block5 .step1-standard-explanation  {
+  margin-top: 5px;
+}
+
+/*........... Step 5 End*/
 
 
 .error-form{
