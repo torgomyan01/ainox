@@ -3635,6 +3635,58 @@ main {
 
 /*........... Step 5 End*/
 
+/*............ Step 6...*/
+
+.steps-block6 .step6-subtitle{
+  color: var(--black);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 145%; /* 26.1px */
+}
+
+/*............Step 6 End*/
+
+
+/*........... Step8.....*/
+
+.steps-block8 .step1-standard-explanation  {
+  margin-top: 5px;
+}
+
+.steps-block8 .inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.steps-block8 .inner h4{
+  color: var(--black);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 120%; /* 14.4px */
+}
+
+/*........... Step8 End*/
+
+
+/*......... Step 10...*/
+
+.steps-block10 .step1-standard-explanation  {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.steps-block10 .step10-subtitle-info{
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%; /* 19.6px */
+  margin-bottom: 3px;
+}
+
+
+/*...........Step 10 End*/
 
 .error-form{
   color: var(--red);

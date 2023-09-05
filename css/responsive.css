@@ -61,6 +61,10 @@
     width: 250px;
   }
 
+  .standard-explanation {
+    font-size: 10px;
+  }
+
   .steps-block2 .btn-white{
     width: 100%;
   }
@@ -359,9 +363,15 @@
     font-size: 12px;
   }
 
+  .faq .faq-text .btn-link{
+    font-size: 14px;
+  }
+
   .trial .btn-trial{
     width: 100%;
   }
+
+
 
   /* .......... end trial............*/
 
@@ -1040,6 +1050,25 @@
       font-size: 10px;
   }
 
+  .steps-block6 .note{
+      font-size: 10px;
+  }
+
+  .steps-block7 .note{
+      font-size: 10px;
+  }
+
+  .steps-block8 .inner h4{
+    font-size: 12px;
+  }
+
+  .steps-block9 .note{
+    font-size: 10px;
+  }
+
+  .steps-block10 .note{
+    font-size: 10px;
+  }
 
 }
 
