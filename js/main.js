@@ -201,6 +201,9 @@ defaultInputs.forEach((item) => {
 $('.def-fields-icon-edit').forEach((item) => {
     item.addEventListener('click', function (){
         this.parentElement.classList.remove(disabled)
+        this.parentElement.querySelector('.filed-phone-input')?.removeAttribute(disabled);
+        this.parentElement.querySelector('.filed-phone-country-code')?.removeAttribute(disabled);
+        this.parentElement.querySelector('.filed-phone-countries')?.classList.remove(disabled)
         this.previousElementSibling.removeAttribute(disabled)
     })
 })
@@ -332,6 +335,25 @@ $('.mobile-menu-item').forEach((item) => {
     })
 })
 
+const disabledInputs = document.querySelectorAll('.filed-phone.disabled');
+
+disabledInputs.forEach((item) => {
+    changeDisabledInputPhone(true, item)
+})
+
+
+function changeDisabledInputPhone(status, item){
+    if(status){
+        item.querySelector('.filed-phone-input').setAttribute(disabled, 'true');
+        item.querySelector('.filed-phone-country-code').setAttribute(disabled, 'true');
+        item.querySelector('.filed-phone-countries').classList.add(disabled);
+    } else {
+        item.querySelector('.filed-phone-input').removeAttribute(disabled);
+        item.querySelector('.filed-phone-country-code').removeAttribute(disabled);
+        item.querySelector('.filed-phone-countries').classList.remove(disabled);
+        item.classList.add(disabled);
+    }
+}
 
 // ------------- ************* ---------------------- //
 //             CLOSE ALERT
@@ -541,13 +563,16 @@ function switchTelInputBackFon(status){
 
 filedPhoneCountries.forEach((item) => {
     item.addEventListener('click', function (){
-        if(this.classList.contains(active)){
-            this.classList.remove(active);
-            switchTelInputBackFon(false)
-        } else {
-            this.classList.add(active);
-            switchTelInputBackFon(true)
+        if(!item.classList.contains('disabled')){
+            if(this.classList.contains(active)){
+                this.classList.remove(active);
+                switchTelInputBackFon(false)
+            } else {
+                this.classList.add(active);
+                switchTelInputBackFon(true)
+            }
         }
+
     })
 })
 

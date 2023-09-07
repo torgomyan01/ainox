@@ -182,3 +182,46 @@ $element('.def-fields-input.mask-physical').addEventListener('keyup', function (
 })
 
 
+const numberInputStep2 = $element('.steps-block2 .filed-phone .def-fields-icon-edit');
+const step1StandardExplanation2 = $element('.step1-standard-explanation2');
+
+
+
+const getSMSButton = $element('.get-sms');
+const smsCodeInput = $element('.sms-code-input');
+const confirmSmsCode = $element('.confirm-sms-code');
+
+getSMSButton.addEventListener('click', function (){
+    step1StandardExplanation2.classList.remove(none);
+    smsCodeInput.classList.remove(none);
+    getSMSButton.classList.add(none);
+    confirmSmsCode.classList.remove(none);
+
+    disabledInputs.forEach((item) => {
+        console.log(555)
+        changeDisabledInputPhone(false, item)
+    })
+
+})
+
+numberInputStep2.addEventListener('click', function (){
+    step1StandardExplanation2.classList.add(none);
+    smsCodeInput.classList.add(none);
+    getSMSButton.classList.remove(none);
+    confirmSmsCode.classList.add(none);
+})
+
+$element('.sms-code-input input').addEventListener('input', function (){
+    console.log(this.value)
+    if(this.value.length === 9){
+        confirmSmsCode.classList.remove(disabled);
+        confirmSmsCode.removeAttribute(disabled);
+    } else {
+        confirmSmsCode.classList.add(disabled);
+        confirmSmsCode.setAttribute(disabled, 'true');
+    }
+})
+
+// numberInputStep2.addEventListener('click', function (){
+//     step1StandardExplanation2.classList.remove(none);
+// })

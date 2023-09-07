@@ -118,7 +118,7 @@
 
     <div class="step-page-row">
       <div class="step-page-row-left">
-        <div class="steps-block" data-step="1">
+        <div class="steps-block d-none" data-step="1">
           <h1 class="standard-h1">Добро пожаловать в мастер настройки</h1>
           <p class="standard-p mt-25 mb-25">
             Вы в паре шагов от запуска продаж, осталось сделать несколько настроек. Процедура состоит из двух этапов:
@@ -154,7 +154,7 @@
             <img src="assets/icons/arrow-right.svg" alt="arrow">
           </button>
         </div>
-        <div class="steps-block steps-block2 d-none" data-step="2">
+        <div class="steps-block steps-block2" data-step="2">
           <div class="mb-25">
             <button class="btn-transparent btn-transparent-new-ticket go-to-back-step change-step" data-step="1">
               <img src="assets/icons/arrow-left.svg" alt="arrow-left">
@@ -173,15 +173,16 @@
             <p class="form-title mb-15">
               Подтвердите свои контакты
             </p>
-            <label class="filed-phone">
+            <label class="filed-phone disabled">
                 <span class="filed-phone-countries">
                   <img src="https://www.countryflagicons.com/FLAT/64/RU.png" alt="flag" width="30" class="filed-phone-countries-flag">
                   <img src="assets/icons/down.svg" alt="down" class="filed-phone-countries-downIcon">
                   <span class="filed-phone-numbers"></span>
                 </span>
               <input class="filed-phone-country-code" value="+7" size="2" maxlength="5" />
-              <input type="text" class="filed-phone-input">
+              <input type="text" class="filed-phone-input" value="77769668">
               <span class="filed-phone-placeholder">Телефон</span>
+              <img class="def-fields-icon-edit" src="assets/icons/edit-input.svg" alt="key-icon">
             </label>
             <p class="standard-explanation step1-standard-explanation">Проверьте правильность телефона</p>
             <div class="step-sms-info">
@@ -190,14 +191,20 @@
                 <a href="#" class="link-blue">принимаете условия пользовательского соглашения</a>
               </p>
             </div>
-            <label class="def-fields">
+            <label class="def-fields sms-code-input d-none">
               <span class="def-fields-title">Код из СМС</span>
               <input type="text" class="def-fields-input mask-one-key" placeholder="000–000">
               <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
             </label>
-            <p class="standard-explanation step1-standard-explanation2">Мы отправили СМС с кодом на номер +7 (999) 123-45-67. Код не пришел?</p>
-            <button class="btn-white mt-15 change-step " data-step="3">
+            <p class="standard-explanation step1-standard-explanation2 d-none">
+              Мы отправили СМС с кодом на номер +7 (999) 123-45-67. <span class="">Код не пришел?</span>
+            </p>
+            <button class="btn-white mt-15 confirm-sms-code d-none change-step disabled" disabled data-step="3">
               Подтвердить телефон
+              <img src="assets/icons/arrow-right-black.svg" class="ms-15" alt="arrow">
+            </button>
+            <button class="btn-white mt-15 get-sms">
+              Получить СМС
               <img src="assets/icons/arrow-right-black.svg" class="ms-15" alt="arrow">
             </button>
           </div>
