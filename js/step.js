@@ -219,11 +219,12 @@ btnTime.addEventListener('click', function (){
     })
 })
 
-
+let int
 function startTimingBtb(btn, callBack){
+    clearInterval(int);
     let min = 3;
     let sec = 59;
-    const int = setInterval(() => {
+    int = setInterval(() => {
         sec--;
         if(sec === 0){
             sec = 59;
@@ -247,6 +248,10 @@ numberInputStep2.addEventListener('click', function (){
     smsCodeInput.classList.add(none);
     getSMSButton.classList.remove(none);
     confirmSmsCode.classList.add(none);
+
+    btnTime.classList.add(disabled);
+    btnTime.classList.add(none);
+    btnTime.addAttribute(disabled, 'true');
 })
 
 $element('.sms-code-input input').addEventListener('input', function (){
