@@ -190,19 +190,57 @@ const step1StandardExplanation2 = $element('.step1-standard-explanation2');
 const getSMSButton = $element('.get-sms');
 const smsCodeInput = $element('.sms-code-input');
 const confirmSmsCode = $element('.confirm-sms-code');
+const btnTime = $element('.btn-time');
 
 getSMSButton.addEventListener('click', function (){
     step1StandardExplanation2.classList.remove(none);
     smsCodeInput.classList.remove(none);
     getSMSButton.classList.add(none);
-    confirmSmsCode.classList.remove(none);
+    btnTime.classList.remove(none);
 
     disabledInputs.forEach((item) => {
-        console.log(555)
         changeDisabledInputPhone(false, item)
     })
 
+    startTimingBtb(btnTime, () => {
+
+        btnTime.classList.remove(disabled);
+        btnTime.removeAttribute(disabled);
+
+    })
+
 })
+
+btnTime.addEventListener('click', function (){
+    startTimingBtb(btnTime, () => {
+
+        btnTime.classList.remove(disabled);
+        btnTime.removeAttribute(disabled);
+    })
+})
+
+
+function startTimingBtb(btn, callBack){
+    let min = 3;
+    let sec = 59;
+    const int = setInterval(() => {
+        sec--;
+        if(sec === 0){
+            sec = 59;
+            min--;
+        }
+
+        btn.innerText = `Повторить отправку ${min}:${sec}`;
+
+        if(min === 0 && sec ===  1){
+            clearInterval(int);
+            callBack()
+            btn.innerText = `Повторить отправку`;
+        }
+    }, 1000)
+}
+
+
 
 numberInputStep2.addEventListener('click', function (){
     step1StandardExplanation2.classList.add(none);
@@ -212,13 +250,17 @@ numberInputStep2.addEventListener('click', function (){
 })
 
 $element('.sms-code-input input').addEventListener('input', function (){
-    console.log(this.value)
     if(this.value.length === 9){
+        confirmSmsCode.classList.remove(none);
         confirmSmsCode.classList.remove(disabled);
         confirmSmsCode.removeAttribute(disabled);
+
+        btnTime.classList.add(none);
+
     } else {
         confirmSmsCode.classList.add(disabled);
         confirmSmsCode.setAttribute(disabled, 'true');
+        btnTime.classList.remove(none);
     }
 })
 
