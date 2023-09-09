@@ -1,3 +1,5 @@
+
+
 const uploadInput = document.getElementById('upload-file-step-input');
 const uploadBlock = document.getElementById('uploading-file-step');
 const dropCenter = document.querySelector('.files-drag-drop-center');
@@ -181,6 +183,9 @@ $element('.def-fields-input.mask-physical').addEventListener('keyup', function (
     }
 })
 
+//  -------------------------- FOR STEP 1 -------------------
+//
+// -----------------------------------------------------------
 
 const numberInputStep2 = $element('.steps-block2 .filed-phone .def-fields-icon-edit');
 const step1StandardExplanation2 = $element('.step1-standard-explanation2');
@@ -269,6 +274,19 @@ $element('.sms-code-input input').addEventListener('input', function (){
     }
 })
 
-// numberInputStep2.addEventListener('click', function (){
-//     step1StandardExplanation2.classList.remove(none);
-// })
+//  -------------------------- FOR STEP 2 -------------------
+//
+// -----------------------------------------------------------
+
+const innFiled = $element('.filed-inn');
+
+innFiled.addEventListener('input', function (){
+    const val = this.value;
+
+    Request(API_URL.INN).then((res) => {
+        console.log(res)
+    })
+})
+
+
+

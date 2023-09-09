@@ -1,3 +1,8 @@
+const API_URL = {
+    INN: 'https://dev.ainox.pro/api/dadata/?inn=7707083893'
+}
+
+
 const $ = (className) => document.querySelectorAll(className);
 const $element = (className) => document.querySelector(className);
 
@@ -60,6 +65,12 @@ const icons = [
         icon: '<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg"> <g id="12 px"> <path id="Vector" d="M0.428467 8.10858L2.76847 11.1172C2.84743 11.2197 2.9486 11.3031 3.06439 11.361C3.18019 11.4189 3.30759 11.4498 3.43704 11.4514C3.5644 11.4529 3.6905 11.426 3.80615 11.3726C3.9218 11.3192 4.0241 11.2407 4.10561 11.1429L11.5713 2.10858" stroke="white" stroke-width="0.857143" stroke-linecap="round" stroke-linejoin="round"/> </g> </svg>'
     },
 ]
+
+
+function Request(url, option = {}){
+    return fetch(url, option).then((res) => res.json());
+}
+
 
 function startConvertIcons(){
     $('.icon').forEach((item) => {
