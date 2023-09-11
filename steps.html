@@ -118,7 +118,7 @@
 
     <div class="step-page-row">
       <div class="step-page-row-left">
-        <div class="steps-block" data-step="1">
+        <div class="steps-block " data-step="1">
           <h1 class="standard-h1">Добро пожаловать в мастер настройки</h1>
           <p class="standard-p mt-25 mb-25">
             Вы в паре шагов от запуска продаж, осталось сделать несколько настроек. Процедура состоит из двух этапов:
@@ -300,7 +300,7 @@
             </p>
             <label class="def-fields def-fields-text mt-15">
               <span class="def-fields-title">Название магазина</span>
-              <input type="email" class="def-fields-input field-name-surname" placeholder="Рога и копыта">
+              <input type="email" class="def-fields-input shop-name" placeholder="Рога и копыта">
               <img class="def-fields-icon" src="assets/icons/magazin-icon.svg" alt="mag-icon">
             </label>
             <p class="standard-explanation step1-standard-explanation mb-15">
@@ -314,12 +314,17 @@
             <p class="standard-explanation step1-standard-explanation mb-15">
               Расскажите в деталях о своей работе: что, кому, зачем, как и на каких условиях вы продаете
             </p>
-            <label class="def-fields def-fields-text mt-15">
-              <span class="def-fields-title ">Адрес вашего сайта-витрины</span>
-              <input type="email" class="def-fields-input mask-email" placeholder="_@_._">
+            <label class="def-fields def-fields-text mt-15 address-site-shop">
+              <span class="def-fields-title">Адрес вашего сайта-витрины</span>
+<!--              <input type="email" class="def-fields-input address-site-shop" placeholder="__@ainox.ru">-->
+              <span class="def-fields-input">
+                <span contenteditable="false" class="address-site-shop-name"></span><span contenteditable="false" class="ainox-name">.ainox.pro</span>
+              </span>
               <img class="def-fields-icon" src="assets/icons/edit-input.svg" alt="email-icon">
             </label>
-            <p class="error-form mb-25 mt-6 d-none error-user-name-surname"></p>
+            <p class="error-form mt-6 mb-6">
+              Этот адрес уже занят, выберите другой
+            </p>
             <p class="standard-explanation step1-standard-explanation mb-15">
               Этот адрес вы сможете давать своим клиентам для оформления подписки
             </p>
@@ -462,9 +467,9 @@
               <input type="email" class="def-fields-input field-name-surname" placeholder="БИК банка">
               <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="check-icon">
             </label>
-            <label class="def-fields mt-25">
+            <label class="def-fields mt-15">
               <span class="def-fields-title">Расчетный счет</span>
-              <input type="text" class="def-fields-input mask-orgn" placeholder="0000000000">
+              <input type="text" class="def-fields-input mask-checking-account" placeholder="00000000000000000000">
               <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
             </label>
           </div>
@@ -491,9 +496,8 @@
             <div class="def-select">
               <select data-title="Ваша роль в проекте">
                 <option value="text" data-subtitle="text-subtitle1">Технический специалист</option>
-                <option value="text1" data-subtitle="text-subtitle1">Технический специалист</option>
-                <option value="text2" data-subtitle="text-subtitle2">Технический специалист</option>
-                <option value="text3" data-subtitle="text-subtitle3">Технический специалист</option>
+                <option value="text" data-subtitle="text-subtitle1">Сотрудник </option>
+                <option value="text1" data-subtitle="text-subtitle1">Владелец </option>
               </select>
               <div class="def-select-content"></div>
             </div>

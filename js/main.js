@@ -199,7 +199,7 @@ defaultInputs.forEach((item) => {
     }
 
     item.addEventListener('focus', function (){
-        checkItems()
+        checkItems();
         // this.parentElement.classList.remove(disabled);
         this.parentElement.classList.add(active);
 
