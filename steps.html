@@ -118,7 +118,7 @@
 
     <div class="step-page-row">
       <div class="step-page-row-left">
-        <div class="steps-block " data-step="1">
+        <div class="steps-block d-none" data-step="1">
           <h1 class="standard-h1">Добро пожаловать в мастер настройки</h1>
           <p class="standard-p mt-25 mb-25">
             Вы в паре шагов от запуска продаж, осталось сделать несколько настроек. Процедура состоит из двух этапов:
@@ -314,7 +314,7 @@
             <p class="standard-explanation step1-standard-explanation mb-15">
               Расскажите в деталях о своей работе: что, кому, зачем, как и на каких условиях вы продаете
             </p>
-            <label class="def-fields def-fields-text mt-15 address-site-shop">
+            <label class="def-fields def-fields-text mt-15 address-site-shop disabled">
               <span class="def-fields-title">Адрес вашего сайта-витрины</span>
 <!--              <input type="email" class="def-fields-input address-site-shop" placeholder="__@ainox.ru">-->
               <span class="def-fields-input">
@@ -496,8 +496,8 @@
             <div class="def-select">
               <select data-title="Ваша роль в проекте">
                 <option value="text" data-subtitle="text-subtitle1">Технический специалист</option>
-                <option value="text" data-subtitle="text-subtitle1">Сотрудник </option>
-                <option value="text1" data-subtitle="text-subtitle1">Владелец </option>
+                <option value="text">Сотрудник </option>
+                <option value="text1">Владелец </option>
               </select>
               <div class="def-select-content"></div>
             </div>
@@ -542,7 +542,7 @@
             <img src="assets/icons/arrow-right.svg" alt="arrow">
           </button>
         </div>
-        <div class="steps-block steps-block9 d-none" data-step="9">
+        <div class="steps-block steps-block9 " data-step="9">
           <div class="mb-25">
             <button class="btn-transparent btn-transparent-new-ticket change-step" data-step="2">
               <img src="assets/icons/arrow-left.svg" alt="arrow-left">
@@ -598,7 +598,7 @@
             </label>
             <label class="def-fields mt-15">
               <span class="def-fields-title">Дата выдачи паспорта</span>
-              <input type="date" class="def-fields-input" placeholder="00000000000000000000">
+              <input type="date" class="def-fields-input date">
             </label>
             <label class="def-fields mt-15">
               <span class="def-fields-title">Кем выдан паспорт</span>
@@ -622,7 +622,7 @@
             </p>
             <label class="def-fields">
               <span class="def-fields-title">Дата рождения </span>
-              <input type="date" class="def-fields-input" placeholder="00000000000000000000">
+              <input type="date" class="def-fields-input date">
             </label>
             <label class="def-fields def-fields-text mt-15">
               <span class="def-fields-title">Место рождения</span>
@@ -708,10 +708,12 @@
               В формате jpg, jpeg, png, pdf. До 1 мб. Без бликов, размытий, с четко видимыми всеми элементами.
             </p>
           </div>
-          <button class="btn-green mt-25 mb-25 change-step" data-step="1">
-            Отправить на модерацию
-            <img src="assets/icons/arrow-right.svg" alt="arrow">
-          </button>
+          <a href="robo.html">
+            <button class="btn-green mt-25 mb-25 change-step">
+              Отправить на модерацию
+              <img src="assets/icons/arrow-right.svg" alt="arrow">
+            </button>
+          </a>
         </div>
       </div>
       <div class="step-page-row-right">

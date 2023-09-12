@@ -3893,7 +3893,7 @@ main {
 }
 .def-select.active .def-select-body{
   padding: 10px;
-  height: 300px;
+  min-height: 230px;
   border: 1px solid var(--grey);
   margin-bottom: 20px;
 }
@@ -4529,4 +4529,8 @@ input[type="date"]::-webkit-date-and-time-value{ text-align:left; }
 .address-site-shop .def-fields-icon{
   display: block !important;
   cursor: pointer;
+}
+
+.def-fields-input.date{
+  width: 97%;
 }

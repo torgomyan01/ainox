@@ -385,6 +385,12 @@ siteShopName.addEventListener('click', function (){
 })
 
 
+$element('.address-site-shop-name').addEventListener('blur', function (){
+    this.setAttribute('contenteditable', 'false')
+    this.parentElement.parentElement.classList.add(disabled);
+})
+
+
 // const inpSiteName = $element('.address-site-shop-name');
 //
 // if(inpSiteName.innerText === ''){
