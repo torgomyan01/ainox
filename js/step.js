@@ -256,7 +256,7 @@ numberInputStep2.addEventListener('click', function (){
 
     btnTime.classList.add(disabled);
     btnTime.classList.add(none);
-    btnTime.addAttribute(disabled, 'true');
+    btnTime?.setAttribute(disabled, 'true');
 })
 
 $element('.sms-code-input input').addEventListener('input', function (){
@@ -365,39 +365,71 @@ const transliterate = function(text) {
 
     return text;
 };
+//
+
+const addressSiteShop = $element('.address-site-shop');
+//
+//
+// addressSiteShopInp.addEventListener('input', function (){
+//     console.log(this.innerText)
+// })
 
 
+//
 const inpShopName = $element('.shop-name');
 const addressSiteShopName = $element('.address-site-shop-name');
 
 inpShopName.addEventListener('input', function (){
-    addressSiteShopName.innerText = transliterate(this.value).replace(/ /g, '-')
+    addressSiteShopName.innerText = transliterate(this.value).replace(/ /g, '-');
+    addressSiteShop.classList.add(active);
+    addressSiteShop.classList.add(disabled);
+    addressSiteShop.querySelector('.address-site-shop-name').setAttribute('contenteditable', 'false')
+    addressSiteShop.querySelector('input').value = this.value;
 })
-
-
-const siteShopName = $element('.address-site-shop .def-fields-icon');
-
-siteShopName.addEventListener('click', function (){
-    console.log('ddd')
-
-    this.parentElement.classList.remove(disabled);
-    this.parentElement.querySelector('.address-site-shop-name').setAttribute('contenteditable', 'true')
-})
-
-
-$element('.address-site-shop-name').addEventListener('blur', function (){
-    this.setAttribute('contenteditable', 'false')
-    this.parentElement.parentElement.classList.add(disabled);
-})
-
-
-// const inpSiteName = $element('.address-site-shop-name');
 //
-// if(inpSiteName.innerText === ''){
-//     inpSiteName.parentElement.parentElement.classList.remove(active)
-// }
+//
+
+//
+// siteShopName.addEventListener('click', function (){
+//     this.parentElement.classList.remove(disabled);
+//     this.parentElement.querySelector('.address-site-shop-name').setAttribute('contenteditable', 'true')
+// })
+//
+//
+// $element('.address-site-shop-name')?.addEventListener('blur', function (){
+//     this.setAttribute('contenteditable', 'false')
+//     this.parentElement.parentElement.classList.add(disabled);
+// })
+
+const startStep = $element('.change-step[data-step="2"]');
+
+startStep.addEventListener('click', function (){
+    $element('.alert.success').style.display = 'none';
+})
 
 
-// const
+
+
+const priceProducts = $element('.price-products');
+
+IMask(
+    priceProducts,
+    {
+        mask: 'num',
+        blocks: {
+            num: {
+                // nested masks are available!
+                mask: Number,
+                thousandsSeparator: ' '
+            }
+        }
+    }
+)
+
+
+addressSiteShop.classList.remove(active);
+
+
+
 
 

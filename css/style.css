@@ -4534,3 +4534,16 @@ input[type="date"]::-webkit-date-and-time-value{ text-align:left; }
 .def-fields-input.date{
   width: 97%;
 }
+
+.address-site-shop .def-fields-text-body:after{
+  content: ".ainox.pro";
+  color: #AEB5BC;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.address-site-shop .def-fields-text-icon-edit{
+  top: 50% !important;
+  transform: translateY(-50%);
+}

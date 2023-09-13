@@ -202,7 +202,6 @@ defaultInputs.forEach((item) => {
         checkItems();
         // this.parentElement.classList.remove(disabled);
         this.parentElement.classList.add(active);
-
     })
 
     item.addEventListener('blur', checkItems)
@@ -598,9 +597,11 @@ function startNowClickTelItems(){
             const countryCode = this.dataset.countrycode;
             const parent = this.parentElement.parentElement.parentElement;
 
+            console.log(parent)
             parent.querySelector('.filed-phone-country-code').value = number;
             parent.querySelector('.filed-phone-country-code').setAttribute('size', number.length - 1)
             parent.querySelector('.filed-phone-countries-flag').setAttribute('src', `https://www.countryflagicons.com/FLAT/64/${countryCode}.png`);
+
 
 
             parent.querySelector('.filed-phone-numbers').classList.remove(active)
@@ -612,6 +613,9 @@ function startNowClickTelItems(){
 
             mask.value = '';
             mask.mask.updateOptions({mask: getMask});
+
+            parent.querySelector('.filed-phone-input').setAttribute('placeholder', getMask);
+
         })
     })
 }
@@ -693,7 +697,6 @@ fetch("http://ip-api.com/json/?fields=countryCode", optionCountryCode)
         const mask = data[isoCode];
         const telNumber = countryCodeAndName.find((item) => item.code === isoCode)
 
-
         $('.filed-phone').forEach((item) => {
             item.querySelector('.filed-phone-country-code').value = telNumber.dial_code;
             item.querySelector('.filed-phone-country-code').setAttribute('size', telNumber.dial_code.length - 1)
@@ -704,34 +707,3 @@ fetch("http://ip-api.com/json/?fields=countryCode", optionCountryCode)
         arrayMask.forEach((_mask) => _mask.mask.updateOptions({ mask: mask }))
     })
 
-
-//
-// const PhoneClasses = [
-//     'filed-phone',
-//     'filed-phone-countries',
-//     'filed-phone-countries-flag',
-//     'filed-phone-countries-downIcon',
-//     'filed-phone-numbers',
-//     'filed-phone-country-code',
-//     'filed-phone-input',
-//     'menu-back-fon-tel'
-// ]
-//
-// window.addEventListener('click', function (e){
-//     console.log(e.target.className)
-//     if(!PhoneClasses.some((_class) => e.target.className.includes(_class))){
-//         $('.filed-phone-input').forEach((item) => {
-//             if(item.value === ''){
-//                 item.parentElement.classList.remove(active)
-//             }
-//         })
-//     }
-// })
-
-
-
-
-
-// document.addEventListener('gesturestart', function (e) {
-//     e.preventDefault();
-// });
