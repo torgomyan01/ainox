@@ -3430,8 +3430,14 @@ main {
   font-weight: 500;
   line-height: 145%;
   text-transform: uppercase;
+  cursor: pointer;
 }
-.menu-list-with-content{
+
+.form-title.active{
+  color: #000;
+}
+
+.menu-list-with-content-item{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3453,11 +3459,11 @@ main {
   transition: 0.3s;
   cursor: pointer;
 }
-.menu-list-with-content:hover{
+.menu-list-with-content-item:hover{
   background-color: var(--grey);
   color: var(--black);
 }
-.menu-list-with-content span{
+.menu-list-with-content-item span{
   width: 25px;
   height: 25px;
   padding: 5px;
@@ -3482,31 +3488,34 @@ main {
   transition: 0.3s;
 }
 
-.menu-list-with-content.active{
+.menu-list-with-content-item.active{
   color: var(--black);
   font-weight: 600;
   cursor: pointer;
 }
-.menu-list-with-content.active span{
+.menu-list-with-content-item.active span{
   border: 1px solid var(--green);
   background: var(--green);
   color: var(--white);
 }
 
 
-.menu-list-with-content.no-active{
+.menu-list-with-content-item.no-active{
   color: var(--black);
 }
-.menu-list-with-content.no-active span{
+.menu-list-with-content-item.no-active span{
   border: 1px solid var(--grey);
   background: transparent;
   color: #6E757C;
 }
-.menu-list-with-content:hover span{
+.menu-list-with-content-item:hover span{
   background-color: var(--white);
 }
-.menu-list-with-content.active:hover span{
+.menu-list-with-content-item.active:hover span{
   background-color: var(--green);
+}
+.menu-list-with-content-item.form-title{
+  padding: 0;
 }
 
 
@@ -4339,7 +4348,7 @@ input[type="date"]::-webkit-date-and-time-value{ text-align:left; }
   color: var(--black);
   font-size: 16px;
   position: relative;
-  padding: 15px 10px 10px;
+  padding: 20px 10px 10px;
   transition: 0.3s;
   z-index: 10;
 }
@@ -4493,7 +4502,7 @@ input[type="date"]::-webkit-date-and-time-value{ text-align:left; }
   font-size: 11px;
   z-index: 0;
   background-color: transparent;
-  top: 5px;
+  top: 10px;
   cursor: default;
 }
 
@@ -4594,4 +4603,8 @@ input[type="date"]::-webkit-date-and-time-value{ text-align:left; }
 
 .name-inn-body-item-inn{
   color: var(--green);
+}
+
+.change-steps-start{
+  cursor: pointer;
 }

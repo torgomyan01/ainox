@@ -640,7 +640,7 @@ $('.filed-phone').forEach((item) => {
     })
 })
 
-$element('.menu-back-fon-tel').addEventListener('click', function (){
+$element('.menu-back-fon-tel')?.addEventListener('click', function (){
     filedPhoneCountries.forEach((item) => {
         item.classList.contains(active) && item.classList.remove(active)
     });

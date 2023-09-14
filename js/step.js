@@ -101,7 +101,7 @@ $('.change-step').forEach((item) => {
     item.addEventListener('click', function (){
         const stepPage = this.dataset.step;
         changeStepBlock(stepPage)
-        setActiveList(+stepPage - 1)
+        setActiveList(+stepPage - 1);
     })
 })
 
@@ -154,12 +154,12 @@ function setActiveList(count){
 
 function changeStepBlock(stepPage){
     $('.steps-block').forEach((stepBlock) => stepBlock.classList.add(none));
-    $element(`.steps-block[data-step="${stepPage}"]`).classList.remove(none);
+    $element(`.steps-block[data-step="${stepPage}"]`)?.classList.remove(none);
 }
 
 menuList.forEach((item, index) => {
     item.addEventListener('click', function (){
-        if(!this.classList.contains(active) && !this.classList.contains('no-active') && index < 3){
+        if(!this.classList.contains(active) && !this.classList.contains('no-active') && this.classList.contains('form-title') && index < 3){
             setActiveList(index);
             changeStepBlock(index + 1);
         }
@@ -476,6 +476,27 @@ IMask(
 addressSiteShop.classList.remove(active);
 
 
+
+
+// const changeStepsStart = $('.change-steps-start');
+// const stepsStart = $('.steps-start');
+//
+// changeStepsStart.forEach((item) => {
+//     item.addEventListener('click', function (){
+//         const indexStep = +this.dataset.stepsstart;
+//
+//         $('.steps-block').forEach((_item) => _item.classList.add(none))
+//
+//         stepsStart.forEach((_stepsStart) => {
+//             _stepsStart.classList.add(none);
+//         })
+//         stepsStart[indexStep].classList.remove(none)
+//
+//         // $('.steps-start')[indexStep].classList.remove()
+//     })
+// })
+//
+//
 
 
 
