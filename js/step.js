@@ -169,7 +169,7 @@ menuList.forEach((item, index) => {
 const errorForInn = $element('#error-for-inn');
 const errorForInnCount = $element('#error-for-inn-count');
 
-$element('.def-fields-input.mask-physical').addEventListener('keyup', function (){
+$element('.def-fields-input.mask-physical')?.addEventListener('keyup', function (){
     const val = this.value;
     const maskCount = 12;
 
@@ -279,14 +279,60 @@ $element('.sms-code-input input').addEventListener('input', function (){
 // -----------------------------------------------------------
 
 const innFiled = $element('.filed-inn');
+const nameInnBody = $element('.name-inn-body');
 
 innFiled.addEventListener('input', function (){
     const val = this.value;
 
-    Request(API_URL.INN).then((res) => {
-        console.log(res)
-    })
+    if(val.length > 0){
+        Request(API_URL.INN).then((res) => {
+            nameInnBody.classList.add(active);
+            nameInnBody.innerHTML = '';
+            const _res = res.suggestions;
+            _res.forEach((item) => {
+                nameInnBody.insertAdjacentHTML('beforeend', `
+                    <div class="name-inn-body-item" data-name="${item.value}">
+                        <span class="name-inn-body-item-name">${item.value}</span>
+                        <span class="name-inn-body-item-inn">${item.data.inn}</span>
+                      </div>
+                `)
+            })
+            clickNameInnBodyItem(_res);
+        })
+    } else {
+        nameInnBody.innerHTML = '';
+        nameInnBody.classList.remove(active)
+    }
+
 })
+
+
+function clickNameInnBodyItem(_res){
+    const items = $('.name-inn-body-item');
+    items.forEach((_item) => {
+        _item.addEventListener('click', function (){
+            const name = this.dataset.name;
+            if(name){
+                const objSelected = _res.find((obj) => obj.value = name);
+
+                $element('.def-fields-input.filed-inn').value = objSelected.value;
+                nameInnBody.classList.remove(active);
+                $element('.add-info-inn').classList.remove(none)
+
+                const defFieldsInn = $element('.def-fields-inn');
+                const defFieldsOgrnip = $element('.def-fields-ogrnip');
+
+                defFieldsInn.classList.add(active);
+                defFieldsInn.querySelector('input').value = objSelected.data.inn;
+
+                defFieldsOgrnip.classList.add(active);
+                defFieldsOgrnip.querySelector('input').value = objSelected.data.ogrn;
+            }
+        })
+    })
+}
+
+
 
 
 //  -------------------------- FOR STEP 3 -------------------

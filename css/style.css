@@ -4547,3 +4547,51 @@ input[type="date"]::-webkit-date-and-time-value{ text-align:left; }
   top: 50% !important;
   transform: translateY(-50%);
 }
+
+.name-inn-body{
+  width: 100%;
+  max-height: 200px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  display: none;
+  overflow: auto;
+  border-radius: 5px;
+  border: 1px solid #EAECEF;
+  background: #FFF;
+  padding: 10px;
+}
+
+.name-inn-body.active{
+  display: block;
+}
+
+.name-inn-body-item{
+  width: 100%;
+  padding: 0 10px 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EAECEF;
+  cursor: pointer;
+}
+.name-inn-body-item:hover{
+  border-bottom: 1px solid #d2d2d2;
+}
+
+
+.name-inn-body-item:last-child{
+  margin-bottom: 0;
+  border: 0;
+}
+
+.name-inn-body-item:first-child{
+  margin-top: 10px;
+}
+
+.name-inn-body-item-name{
+}
+
+.name-inn-body-item-inn{
+  color: var(--green);
+}
