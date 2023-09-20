@@ -101,7 +101,7 @@ $('.change-step').forEach((item) => {
     item.addEventListener('click', function (){
         const stepPage = this.dataset.step;
         changeStepBlock(stepPage)
-        setActiveList(+stepPage - 1);
+        setActiveList(+stepPage - 1, true);
     })
 })
 
@@ -134,20 +134,22 @@ $element('.menu-back-fon').addEventListener('click', function (){
 
 $element('.view-image-bg').addEventListener('click', function (){
     this.parentElement.classList.remove(active);
-
-
     document.body.style.overflow = null;
 })
 
+
 const menuList = $('.menu-list-with-content');
-function setActiveList(count){
+function setActiveList(count, success){
     menuList.forEach((element, index) => {
-        element.classList.remove(active);
-        element.classList.remove('no-active');
-        if(index === count){
-            element.classList.add(active)
-        } else if(index > count){
-            element.classList.add('no-active')
+
+        if(success){
+            element.classList.remove(active);
+            element.classList.remove('no-active');
+            if(index === count){
+                element.classList.add(active)
+            } else if(index > count){
+                element.classList.add('no-active')
+            }
         }
     })
 }
@@ -159,12 +161,28 @@ function changeStepBlock(stepPage){
 
 menuList.forEach((item, index) => {
     item.addEventListener('click', function (){
-        if(!this.classList.contains(active) && !this.classList.contains('no-active') && this.classList.contains('form-title') && index < 3){
-            setActiveList(index);
+        if(!this.classList.contains(active) && !this.classList.contains('no-active') && index < 3){
+            setActiveList(index, true);
+            changeStepBlock(index + 1);
+        }
+
+        if(this.classList.contains('form-title')){
+            setActiveList(index, false);
             changeStepBlock(index + 1);
         }
     })
 })
+
+
+const titleSteps = $('.menu-list-with-content.form-title');
+
+titleSteps.forEach((item) => {
+    item.addEventListener('click', function (){
+        titleSteps.forEach((_it) => _it.classList.remove(active));
+        this.classList.add(active);
+    })
+})
+
 
 const errorForInn = $element('#error-for-inn');
 const errorForInnCount = $element('#error-for-inn-count');
@@ -286,18 +304,21 @@ innFiled.addEventListener('input', function (){
 
     if(val.length > 0){
         Request(API_URL.INN).then((res) => {
+            console.log(res)
             nameInnBody.classList.add(active);
             nameInnBody.innerHTML = '';
             const _res = res.suggestions;
-            _res.forEach((item) => {
-                nameInnBody.insertAdjacentHTML('beforeend', `
-                    <div class="name-inn-body-item" data-name="${item.value}">
-                        <span class="name-inn-body-item-name">${item.value}</span>
-                        <span class="name-inn-body-item-inn">${item.data.inn}</span>
-                      </div>
-                `)
-            })
-            clickNameInnBodyItem(_res);
+            if(_res.length){
+                _res.forEach((item) => {
+                    nameInnBody.insertAdjacentHTML('beforeend', `
+                        <div class="name-inn-body-item" data-name="${item.value}">
+                            <span class="name-inn-body-item-name">${item.value}</span>
+                            <span class="name-inn-body-item-inn">${item.data.inn}</span>
+                          </div>
+                    `)
+                })
+                clickNameInnBodyItem(_res);
+            }
         })
     } else {
         nameInnBody.innerHTML = '';
@@ -426,11 +447,21 @@ const inpShopName = $element('.shop-name');
 const addressSiteShopName = $element('.address-site-shop-name');
 
 inpShopName.addEventListener('input', function (){
-    addressSiteShopName.innerText = transliterate(this.value).replace(/ /g, '-');
-    addressSiteShop.classList.add(active);
-    addressSiteShop.classList.add(disabled);
-    addressSiteShop.querySelector('.address-site-shop-name').setAttribute('contenteditable', 'false')
-    addressSiteShop.querySelector('input').value = this.value;
+    if(this.value !== ''){
+        addressSiteShopName.innerText = transliterate(this.value).replace(/ /g, '-');
+        addressSiteShop.classList.add(active);
+        addressSiteShop.classList.add(disabled);
+        addressSiteShop.querySelector('.address-site-shop-name').setAttribute('contenteditable', 'false')
+        addressSiteShop.querySelector('input').value = this.value;
+    } else {
+        addressSiteShopName.innerText = '';
+        addressSiteShop.classList.remove(active);
+        addressSiteShop.classList.remove(disabled);
+        addressSiteShop.querySelector('.address-site-shop-name').setAttribute('contenteditable', 'false')
+        addressSiteShop.querySelector('input').value = '';
+    }
+
+
 })
 //
 //

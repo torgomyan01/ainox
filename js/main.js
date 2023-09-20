@@ -597,11 +597,9 @@ function startNowClickTelItems(){
             const countryCode = this.dataset.countrycode;
             const parent = this.parentElement.parentElement.parentElement;
 
-            console.log(parent)
             parent.querySelector('.filed-phone-country-code').value = number;
             parent.querySelector('.filed-phone-country-code').setAttribute('size', number.length - 1)
             parent.querySelector('.filed-phone-countries-flag').setAttribute('src', `https://www.countryflagicons.com/FLAT/64/${countryCode}.png`);
-
 
 
             parent.querySelector('.filed-phone-numbers').classList.remove(active)
