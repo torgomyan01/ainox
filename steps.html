@@ -154,7 +154,7 @@
             <img src="assets/icons/arrow-right.svg" alt="arrow">
           </button>
         </div>
-        <div class="steps-block steps-block2 " data-step="2">
+        <div class="steps-block steps-block2 d-none" data-step="2">
           <div class="mb-25">
             <button class="btn-transparent btn-transparent-new-ticket go-to-back-step change-step" data-step="1">
               <img src="assets/icons/arrow-left.svg" alt="arrow-left">
@@ -242,21 +242,21 @@
             </p>
             <p class="error-form mb-25 mt-6 d-none error-user-name-surname"></p>
             <div class="add-info-inn d-none">
-              <label class="def-fields def-fields-inn">
+              <label class="def-fields def-fields-text def-fields-name">
+                <span class="def-fields-title">Название</span>
+                <input type="email" class="def-fields-input filed-inn" placeholder="Иванов Иван Иванович">
+                <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="email-icon">
+              </label>
+              <label class="def-fields def-fields-inn mt-15">
                 <span class="def-fields-title">ИНН</span>
                 <input type="text" class="def-fields-input mask-jurlitsa" placeholder="0000000000">
                 <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
               </label>
-              <label class="def-fields mt-15 def-fields-ogrnip">
-                <span class="def-fields-title">ОГРНИП</span>
-                <input type="text" class="def-fields-input mask-orgnip" placeholder="00000000000000">
-                <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
-              </label>
             </div>
-            <label class="def-fields def-fields-text mt-15">
+            <label class="def-fields def-fields-text mt-15 disabled">
               <span class="def-fields-title ">Публичный E-mail</span>
-              <input type="email" class="def-fields-input mask-email" placeholder="_@_._" value="and.torgomyan@ainox.pro">
-              <img class="def-fields-icon" src="assets/icons/edit-input.svg" alt="email-icon">
+              <input type="email" class="def-fields-input mask-email" placeholder="_@_._" value="and.torgomyan@gmail.com" disabled>
+              <img class="def-fields-icon-edit" src="assets/icons/edit-input.svg" alt="key-icon">
             </label>
 
             <label class="filed-phone mt-15 active">
@@ -485,7 +485,7 @@
             <img src="assets/icons/arrow-right.svg" alt="arrow">
           </button>
         </div>
-        <div class="steps-block steps-block8 d-none" data-step="8">
+        <div class="steps-block steps-block8 " data-step="8">
           <div class="mb-25">
             <button class="btn-transparent btn-transparent-new-ticket change-step" data-step="2">
               <img src="assets/icons/arrow-left.svg" alt="arrow-left">
@@ -502,9 +502,8 @@
             </p>
             <div class="def-select">
               <select data-title="Ваша роль в проекте">
-                <option value="text" data-subtitle="text-subtitle1">Технический специалист</option>
-                <option value="text">Сотрудник </option>
-                <option value="text1">Владелец </option>
+                <option value="text">Технический специалист</option>
+                <option value="text">Руководитель / Владелец</option>
               </select>
               <div class="def-select-content"></div>
             </div>
@@ -512,6 +511,9 @@
               <span class="def-fields-title">Ваши фамилия имя отчество</span>
               <input type="email" class="def-fields-input field-name-surname" placeholder="Иванов Иван Иванович">
               <img class="def-fields-icon" src="assets/icons/magazin-icon.svg" alt="mag-icon">
+
+              <span class="def-fields-clue">
+              </span>
             </label>
             <p class="error-form mb-25 d-none error-user-name-surname"></p>
             <label class="def-fields def-fields-text mt-15">

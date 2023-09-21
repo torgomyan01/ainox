@@ -336,18 +336,19 @@ function clickNameInnBodyItem(_res){
             if(name){
                 const objSelected = _res.find((obj) => obj.value = name);
 
-                $element('.def-fields-input.filed-inn').value = objSelected.value;
+                $element('.def-fields-input.filed-inn').value = '';
+                $element('.def-fields-input.filed-inn').value = '';
                 nameInnBody.classList.remove(active);
                 $element('.add-info-inn').classList.remove(none)
 
                 const defFieldsInn = $element('.def-fields-inn');
-                const defFieldsOgrnip = $element('.def-fields-ogrnip');
+                const defFieldsOgrnip = $element('.def-fields-name');
 
                 defFieldsInn.classList.add(active);
                 defFieldsInn.querySelector('input').value = objSelected.data.inn;
 
                 defFieldsOgrnip.classList.add(active);
-                defFieldsOgrnip.querySelector('input').value = objSelected.data.ogrn;
+                defFieldsOgrnip.querySelector('input').value = objSelected.value;
             }
         })
     })
@@ -505,6 +506,9 @@ IMask(
 
 
 addressSiteShop.classList.remove(active);
+
+
+
 
 
 

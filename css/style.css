@@ -118,6 +118,45 @@ main {
   transition: 0.3s;
 }
 
+.def-fields-clue{
+  position: absolute;
+  left: 0;
+  top: calc(100% + 5px);
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #EAECEF;
+  background: #FFF;
+  padding: 10px;
+  z-index: 1000;
+  display: none;
+  max-height: 245px;
+  overflow-y: auto;
+  counter-reset: labels;
+}
+
+.def-fields-clue-item{
+  width: 100%;
+  display: block;
+  color: #222529;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  padding-bottom: 15px;
+  border-bottom: 1px solid #EAECEF;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.def-fields-clue-item:last-child{
+  border: 0;
+  padding-bottom: 5px;
+}
+
+.def-fields.open-clue .def-fields-clue{
+  display: block;
+}
+
+
 .def-fields.text .def-fields-icon{
   top: 20px;
 }

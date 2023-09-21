@@ -501,7 +501,6 @@ delete_btn?.addEventListener('click', ()=>{
 // }
 
 
-
  $element('.modal-delete-account-body')?.addEventListener('click', ()=>{
      modal_delete_account.classList.remove('active')
  })
@@ -511,23 +510,62 @@ $('.field-name-surname').forEach((item) => {
     item.addEventListener('keyup', function (){
         const val = this.value;
         const valArr = val.split(' ');
+        const parent = this.parentElement;
 
-        if(valArr.length <= 1){
-            errorBlockNameAndSurname(true, 'Имя, фамилия, отчество должны быть заполнены')
-        } else if(valArr.length < 2){
-            errorBlockNameAndSurname(true, 'Фамилия отсутствует')
-        } else if(valArr.length < 3){
-            errorBlockNameAndSurname(true, 'Отсутствует отчество')
-        } else {
-            errorBlockNameAndSurname(false, '')
+        if(val.length){
+            if(valArr.length <= 1){
+                errorBlockNameAndSurname(true, 'Имя, фамилия, отчество должны быть заполнены');
+
+            } else if(valArr.length < 2){
+                errorBlockNameAndSurname(true, 'Фамилия отсутствует');
+            } else if(valArr.length < 3){
+                errorBlockNameAndSurname(true, 'Отсутствует отчество');
+            } else {
+                errorBlockNameAndSurname(false, '');
+                parent.classList.remove('open-clue');
+            }
         }
+
 
         if(val === ''){
-            errorBlockNameAndSurname(false, '')
+            errorBlockNameAndSurname(false, '');
+            parent.classList.remove('open-clue')
+        } else {
+            Request(`https://dev.ainox.pro/api/dadata/?fio=${valArr[valArr.length - 1]}`, ).then(({suggestions}) => {
+                parent.classList.add('open-clue');
+                parent.querySelector('.def-fields-clue').innerHTML = '';
+                suggestions.forEach((suggestion) => {
+                    parent.querySelector('.def-fields-clue').insertAdjacentHTML('beforeend', `
+                        <span class="def-fields-clue-item">${suggestion.value}</span>
+                    `)
+                });
+                startClickFieldsClue(valArr[valArr.length - 1])
+            })
         }
+
+
 
     })
 })
+
+startClickFieldsClue()
+function startClickFieldsClue(value){
+    const defFieldsClueItem = $('.def-fields-clue-item');
+
+    defFieldsClueItem.forEach((item) => {
+        item.addEventListener('click', function (){
+            const text = this.innerText;
+            const parent = this.parentElement.parentElement;
+            const inpValue = parent.querySelector('input').value;
+            const reg = new RegExp(value, 'g');
+
+            parent.querySelector('input').value = inpValue.replace(reg, text);
+            parent.classList.remove('open-clue')
+        })
+    })
+}
+
+
 
 function errorBlockNameAndSurname(status, text){
     $('.error-user-name-surname').forEach((item) => {
