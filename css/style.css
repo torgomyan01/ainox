@@ -3851,13 +3851,14 @@ main {
   -webkit-transition: 0.3s;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   z-index: 10000;
   overflow: auto;
   padding: 0 10px;
-  height: 0;
   transition: .3s;
   position: absolute;
+  counter-reset: labels;
+  display: none;
+  max-height: 230px;
 }
 
 .def-select-body::-webkit-scrollbar {
@@ -3893,7 +3894,7 @@ main {
 
 .def-select-body-item:last-child{
   border: 0;
-  padding-bottom: 0;
+  padding-bottom: 5px;
 }
 
 .def-select-body-item.no-subtitle .def-select-body-item-title{
@@ -3941,7 +3942,7 @@ main {
 }
 .def-select.active .def-select-body{
   padding: 10px;
-  min-height: 230px;
+  display: block;
   border: 1px solid var(--grey);
   margin-bottom: 20px;
 }

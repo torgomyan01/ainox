@@ -79,6 +79,7 @@ function startConvertIcons(){
 }
 startConvertIcons()
 
+const event = new Event('change');
 
 class ToolMasks {
     static numberMaskElements = $('.mask-phone');
@@ -426,6 +427,8 @@ $('.def-select select').forEach((select) => {
             ${optionItems}
         </div>
     `)
+
+    select.dispatchEvent(event)
 })
 
 //
@@ -450,7 +453,9 @@ $('.def-select-body-item').forEach((item) => {
         this.parentElement.parentElement.querySelectorAll(`select option`).forEach((option) => {
             option.removeAttribute(selected)
         })
-        this.parentElement.parentElement.querySelector(`select option[value="${this.dataset.value}"]`).setAttribute(selected, 'true')
+        const opt = `select option[value="${this.dataset.value}"]`;
+        this.parentElement.parentElement.querySelector(opt).setAttribute(selected, 'true');
+        $element(opt).parentElement.dispatchEvent(event)
     })
 })
 
@@ -465,6 +470,7 @@ $('.def-select select option').forEach((option) => {
         if(this.dataset?.value){
             option.parentElement.parentElement.querySelector(`select option[value="${this.dataset.value}"]`).setAttribute(selected, 'true')
         }
+        option.parentElement.dispatchEvent(event)
     }
 })
 

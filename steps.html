@@ -118,7 +118,7 @@
 
     <div class="step-page-row">
       <div class="step-page-row-left">
-        <div class="steps-block " data-step="1">
+        <div class="steps-block d-none" data-step="1">
           <h1 class="standard-h1">Добро пожаловать в мастер настройки</h1>
           <p class="standard-p mt-25 mb-25">
             Вы в паре шагов от запуска продаж, осталось сделать несколько настроек. Процедура состоит из двух этапов:
@@ -180,7 +180,7 @@
                   <span class="filed-phone-numbers"></span>
                 </span>
               <input class="filed-phone-country-code" value="+7" size="2" maxlength="5" />
-              <input type="text" class="filed-phone-input" value="(861)968-19-65">
+              <input type="text" class="filed-phone-input" value="(861) 968-19-65">
               <span class="filed-phone-placeholder">Телефон</span>
               <img class="def-fields-icon-edit" src="assets/icons/edit-input.svg" alt="key-icon">
             </label>
@@ -485,7 +485,7 @@
             <img src="assets/icons/arrow-right.svg" alt="arrow">
           </button>
         </div>
-        <div class="steps-block steps-block8 d-none" data-step="8">
+        <div class="steps-block steps-block8 " data-step="8">
           <div class="mb-25">
             <button class="btn-transparent btn-transparent-new-ticket change-step" data-step="2">
               <img src="assets/icons/arrow-left.svg" alt="arrow-left">
@@ -501,12 +501,17 @@
               Расскажите о себе
             </p>
             <div class="def-select">
-              <select data-title="Ваша роль в проекте">
-                <option value="text">Технический специалист</option>
-                <option value="text">Руководитель / Владелец</option>
+              <select data-title="Ваша роль в проекте" class="inn-for-tech-select">
+                <option value="Технический специалист">Технический специалист</option>
+                <option value="Руководитель / Владелец">Руководитель / Владелец</option>
               </select>
               <div class="def-select-content"></div>
             </div>
+            <label class="def-fields inn-for-tech mt-15 d-none">
+              <span class="def-fields-title">ИНН</span>
+              <input type="text" class="def-fields-input mask-physical" placeholder="0000000000">
+              <img class="def-fields-icon" src="assets/icons/check-mark.svg" alt="filed-icon">
+            </label>
             <label class="def-fields def-fields-text mt-15">
               <span class="def-fields-title">Ваши фамилия имя отчество</span>
               <input type="email" class="def-fields-input field-name-surname" placeholder="Иванов Иван Иванович">

@@ -510,6 +510,15 @@ addressSiteShop.classList.remove(active);
 
 
 
+$element('.inn-for-tech-select').addEventListener('change', function (){
+    const elem = $element('.inn-for-tech');
+
+    if(this.value === 'Технический специалист'){
+        elem.classList.remove(none)
+    } else {
+        elem.classList.add(none)
+    }
+})
 
 
 
