@@ -100,6 +100,7 @@ function removeItemToModal(id){
 $('.change-step').forEach((item) => {
     item.addEventListener('click', function (){
         const stepPage = this.dataset.step;
+        console.log(stepPage)
         changeStepBlock(stepPage)
         setActiveList(+stepPage - 1, true);
     })
@@ -141,7 +142,6 @@ $element('.view-image-bg').addEventListener('click', function (){
 const menuList = $('.menu-list-with-content');
 function setActiveList(count, success){
     menuList.forEach((element, index) => {
-
         if(success){
             element.classList.remove(active);
             element.classList.remove('no-active');
@@ -162,12 +162,12 @@ function changeStepBlock(stepPage){
 menuList.forEach((item, index) => {
     item.addEventListener('click', function (){
         if(!this.classList.contains(active) && !this.classList.contains('no-active') && index < 3){
-            setActiveList(index, true);
+            // setActiveList(index, true);
             changeStepBlock(index + 1);
         }
 
         if(this.classList.contains('form-title')){
-            setActiveList(index, false);
+            // setActiveList(index, false);
             changeStepBlock(index + 1);
         }
     })
@@ -177,7 +177,8 @@ menuList.forEach((item, index) => {
 const titleSteps = $('.menu-list-with-content.form-title');
 
 titleSteps.forEach((item) => {
-    item.addEventListener('click', function (){
+    item.addEventListener('click', function (e){
+        e.preventDefault();
         titleSteps.forEach((_it) => _it.classList.remove(active));
         this.classList.add(active);
     })
