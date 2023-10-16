@@ -610,6 +610,20 @@ Request(url).then((res) => {
             const selectedCountryData = iti.getSelectedCountryData();
 
         });
+        // // listen to the telephone input for changes
+        item.addEventListener('blur', function (){
+            checkItems();
+            // this.parentElement.classList.remove(disabled);
+            this.parentElement.parentElement.classList.remove(active);
+
+        });
+        // // listen to the telephone input for changes
+        item.addEventListener('focus', function (){
+            checkItems();
+            // this.parentElement.classList.remove(disabled);
+            this.parentElement.parentElement.classList.add(active);
+
+        });
 
     })
 

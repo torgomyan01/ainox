@@ -4655,7 +4655,14 @@ input[type="date"]::-webkit-date-and-time-value{ text-align:left; }
   height: 34px;
   top: 12px;
   left: -2px;
+  opacity: 0;
+  transition: 0.3s;
 }
+
+.def-fields.active .iti--allow-dropdown{
+  opacity: 1;
+}
+
 .def-fields .iti--allow-dropdown input{
   width: 100%;
   height: 100%;
