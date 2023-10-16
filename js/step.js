@@ -267,7 +267,7 @@ function startTimingBtb(btn, callBack){
 
 
 
-numberInputStep2.addEventListener('click', function (){
+numberInputStep2?.addEventListener('click', function (){
     step1StandardExplanation2.classList.add(none);
     smsCodeInput.classList.add(none);
     getSMSButton.classList.remove(none);
@@ -465,20 +465,6 @@ inpShopName.addEventListener('input', function (){
 
 
 })
-//
-//
-
-//
-// siteShopName.addEventListener('click', function (){
-//     this.parentElement.classList.remove(disabled);
-//     this.parentElement.querySelector('.address-site-shop-name').setAttribute('contenteditable', 'true')
-// })
-//
-//
-// $element('.address-site-shop-name')?.addEventListener('blur', function (){
-//     this.setAttribute('contenteditable', 'false')
-//     this.parentElement.parentElement.classList.add(disabled);
-// })
 
 const startStep = $element('.change-step[data-step="2"]');
 
@@ -542,6 +528,17 @@ $element('.inn-for-tech-select').addEventListener('change', function (){
 // })
 //
 //
+
+
+
+
+
+
+
+
+
+// set it's initial value
+
 
 
 
