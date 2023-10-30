@@ -600,6 +600,7 @@ Request(url).then((res) => {
     defFieldsPhone.forEach((item) => {
         const iti = window.intlTelInput(item, {
             initialCountry: "auto",
+            onlyCountries: ["ru", "am", "BY", "kz", "uz"],
             geoIpLookup: callback => callback(res.country_code),
             utilsScript: './js/util.min.js' // just for formatting/placeholders etc
         });
@@ -610,13 +611,13 @@ Request(url).then((res) => {
             const selectedCountryData = iti.getSelectedCountryData();
 
         });
-        // // listen to the telephone input for changes
-        item.addEventListener('blur', function (){
-            checkItems();
-            // this.parentElement.classList.remove(disabled);
-            this.parentElement.parentElement.classList.remove(active);
-
-        });
+        // // // listen to the telephone input for changes
+        // item.addEventListener('blur', function (){
+        //     checkItems();
+        //     // this.parentElement.classList.remove(disabled);
+        //     this.parentElement.parentElement.classList.remove(active);
+        //
+        // });
         // // listen to the telephone input for changes
         item.addEventListener('focus', function (){
             checkItems();
