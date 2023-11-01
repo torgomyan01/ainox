@@ -464,7 +464,9 @@ inpShopName.addEventListener('input', function (){
     }
 })
 
+const errorMessageAddressSite = $element('#error-message-address-site');
 const cyrillicPattern = /^[\u0400-\u04FF]+$/;
+
 addressSiteShopName.addEventListener('keydown', function (e){
     const val = this.innerText;
     const symbol = e.key;
@@ -474,6 +476,11 @@ addressSiteShopName.addEventListener('keydown', function (e){
     if(!symbolCheck){
         e.preventDefault();
         e.stopPropagation();
+        errorMessageAddressSite.classList.remove(none)
+        errorMessageAddressSite.innerText = 'Пожалуйста, заполняйте только латинские буквы';
+    } else {
+        errorMessageAddressSite.classList.add(none)
+        errorMessageAddressSite.innerText = '';
     }
 })
 
