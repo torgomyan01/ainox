@@ -462,9 +462,21 @@ inpShopName.addEventListener('input', function (){
         addressSiteShop.querySelector('.address-site-shop-name').setAttribute('contenteditable', 'false')
         addressSiteShop.querySelector('input').value = '';
     }
-
-
 })
+
+const cyrillicPattern = /^[\u0400-\u04FF]+$/;
+addressSiteShopName.addEventListener('keydown', function (e){
+    const val = this.innerText;
+    const symbol = e.key;
+
+    const symbolCheck = /^[a-z]$/i.test(symbol);
+
+    if(!symbolCheck){
+        e.preventDefault();
+        e.stopPropagation();
+    }
+})
+
 
 const startStep = $element('.change-step[data-step="2"]');
 

@@ -598,7 +598,7 @@ Request(url).then((res) => {
     defFieldsPhone.forEach((item) => {
         const iti = window.intlTelInput(item, {
             initialCountry: "auto",
-            onlyCountries: ["ru", "am", "by", "kz", "uz"],
+            // onlyCountries: ["ru", "am", "by", "kz", "uz"],
             geoIpLookup: callback => callback(res?.country_code),
             utilsScript: './js/util.min.js' // just for formatting/placeholders etc
         });

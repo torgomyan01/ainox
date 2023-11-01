@@ -109,7 +109,7 @@
     transition: 0.3s;
     transform: translateX(-100%);
     opacity: 0;
-    z-index: 1000;
+    z-index: 100000;
     padding: 10px;
   }
   .step-page-row-right.active{
@@ -911,6 +911,9 @@
 
 
 @media (max-width: 480px){
+  .iti__country-list{
+    width: 300px;
+  }
   .new-request .form .form-input-box {
     margin-top: 0;
   }
