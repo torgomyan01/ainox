@@ -315,7 +315,7 @@ innFiled.addEventListener('input', function (){
                         <div class="name-inn-body-item" data-name="${item.value}">
                             <span class="name-inn-body-item-name">${item.value}</span>
                             <span class="name-inn-body-item-inn">${item.data.inn}</span>
-                          </div>
+                        </div>
                     `)
                 })
                 clickNameInnBodyItem(_res);

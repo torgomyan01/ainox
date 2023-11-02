@@ -1,5 +1,5 @@
 const API_URL = {
-    INN: 'https://dev.ainox.pro/api/dadata/?inn=7707083893'
+    INN: (value) => `https://dev.ainox.pro/api/dadata/?suggest=${value}`
 }
 
 
@@ -614,7 +614,6 @@ Request(url).then((res) => {
 
                 if(placeholder){
                     mask.updateOptions({ mask: placeholder.replace(/[0-9]/g, '0') });
-                    item.value = '';
                 }
             }, 100)
         });
