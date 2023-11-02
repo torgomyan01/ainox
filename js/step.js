@@ -468,12 +468,19 @@ const errorMessageAddressSite = $element('#error-message-address-site');
 const cyrillicPattern = /^[\u0400-\u04FF]+$/;
 
 addressSiteShopName.addEventListener('keydown', function (e){
-    const val = this.innerText;
     const symbol = e.key;
 
     const symbolCheck = /^[a-z]$/i.test(symbol);
 
-    if(!symbolCheck){
+    const check = !symbolCheck &&
+        !/^[0-9]$/i.test(symbol) &&
+        !/^[-]$/i.test(symbol) &&
+        symbol !== 'Backspace' &&
+        symbol !== 'Delete' &&
+        symbol !== 'ArrowLeft' &&
+        symbol !== 'ArrowRight';
+
+    if(check){
         e.preventDefault();
         e.stopPropagation();
         errorMessageAddressSite.classList.remove(none)
